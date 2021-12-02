@@ -41,27 +41,24 @@ namespace ModFinder_WOTR
             installedModList.Items.Add(new ModDetails
             {
                 Name = "BubbleGuns",
-                Version = "0.0.1",
+                InstalledVersion = "0.0.1",
                 ModType = Infrastructure.ModType.UMM,
                 Source = Infrastructure.ModSource.Other,
-                CanInstall = false,
             });
             installedModList.Items.Add(new ModDetails
             {
                 Name = "RespecModWrath",
-                Version = "4.2.0",
+                InstalledVersion = "1.09.1",
                 ModType = Infrastructure.ModType.Owlcat,
                 OwnerAndRepo = new string[2] { "BarleyFlour", "RespecMod" },
                 Source = Infrastructure.ModSource.GitHub,
-                CanInstall = true,
             });
             installedModList.Items.Add(new ModDetails
             {
                 Name = "Test Mod",
-                Version = "1.2.3",
+                InstalledVersion = "1.2.3",
                 // ModType = "UMM",
                 Source = Infrastructure.ModSource.Nexus,
-                CanInstall = false,
             });
 
             installedMods.DataContext = installedModList;
@@ -84,6 +81,36 @@ namespace ModFinder_WOTR
             // Drag drop nonsense
             dropTarget.Drop += DropTarget_Drop;
             dropTarget.DragOver += DropTarget_DragOver;
+
+            _ = Task.Run(async () =>
+              {
+                  try
+                  {
+                      foreach (var mod in installedModList.Items)
+                      {
+                          if (mod.Source == Infrastructure.ModSource.GitHub)
+                          {
+                              Debug.WriteLine("[ModFinder] ModSourceGitDescrip " + mod.Name + "\n");
+                              var repo = await Infrastructure.Main.Client.Repository.Get(mod.OwnerAndRepo[0], mod.OwnerAndRepo[1]);
+                              var latest = await Infrastructure.Main.Client.Repository.Release.GetLatest(mod.OwnerAndRepo[0], mod.OwnerAndRepo[1]);
+                              Debug.WriteLine("[ModFinder]        got repo name: " + repo.FullName);
+                              Debug.WriteLine("[ModFinder] got repo description: " + repo.Description);
+                              Debug.WriteLine("[MedFinder]   got latest release (tag): " + latest.TagName);
+                              await Dispatcher.InvokeAsync(() =>
+                              {
+                                  mod.Description = repo.Description;
+                                  mod.LatestVersion = latest.TagName.StripV(); //This is not true???
+                                  Debug.WriteLine($"setting mod version to: {mod.LatestVersion}");
+                                  Debug.WriteLine($"can install: {mod.CanInstall}");
+                              });
+                          }
+                      }
+                  }
+                  catch (Exception ex)
+                  {
+                      Debug.WriteLine(ex.Message);
+                  }
+              });
         }
 
         private void DropTarget_DragOver(object sender, DragEventArgs e)
@@ -119,12 +146,8 @@ namespace ModFinder_WOTR
                 return false;
 
             //BARLEY CODE HERE
-            {
-                var opened = ZipFile.OpenRead(path);
-                if (opened.Entries.Any(a => a.Name == @"OwlcatModificationManifest.json" || a.Name == @"Info.json")) return true;
-            }
-
-            return false;
+            using ZipArchive opened = ZipFile.OpenRead(path);
+            return opened.Entries.Any(a => a.Name is @"OwlcatModificationManifest.json" or @"Info.json");
         }
 
         private void InstallOrUpdateMod(object sender, RoutedEventArgs e)
@@ -154,59 +177,61 @@ namespace ModFinder_WOTR
         public event PropertyChangedEventHandler PropertyChanged;
     }
 
-    public class ModDetails
+    public static class Versions
+    {
+        public static string StripV(this string version)
+        {
+            if (version.Length > 0 && (version[0] == 'v' || version[0] == 'V'))
+                return version[1..];
+            else
+                return version;
+
+        }
+        public static bool IsLaterThan(this string current, string reference)
+        {
+            if (current == null || reference == null)
+                return false;
+
+            try
+            {
+                int[] thisComps = current.Split('.').Select(s => int.Parse(s)).ToArray();
+                int[] referenceComps = reference.Split('.').Select(s => int.Parse(s)).ToArray();
+
+                if (thisComps.Length != referenceComps.Length)
+                    return false;
+
+                int a = 0;
+                int b = 0;
+
+                for (int i = 0; i < thisComps.Length; i++)
+                {
+                    int index = thisComps.Length - i - 1;
+                    a += (int)(Math.Pow(100, i) * thisComps[index]);
+                    b += (int)(Math.Pow(100, i) * referenceComps[index]);
+                }
+
+                return a > b;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+    }
+
+    public class ModDetails : INotifyPropertyChanged
     {
         public string Name { get; set; }
-        public string Version { get; set; }
+        private string _Description;
         public string Description
         {
-            get
+            get => _Description ?? "Loading...";
+            set
             {
-                // Get From Github/Nexus
-                {
-                    if (this.Source == Infrastructure.ModSource.GitHub)
-                    {
-                        Debug.Write(" ModSourceGitDescrip " + this.Name + "\n");
-                        using var wc = new WebClient();
-                        {
-                            Debug.Write(OwnerAndRepo[0] + " " + OwnerAndRepo[1]);
-                            /* var descrip = Task.Run(() => 
-                             {
-                                 var j = Infrastructure.Main.client.Repository.Get(OwnerAndRepo[0], OwnerAndRepo[1]);
-                                 return j;
-
-                             });*/
-                            var task = Task.Run(() => Infrastructure.Main.client.Repository.Get(OwnerAndRepo[0], OwnerAndRepo[1]));
-                            task.ContinueWith(t =>
-                            {
-                                //do somethign with t.Result here
-                                Debug.Write(t.Result.Description);
-                                return t.Result.Description;
-                            });
-                            // else
-                            {
-                                return "Failed to get GitHub Description";
-                            }
-                        }
-                    }
-                    else if (this.Source == Infrastructure.ModSource.Nexus)
-                    {
-                        if (Infrastructure.Main.Settings.NexusAPIKey == null || Infrastructure.Main.Settings.NexusAPIKey == "")
-                        {
-                            return "Please log in to nexus to view descriptions (Nexus' API Requires this)";
-                        }
-                        else
-                        {
-                            return "Placeholder";
-                            //Nexus API stuff here
-                        }
-                    }
-                    else
-                    {
-                        return "No Description Found";
-                    }
-                }
+                _Description = value;
+                PropertyChanged?.Invoke(this, new(nameof(Description)));
             }
+
         }
         public Infrastructure.ModType ModType { get; set; }
         public Infrastructure.ModSource Source { get; set; }
@@ -214,9 +239,35 @@ namespace ModFinder_WOTR
         public string[] OwnerAndRepo { get; set; }
 
         //BARLEY CODE HERE
-        public bool CanInstall { get; set; }
+        public bool CanInstall => LatestVersion?.IsLaterThan(InstalledVersion) ?? false;
 
-        public string InstallButtonText => CanInstall ? "v0.06.11" : "up to date";
+        private string _InstalledVersion;
+        public string InstalledVersion
+        {
+            get => _InstalledVersion;
+            set
+            {
+                _InstalledVersion = value;
+                PropertyChanged?.Invoke(this, new(nameof(InstalledVersion)));
+                PropertyChanged?.Invoke(this, new(nameof(CanInstall)));
+                PropertyChanged?.Invoke(this, new(nameof(InstallButtonText)));
+            }
+        }
 
+        private string _LatestVersion;
+        public string LatestVersion
+        {
+            get => _LatestVersion ?? "...";
+            set {
+                _LatestVersion = value;
+                PropertyChanged?.Invoke(this, new(nameof(LatestVersion)));
+                PropertyChanged?.Invoke(this, new(nameof(CanInstall)));
+                PropertyChanged?.Invoke(this, new(nameof(InstallButtonText)));
+            }
+        }
+
+        public string InstallButtonText => CanInstall ? LatestVersion : "up to date";
+
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }
