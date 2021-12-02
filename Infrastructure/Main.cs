@@ -36,21 +36,12 @@ namespace ModFinder_WOTR.Infrastructure
             }
         }
         private static AppSettingsData m_Settings;
-        public static GitHubClient Client
-        {
-            get
-            {
-                if(m_Client == null)
-                {
-                    m_Client = new GitHubClient(new ProductHeaderValue("ModFinder_WOTR"), new asd());
-                    m_Client.Credentials = new Credentials(Environment.GetEnvironmentVariable("GITHUB_TOKEN"));
 
-                }
-                return m_Client;
-            }
-        }
+        private static GitHubClient _Client;
+        public static GitHubClient Client => _Client ??= new GitHubClient(new ProductHeaderValue("ModFinder_WOTR"));
+
+        [Obsolete("use Client instead")]
         public static GitHubClient client = new GitHubClient(new ProductHeaderValue("ModFinder_WOTR"), new asd());
-        public static GitHubClient m_Client;
         public static DirectoryInfo PFWotrAppdataPath = new DirectoryInfo((new DirectoryInfo(Environment.GetEnvironmentVariable("appdata")).Parent) + @"\LocalLow\Owlcat Games\Pathfinder Wrath Of The Righteous\");
         public static OwlcatModificationSettingsManager OwlcatEnabledMods = new OwlcatModificationSettingsManager();
         public static Dictionary<string, ModInfo> AllMods
