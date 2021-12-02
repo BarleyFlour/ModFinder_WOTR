@@ -1,0 +1,187 @@
+﻿<Window x:Class="ModFinder_WOTR.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModFinder_WOTR"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="694" Width="1208"
+        AllowsTransparency="True" 
+        WindowStyle="None"
+        Background="Transparent" 
+        >
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Constantia"></Setter>
+        </Style>
+        <Style TargetType="DataGridCell">
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="FontSize" Value="14"></Setter>
+            <Setter Property="FontFamily" Value="Constantia"></Setter>
+            <Setter Property="BorderThickness" Value="0"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Foreground" Value="DarkBlue"></Setter>
+                    <Setter Property="BorderThickness" Value="0"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="FontFamily" Value="Constantia"></Setter>
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+        </Style>
+    </Window.Resources>
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top" Height="32">
+            <Rectangle DockPanel.Dock="Right" SnapsToDevicePixels="True" Width="32" Height="32">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="pack://application:,,,/background.png" Viewbox="0.95,0,0.05,0.05" />
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle DockPanel.Dock="Left" SnapsToDevicePixels="True" Width="32" Height="32">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="pack://application:,,,/background.png" Viewbox="0,0,0.05,0.05" />
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle SnapsToDevicePixels="True" Height="32">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="pack://application:,,,/background.png" Viewbox="0.05,0,0.9,0.05" />
+                </Rectangle.Fill>
+            </Rectangle>
+        </DockPanel>
+        <DockPanel DockPanel.Dock="Bottom" Height="32">
+            <Rectangle DockPanel.Dock="Right" SnapsToDevicePixels="True" Width="32" Height="32">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="pack://application:,,,/background.png" Viewbox="0.95,0.95,0.05,0.05" />
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle DockPanel.Dock="Left" SnapsToDevicePixels="True" Width="32" Height="32">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="pack://application:,,,/background.png" Viewbox="0,0.95,0.05,0.05" />
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle SnapsToDevicePixels="True" Height="32">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="pack://application:,,,/background.png" Viewbox="0.05,0.95,0.9,0.05" />
+                </Rectangle.Fill>
+            </Rectangle>
+        </DockPanel>
+        <DockPanel>
+            <Rectangle DockPanel.Dock="Left" SnapsToDevicePixels="True" Width="32">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="pack://application:,,,/background.png" Viewbox="0,0.05,0.05,0.9" />
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle DockPanel.Dock="Right" SnapsToDevicePixels="True" Width="32">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="pack://application:,,,/background.png" Viewbox="0.95,0.05,0.05,0.90" />
+                </Rectangle.Fill>
+            </Rectangle>
+            <DockPanel>
+                <DockPanel.Background>
+                    <ImageBrush ImageSource="pack://application:,,,/background.png" Viewbox="0.05,0.05,0.9,0.9" />
+                </DockPanel.Background>
+                <Grid DockPanel.Dock="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition>
+                            <ColumnDefinition.Width>*</ColumnDefinition.Width>
+                        </ColumnDefinition>
+                        <ColumnDefinition>
+                            <ColumnDefinition.Width>300</ColumnDefinition.Width>
+                        </ColumnDefinition>
+                        <ColumnDefinition>
+                            <ColumnDefinition.Width>100</ColumnDefinition.Width>
+                        </ColumnDefinition>
+                        
+                    </Grid.ColumnDefinitions>
+                    <TextBlock FontSize="30" FontFamily="Constantia" FontWeight="Bold" Foreground="DarkSlateGray" Padding="0,0,0,10" Grid.Column="0">
+                        Modfinder: Wrath of the Righteous
+                    </TextBlock>
+                    <ToggleButton x:Name="showInstalledToggle" Grid.Column="1" Width="300" IsChecked="{Binding ShowInstalled}">
+                        <ToggleButton.Template>
+                            <ControlTemplate TargetType="ToggleButton">
+                                <Grid Height="34" VerticalAlignment="Top">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition> </ColumnDefinition>
+                                        <ColumnDefinition Width="40"> </ColumnDefinition>
+                                        <ColumnDefinition Width="50"> </ColumnDefinition>
+                                        <ColumnDefinition> </ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock FontFamily="Constantia" FontWeight="Bold" Grid.Column="0" TextAlignment="Right" VerticalAlignment="Center" Padding="0,0,8,0">Show:</TextBlock>
+                                    <TextBlock FontFamily="Constantia" FontWeight="Bold" Grid.Column="1" TextAlignment="Right" VerticalAlignment="Center" Padding="0,0,8,0">All</TextBlock>
+                                    <Image Source="pack://application:,,,/UI_Toggler_BG.png" Grid.Column="2" HorizontalAlignment="Right"></Image>
+                                    <Image x:Name="knob" Source="pack://application:,,,/UI_RoundButton_Default.png" Grid.Column="2" Width="25" HorizontalAlignment="Left" Margin="3,0,3,0"></Image>
+                                    <TextBlock FontFamily="Constantia" FontWeight="Bold"  Grid.Column="3" VerticalAlignment="Center" Padding="8,0,0,0">Installed</TextBlock>
+                                </Grid>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsChecked" Value="True">
+                                        <Setter TargetName="knob" Property="HorizontalAlignment" Value="Right"></Setter>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </ToggleButton.Template>
+                    </ToggleButton>
+                    <Button x:Name="closeButton" VerticalAlignment="Top" Grid.Column="2">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Image x:Name="bg" Source="pack://application:,,,/UI_Inventory_CloseButton_Default.png" Width="32" Height="32"></Image>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/UI_Inventory_CloseButton_Hover.png"></Setter>
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/UI_Inventory_CloseButton_Click.png"></Setter>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Grid>
+                <DockPanel DockPanel.Dock="Bottom">
+                    <Grid x:Name="dropTarget" Height="100" AllowDrop="True">
+                        <Rectangle Stroke="Black" StrokeDashArray="1,2">
+                            <Rectangle.Fill>
+                                <SolidColorBrush Color="Orange" Opacity="0.2"></SolidColorBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <TextBlock FontSize="30" FontStyle="Italic" FontFamily="Constantia" Foreground="DarkSlateGray" Padding="0,0,0,10" VerticalAlignment="Center" HorizontalAlignment="Center">Drag zips here to install</TextBlock>
+                    </Grid>
+                </DockPanel>
+                <DataGrid AutoGenerateColumns="false" Name="installedMods" RowBackground="Transparent" SelectionUnit="FullRow" ItemsSource="{Binding Items}" RowHeight="40">
+                    <DataGrid.BorderBrush>
+                        <SolidColorBrush Opacity="0" Color="Black"></SolidColorBrush>
+                    </DataGrid.BorderBrush>
+                    <DataGrid.RowHeaderWidth>0</DataGrid.RowHeaderWidth>
+                    <DataGrid.GridLinesVisibility>None</DataGrid.GridLinesVisibility>
+                    <DataGrid.IsReadOnly>False</DataGrid.IsReadOnly>
+                    <DataGrid.CanUserAddRows>False</DataGrid.CanUserAddRows>
+                    <DataGrid.CanUserDeleteRows>False</DataGrid.CanUserDeleteRows>
+                    <DataGrid.CanUserResizeRows>False</DataGrid.CanUserResizeRows>
+                    <DataGrid.Background>Transparent</DataGrid.Background>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Name" Width="*" Binding="{Binding Name, Mode=OneWay}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Version" Width="120" Binding="{Binding Version, Mode=OneWay}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Type" Width="120" Binding="{Binding ModType, Mode=OneWay}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="From" Width="120" Binding="{Binding Source, Mode=OneWay}"></DataGridTextColumn>
+                        <DataGridTemplateColumn Width="120">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Button Height="30" IsEnabled="{Binding CanInstall}" Content="{Binding InstallButtonText}" Click="InstallOrUpdateMod" Tag="{Binding}"></Button>
+                                    </Grid>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                            <DataGridTemplateColumn.Header>
+                                <TextBlock Text="{Binding DataContext.HeaderNameText, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"></TextBlock>
+                            </DataGridTemplateColumn.Header>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </DockPanel>
+        </DockPanel>
+
+    </DockPanel>
+</Window>
