@@ -28,6 +28,7 @@ namespace ModFinder_WOTR
     public partial class MainWindow : Window
     {
         private ModListData installedModList = new();
+        private ModListData allModList = new();
 
         public MainWindow()
         {
@@ -35,6 +36,11 @@ namespace ModFinder_WOTR
             //Infrastructure.ModListLoader.GetModsManifests();
             Infrastructure.Main.OwlcatEnabledMods = new Infrastructure.OwlcatModificationSettingsManager();
             Infrastructure.Main.OwlcatEnabledMods.Load();
+foreach(var mod in Infrastructure.Main.AllMods)
+            foreach(var installedmod in Infrastructure.Main.Settings.InstalledMods)
+            {
+                installedModList.Items.Add(installedmod);
+            }
 
 
 

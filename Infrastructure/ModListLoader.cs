@@ -17,10 +17,10 @@ namespace ModFinder_WOTR.Infrastructure
         public class ModsContainer
         {
             [JsonProperty]
-            public Dictionary<string, ModInfo> m_AllMods;
+            public List<ModDetails> m_AllMods;
         }
         public static ModsContainer instance;
-        public static Dictionary<string, ModInfo> GetModsManifests()
+        public static List<ModDetails> GetModsManifests()
         {
             using var wc = new WebClient();
             {
@@ -29,7 +29,7 @@ namespace ModFinder_WOTR.Infrastructure
                 var modsContainer = Newtonsoft.Json.JsonConvert.DeserializeObject<ModsContainer>(rawmanifest);
                 instance = modsContainer;
             }
-            var result = new Dictionary<string, ModInfo>();
+            var result = new List<ModDetails>();
             return result;
         }
     }

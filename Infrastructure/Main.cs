@@ -13,22 +13,11 @@ namespace ModFinder_WOTR.Infrastructure
 
     public static class Main
     {
-        public class asd : ICredentialStore
-        {
-            Task<Credentials> ICredentialStore.GetCredentials()
-            {
-                return new Task<Credentials>(() =>
-                {
-                    return new Credentials(Environment.GetEnvironmentVariable("GITHUB_TOKEN"));
-                });
-                throw new NotImplementedException();
-            }
-        }
         public static AppSettingsData Settings
         {
             get
             {
-                if(m_Settings == null)
+                if (m_Settings == null)
                 {
                     m_Settings = AppSettingsData.Load();
                 }
@@ -37,14 +26,27 @@ namespace ModFinder_WOTR.Infrastructure
         }
         private static AppSettingsData m_Settings;
 
-        private static GitHubClient _Client;
-        public static GitHubClient Client => _Client ??= new GitHubClient(new ProductHeaderValue("ModFinder_WOTR"));
+        private static GitHubClient m_Client;
+        public static GitHubClient Client
+        {
+            get
+            {
+                if (m_Client == null)
+                {
+                    m_Client = new GitHubClient(new ProductHeaderValue("ModFinder_WOTR"));
+#if DEBUG
+                    m_Client.Credentials = new Credentials(Environment.GetEnvironmentVariable("GITHUB_TOKEN"));
+#endif
+                }
+                return m_Client;
+            }
+        }
 
-        [Obsolete("use Client instead")]
-        public static GitHubClient client = new GitHubClient(new ProductHeaderValue("ModFinder_WOTR"), new asd());
+
+
         public static DirectoryInfo PFWotrAppdataPath = new DirectoryInfo((new DirectoryInfo(Environment.GetEnvironmentVariable("appdata")).Parent) + @"\LocalLow\Owlcat Games\Pathfinder Wrath Of The Righteous\");
         public static OwlcatModificationSettingsManager OwlcatEnabledMods = new OwlcatModificationSettingsManager();
-        public static Dictionary<string, ModInfo> AllMods
+        public static List<ModDetails> AllMods
         {
             get
             {

@@ -12,14 +12,41 @@ namespace ModFinder_WOTR.Infrastructure
     public class AppSettingsData
     {
         [JsonProperty]
-        public string[] EnabledModifications = new string[0];
         public string NexusAPIKey;
+        [JsonProperty]
+        public ModDetails[] InstalledMods = new ModDetails[] { };
+        public void AddInstalled(ModDetails mod)
+        {
+            var list = InstalledMods.ToList();
+            if (InstalledMods.Any(a => a.Name == mod.Name))
+            {
+                list.Remove(list.FirstOrDefault(a => a.Name == mod.Name));
+            }
+            list.Add(mod);
+            InstalledMods = list.ToArray();
+            Save();
+        }
+        public void RemoveInstalled(ModDetails mod)
+        {
+            var list = InstalledMods.ToList();
+            list.Remove(list.FirstOrDefault(a => a.Name == mod.Name));
+            InstalledMods = list.ToArray();
+            Save();
+        }
         public void Save()
         {
-            var filepath = new DirectoryInfo(Environment.GetEnvironmentVariable("appdata")).Parent.FullName+@"\LocalLow\ModFinderWOTR";
+            
+            if (!Directory.Exists(Environment.GetEnvironmentVariable("appdata") + @"\ModFinderWOTR"))
+            {
+                new DirectoryInfo(Environment.GetEnvironmentVariable("appdata") + @"\ModFinderWOTR\").Create();
+            }
+            var filepath = (Environment.GetEnvironmentVariable("appdata") + @"\ModFinderWOTR") + @"\Settings.json";
+
+            //var filepath = new DirectoryInfo(Environment.GetEnvironmentVariable("appdata")).FullName+@"\ModFinderWOTR\Settings.json";
             JsonSerializer serializer = new JsonSerializer();
             serializer.Formatting = Formatting.Indented;
             //Api key encryption
+            if(this.NexusAPIKey != null && this.NexusAPIKey != "")
             {
                 this.NexusAPIKey = Encrypt(NexusAPIKey);
             }
@@ -31,7 +58,7 @@ namespace ModFinder_WOTR.Infrastructure
         }
         public static AppSettingsData Load()
         {
-            var filepath = Path.Combine(Main.PFWotrAppdataPath.FullName, "OwlcatModificationManangerSettings.json");
+            var filepath = new DirectoryInfo(Environment.GetEnvironmentVariable("appdata")).FullName + @"\ModFinderWOTR\Settings.json";
             if (File.Exists(filepath))
             {
                 JsonSerializer serializer = new JsonSerializer();
