@@ -24,7 +24,7 @@ namespace ModFinder_WOTR.Infrastructure
         {
             using var wc = new WebClient();
             {
-                string rawmanifest = wc.DownloadString("https://github.com/BarleyFlour/ModFinderWOTR/blob/master/ModFinderWOTR/ModManifest/Master_Manifest.json");
+                string rawmanifest = wc.DownloadString("https://raw.githubusercontent.com/BarleyFlour/ModFinder_WOTR/master/ModManifest/Master_Manifest.json");
 
                 var modsContainer = Newtonsoft.Json.JsonConvert.DeserializeObject<ModsContainer>(rawmanifest);
                 instance = modsContainer;

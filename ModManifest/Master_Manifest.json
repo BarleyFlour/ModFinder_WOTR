@@ -2,59 +2,57 @@
     "m_AllMods": [
         {
             "Name": "RespecModWrath",
-            "InstalledVersion": "1.09.1",
-            "ModType": 0,
+            "ModType": 1,
             "Source": 0,
-            "CanInstall": true,
-            "InstallButtonText": "1.09.2",
-            "Description": "A respec mod for Pathfinder: Wrath of the Righteous",
             "OwnerAndRepo": [
                 "BarleyFlour",
                 "RespecMod"
-            ],
-            "LatestVersion": "1.09.2"
+            ]
         },
         {
-            "Name": "RespecModWrath",
-            "InstalledVersion": "1.09.1",
-            "ModType": 0,
+            "Name": "Visual Adjustments",
+            "ModType": 1,
             "Source": 0,
-            "CanInstall": true,
-            "InstallButtonText": "1.09.2",
-            "Description": "A respec mod for Pathfinder: Wrath of the Righteous",
             "OwnerAndRepo": [
                 "BarleyFlour",
-                "RespecMod"
-            ],
-            "LatestVersion": "1.09.2"
+                "WrathVisualAdjustmentsMod"
+            ]
         },
         {
-            "Name": "RespecModWrath",
-            "InstalledVersion": "1.09.1",
-            "ModType": 0,
+            "Name": "BubbleTweaks",
+            "ModType": 1,
             "Source": 0,
-            "CanInstall": true,
-            "InstallButtonText": "1.09.2",
-            "Description": "A respec mod for Pathfinder: Wrath of the Righteous",
             "OwnerAndRepo": [
-                "BarleyFlour",
-                "RespecMod"
-            ],
-            "LatestVersion": "1.09.2"
+                "factubsio",
+                "BubbleTweaks"
+            ]
         },
         {
-            "Name": "RespecModWrath",
-            "InstalledVersion": "1.09.1",
-            "ModType": 0,
-            "Source": 0,
-            "CanInstall": true,
-            "InstallButtonText": "1.09.2",
-            "Description": "A respec mod for Pathfinder: Wrath of the Righteous",
+            "Name": "BubbleBuffs",
+            "ModType": 1,
+            "Source": 1,
             "OwnerAndRepo": [
-                "BarleyFlour",
-                "RespecMod"
-            ],
-            "LatestVersion": "1.09.2"
+                "factubsio",
+                "BubbleBuffs"
+            ]
+        },
+        {
+            "Name": "ToyBox",
+            "ModType": 1,
+            "Source": 1,
+            "OwnerAndRepo": [
+                "cabarius",
+                "ToyBox"
+            ]
+        },
+        {
+            "Name": "TabletopTweaks",
+            "ModType": 1,
+            "Source": 0,
+            "OwnerAndRepo": [
+                "Vek17",
+                "WrathMods-TabletopTweaks"
+            ]
         }
     ]
 }

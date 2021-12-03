@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -36,7 +37,10 @@ namespace ModFinder_WOTR
             //Infrastructure.ModListLoader.GetModsManifests();
             Infrastructure.Main.OwlcatEnabledMods = new Infrastructure.OwlcatModificationSettingsManager();
             Infrastructure.Main.OwlcatEnabledMods.Load();
-foreach(var mod in Infrastructure.Main.AllMods)
+            foreach(var mod in Infrastructure.Main.AllMods)
+            {
+                installedModList.Items.Add(mod);
+            }
             foreach(var installedmod in Infrastructure.Main.Settings.InstalledMods)
             {
                 installedModList.Items.Add(installedmod);
@@ -69,6 +73,7 @@ foreach(var mod in Infrastructure.Main.AllMods)
 
             installedMods.DataContext = installedModList;
             showInstalledToggle.DataContext = installedModList;
+            showInstalledToggle.Click += ShowInstalledToggle_Click;
 
 
             // Do magic window dragging regardless where they click
@@ -117,6 +122,29 @@ foreach(var mod in Infrastructure.Main.AllMods)
                       Debug.WriteLine(ex.Message);
                   }
               });
+        }
+
+        private void ShowInstalledToggle_Click(object sender, RoutedEventArgs e)
+        {
+           // this.installedModList.ShowInstalled = !this.installedModList.ShowInstalled;
+            //Debug.WriteLine(((ToggleButton)sender).IsChecked);
+            var togglebutton = sender as ToggleButton;
+            if(togglebutton.IsChecked == false)
+            {
+                this.installedModList.Items.Clear();
+                foreach(var mod in Infrastructure.Main.AllMods)
+                {
+                    this.installedModList.Items.Add(mod);
+                }
+            }
+            else if(togglebutton.IsChecked == true)
+            {
+                this.installedModList.Items.Clear();
+                foreach (var mod in Infrastructure.Main.Settings.InstalledMods)
+                {
+                    this.installedModList.Items.Add(mod);
+                }
+            }
         }
 
         private void DropTarget_DragOver(object sender, DragEventArgs e)
