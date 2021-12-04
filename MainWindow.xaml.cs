@@ -1,4 +1,5 @@
-﻿using Octokit;
+﻿using Newtonsoft.Json;
+using Octokit;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -20,6 +21,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Newtonsoft.Json;
 
 namespace ModFinder_WOTR
 {
@@ -28,16 +30,17 @@ namespace ModFinder_WOTR
     /// </summary>
     public partial class MainWindow : Window
     {
-        private ModListData installedModList = new();
-        private ModListData allModList = new();
+        public static MainWindow instance;
+        public ModListData installedModList = new();
 
         public MainWindow()
         {
             InitializeComponent();
+            instance = this;
             //Infrastructure.ModListLoader.GetModsManifests();
             Infrastructure.Main.OwlcatEnabledMods = new Infrastructure.OwlcatModificationSettingsManager();
             Infrastructure.Main.OwlcatEnabledMods.Load();
-            foreach(var mod in Infrastructure.Main.AllMods)
+            foreach(var mod in (Infrastructure.Main.AllMods.Where(a => !Infrastructure.Main.Settings.InstalledMods.Any(b => b.Name == a.Name))))
             {
                 installedModList.Items.Add(mod);
             }
@@ -46,9 +49,59 @@ namespace ModFinder_WOTR
                 installedModList.Items.Add(installedmod);
             }
 
-
-
-            installedModList.Items.Add(new ModDetails
+            //Detect currently installed mods
+            {
+                //Owlcat mods
+                {
+                    foreach (var modfolder in new DirectoryInfo(Infrastructure.Main.PFWotrAppdataPath + @"\Modifications").EnumerateDirectories())
+                    {
+                        foreach (var mod in modfolder.EnumerateFiles())
+                        {
+                            if (mod.Name == "OwlcatModificationManifest.json")
+                            {
+                                JsonSerializer serializer = new JsonSerializer();
+                                using (StreamReader sr = new StreamReader(mod.FullName))
+                                using (JsonTextReader reader = new JsonTextReader(sr))
+                                {
+                                    var result = (serializer.Deserialize<Infrastructure.Loader.OwlcatModificationManifest>(reader));
+                                    var newmodinfo = Infrastructure.Main.AllMods.FirstOrDefault(a => a.Name == result.DisplayName);
+                                    if (newmodinfo != null && !Infrastructure.Main.Settings.InstalledMods.Any(a => a.Name == newmodinfo.Name))
+                                    {
+                                        newmodinfo.InstalledVersion = result.Version.StripV();
+                                        Infrastructure.Main.Settings.AddInstalled(newmodinfo);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //UMM Mods
+                {
+                    foreach (var modfolder in new DirectoryInfo(Infrastructure.Main.WrathPath + @"\Mods").EnumerateDirectories())
+                    {
+                        foreach (var mod in modfolder.EnumerateFiles())
+                        {
+                            if (mod.Name == "Info.json")
+                            {
+                                JsonSerializer serializer = new JsonSerializer();
+                                using (StreamReader sr = new StreamReader(mod.FullName))
+                                using (JsonTextReader reader = new JsonTextReader(sr))
+                                {
+                                    var result = (serializer.Deserialize<Infrastructure.Loader.ModInfo>(reader));
+                                    var newmodinfo = Infrastructure.Main.AllMods.FirstOrDefault(a => a.Name == result.DisplayName);
+                                    if (newmodinfo != null && !Infrastructure.Main.Settings.InstalledMods.Any(a => a.Name == newmodinfo.Name))
+                                    {
+                                        newmodinfo.InstalledVersion = result.Version.StripV();
+                                        Infrastructure.Main.Settings.AddInstalled(newmodinfo);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //throw new NotImplementedException("InstalledMods");
+            }
+            /*installedModList.Items.Add(new ModDetails
             {
                 Name = "BubbleGuns",
                 InstalledVersion = "0.0.1",
@@ -69,7 +122,7 @@ namespace ModFinder_WOTR
                 InstalledVersion = "1.2.3",
                 // ModType = "UMM",
                 Source = Infrastructure.ModSource.Nexus,
-            });
+            });*/
 
             installedMods.DataContext = installedModList;
             showInstalledToggle.DataContext = installedModList;
@@ -97,7 +150,7 @@ namespace ModFinder_WOTR
               {
                   try
                   {
-                      foreach (var mod in installedModList.Items)
+                      foreach (var mod in installedModList.Items.Concat(Infrastructure.Main.Settings.InstalledMods).Concat(Infrastructure.Main.AllMods))
                       {
                           if (mod.Source == Infrastructure.ModSource.GitHub)
                           {
@@ -132,7 +185,7 @@ namespace ModFinder_WOTR
             if(togglebutton.IsChecked == false)
             {
                 this.installedModList.Items.Clear();
-                foreach(var mod in Infrastructure.Main.AllMods)
+                foreach(var mod in Infrastructure.Main.AllMods.Where(a => !Infrastructure.Main.Settings.InstalledMods.Any(b => b.Name == a.Name)).Concat(Infrastructure.Main.Settings.InstalledMods))
                 {
                     this.installedModList.Items.Add(mod);
                 }
@@ -223,9 +276,10 @@ namespace ModFinder_WOTR
         }
         public static bool IsLaterThan(this string current, string reference)
         {
-            if (current == null || reference == null)
+            if (current == null || current == "")
                 return false;
-
+            if (reference == null || reference == "")
+                return true;
             try
             {
                 int[] thisComps = current.Split('.').Select(s => int.Parse(s)).ToArray();
@@ -273,12 +327,22 @@ namespace ModFinder_WOTR
         public string[] OwnerAndRepo { get; set; }
 
         //BARLEY CODE HERE
-        public bool CanInstall => LatestVersion?.IsLaterThan(InstalledVersion) ?? false;
+        [JsonIgnore] public bool CanInstall => LatestVersion?.IsLaterThan(InstalledVersion) ?? false;
 
         private string _InstalledVersion;
+        
         public string InstalledVersion
         {
-            get => _InstalledVersion;
+            //get => _InstalledVersion;
+            get
+            {
+                if (_InstalledVersion == null || _InstalledVersion == "")
+                {
+                    //   return LatestVersion;
+                    return _InstalledVersion;
+                }
+                else return _InstalledVersion;
+            }
             set
             {
                 _InstalledVersion = value;
@@ -288,7 +352,8 @@ namespace ModFinder_WOTR
             }
         }
 
-        private string _LatestVersion;
+        [JsonIgnore]private string _LatestVersion;
+        [JsonIgnore]
         public string LatestVersion
         {
             get => _LatestVersion ?? "...";
@@ -300,7 +365,7 @@ namespace ModFinder_WOTR
             }
         }
 
-        public string InstallButtonText => CanInstall ? LatestVersion : "up to date";
+        [JsonIgnore]public string InstallButtonText => CanInstall ? LatestVersion : "up to date";
 
         public event PropertyChangedEventHandler PropertyChanged;
     }

@@ -56,6 +56,7 @@ namespace ModFinder_WOTR.Infrastructure.Loader
                     Main.OwlcatEnabledMods.Add(OwlcatManifest.UniqueName);
                     FileSystem.CopyDirectory(foldertoinstall, foldertoinstallto, true);
                     FileSystem.DeleteDirectory(foldertoinstall,DeleteDirectoryOption.DeleteAllContents);
+                    mod.InstalledVersion = OwlcatManifest.Version;
                     Main.Settings.AddInstalled(mod);
                     return;
                 }
@@ -66,6 +67,7 @@ namespace ModFinder_WOTR.Infrastructure.Loader
                     foldertoinstall = tempfolder.FullName;
                     FileSystem.CopyDirectory(foldertoinstall, foldertoinstallto, true);
                     FileSystem.DeleteDirectory(foldertoinstall, DeleteDirectoryOption.DeleteAllContents);
+                    mod.InstalledVersion = UMMManifest.Version;
                     Main.Settings.AddInstalled(mod);
                     return;
                 }
@@ -84,6 +86,9 @@ namespace ModFinder_WOTR.Infrastructure.Loader
                 if (File.Exists(modfolder.FullName + @"\OwlcatModificationManifest.json"))
                 {
                     var OwlcatManifest = Newtonsoft.Json.JsonConvert.DeserializeObject<OwlcatModificationManifest>(File.ReadAllText(modfolder.FullName + @"\OwlcatModificationManifest.json"));
+                    var modentry = MainWindow.instance.installedModList.Items.FirstOrDefault(a => a.Name == OwlcatManifest.DisplayName);
+                    if(modentry != null)
+                    modentry.InstalledVersion = OwlcatManifest.Version.StripV();
                     foldertoinstallto = Main.PFWotrAppdataPath + @"\Modifications\";
                     foldertoinstall = tempfolder.FullName;
                     Main.OwlcatEnabledMods.Add(OwlcatManifest.UniqueName);
@@ -93,6 +98,9 @@ namespace ModFinder_WOTR.Infrastructure.Loader
                 if (File.Exists(modfolder.FullName + @"\Info.json"))
                 {
                     var UMMManifest = Newtonsoft.Json.JsonConvert.DeserializeObject<ModInfo>(File.ReadAllText(modfolder.FullName + @"\Info.json"));
+                    var modentry = MainWindow.instance.installedModList.Items.FirstOrDefault(a => a.Name == UMMManifest.DisplayName);
+                    if (modentry != null)
+                        modentry.InstalledVersion = UMMManifest.Version.StripV();
                     foldertoinstallto = Main.WrathPath + @"\Mods\";
                     foldertoinstall = tempfolder.FullName;
                     FileSystem.CopyDirectory(foldertoinstall, foldertoinstallto, true);

@@ -1,7 +1,7 @@
 {
     "m_AllMods": [
         {
-            "Name": "RespecModWrath",
+            "Name": "Respec Mod",
             "ModType": 1,
             "Source": 0,
             "OwnerAndRepo": [
@@ -19,7 +19,7 @@
             ]
         },
         {
-            "Name": "BubbleTweaks",
+            "Name": "Bubble Tweaks",
             "ModType": 1,
             "Source": 0,
             "OwnerAndRepo": [
@@ -28,7 +28,7 @@
             ]
         },
         {
-            "Name": "BubbleBuffs",
+            "Name": "Bubble Buffs",
             "ModType": 1,
             "Source": 1,
             "OwnerAndRepo": [
@@ -37,7 +37,7 @@
             ]
         },
         {
-            "Name": "ToyBox",
+            "Name": "ToyBox (a bag of tricks)",
             "ModType": 1,
             "Source": 1,
             "OwnerAndRepo": [
@@ -46,7 +46,7 @@
             ]
         },
         {
-            "Name": "TabletopTweaks",
+            "Name": "Tabletop Tweaks",
             "ModType": 1,
             "Source": 0,
             "OwnerAndRepo": [

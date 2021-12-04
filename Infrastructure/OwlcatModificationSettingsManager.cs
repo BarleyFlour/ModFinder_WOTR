@@ -18,7 +18,7 @@ namespace ModFinder_WOTR.Infrastructure
         public SettingsData EnabledModifications;
         public void Remove(string uniqueid)
         {
-            if(EnabledModifications.EnabledModifications.Any(a => a == uniqueid))
+            if (EnabledModifications.EnabledModifications.Any(a => a == uniqueid))
             {
                 var list = EnabledModifications.EnabledModifications.ToList();
                 list.Remove(uniqueid);
