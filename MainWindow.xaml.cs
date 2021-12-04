@@ -40,15 +40,21 @@ namespace ModFinder_WOTR
             //Infrastructure.ModListLoader.GetModsManifests();
             Infrastructure.Main.OwlcatEnabledMods = new Infrastructure.OwlcatModificationSettingsManager();
             Infrastructure.Main.OwlcatEnabledMods.Load();
-            foreach(var mod in (Infrastructure.Main.AllMods.Where(a => !Infrastructure.Main.Settings.InstalledMods.Any(b => b.Name == a.Name))))
+            foreach (var mod in (Infrastructure.Main.AllMods.Where(a => !Infrastructure.Main.Settings.InstalledMods.Any(b => b.Name == a.Name))))
             {
                 installedModList.Items.Add(mod);
             }
-            foreach(var installedmod in Infrastructure.Main.Settings.InstalledMods)
+            foreach (var installedmod in Infrastructure.Main.Settings.InstalledMods)
             {
                 installedModList.Items.Add(installedmod);
             }
+            //Nexus & Github API Key Pop-up
+            {
+                if(Infrastructure.Main.Settings.NexusAPIKey is null or "" || )
+                {
 
+                }
+            }
             //Detect currently installed mods
             {
                 //Owlcat mods
@@ -81,7 +87,7 @@ namespace ModFinder_WOTR
                     {
                         foreach (var mod in modfolder.EnumerateFiles())
                         {
-                            if (mod.Name == "Info.json")
+                            if (mod.Name == "Info.json" || mod.Name == "info.json")
                             {
                                 JsonSerializer serializer = new JsonSerializer();
                                 using (StreamReader sr = new StreamReader(mod.FullName))
@@ -99,7 +105,6 @@ namespace ModFinder_WOTR
                         }
                     }
                 }
-                //throw new NotImplementedException("InstalledMods");
             }
             /*installedModList.Items.Add(new ModDetails
             {
@@ -179,18 +184,18 @@ namespace ModFinder_WOTR
 
         private void ShowInstalledToggle_Click(object sender, RoutedEventArgs e)
         {
-           // this.installedModList.ShowInstalled = !this.installedModList.ShowInstalled;
+            // this.installedModList.ShowInstalled = !this.installedModList.ShowInstalled;
             //Debug.WriteLine(((ToggleButton)sender).IsChecked);
             var togglebutton = sender as ToggleButton;
-            if(togglebutton.IsChecked == false)
+            if (togglebutton.IsChecked == false)
             {
                 this.installedModList.Items.Clear();
-                foreach(var mod in Infrastructure.Main.AllMods.Where(a => !Infrastructure.Main.Settings.InstalledMods.Any(b => b.Name == a.Name)).Concat(Infrastructure.Main.Settings.InstalledMods))
+                foreach (var mod in Infrastructure.Main.AllMods.Where(a => !Infrastructure.Main.Settings.InstalledMods.Any(b => b.Name == a.Name)).Concat(Infrastructure.Main.Settings.InstalledMods))
                 {
                     this.installedModList.Items.Add(mod);
                 }
             }
-            else if(togglebutton.IsChecked == true)
+            else if (togglebutton.IsChecked == true)
             {
                 this.installedModList.Items.Clear();
                 foreach (var mod in Infrastructure.Main.Settings.InstalledMods)
@@ -311,6 +316,7 @@ namespace ModFinder_WOTR
     {
         public string Name { get; set; }
         private string _Description;
+        [JsonIgnore]
         public string Description
         {
             get => _Description ?? "Loading...";
@@ -330,7 +336,7 @@ namespace ModFinder_WOTR
         [JsonIgnore] public bool CanInstall => LatestVersion?.IsLaterThan(InstalledVersion) ?? false;
 
         private string _InstalledVersion;
-        
+
         public string InstalledVersion
         {
             //get => _InstalledVersion;
@@ -338,8 +344,8 @@ namespace ModFinder_WOTR
             {
                 if (_InstalledVersion == null || _InstalledVersion == "")
                 {
-                    //   return LatestVersion;
-                    return _InstalledVersion;
+                       return LatestVersion;
+                    //return _InstalledVersion;
                 }
                 else return _InstalledVersion;
             }
@@ -352,12 +358,13 @@ namespace ModFinder_WOTR
             }
         }
 
-        [JsonIgnore]private string _LatestVersion;
+        private string _LatestVersion;
         [JsonIgnore]
         public string LatestVersion
         {
             get => _LatestVersion ?? "...";
-            set {
+            set
+            {
                 _LatestVersion = value;
                 PropertyChanged?.Invoke(this, new(nameof(LatestVersion)));
                 PropertyChanged?.Invoke(this, new(nameof(CanInstall)));
@@ -365,7 +372,7 @@ namespace ModFinder_WOTR
             }
         }
 
-        [JsonIgnore]public string InstallButtonText => CanInstall ? LatestVersion : "up to date";
+        [JsonIgnore] public string InstallButtonText => CanInstall ? LatestVersion : "up to date";
 
         public event PropertyChangedEventHandler PropertyChanged;
     }

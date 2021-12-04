@@ -34,6 +34,10 @@ namespace ModFinder_WOTR.Infrastructure
                 if (m_Client == null)
                 {
                     m_Client = new GitHubClient(new ProductHeaderValue("ModFinder_WOTR"));
+                    if(Infrastructure.Main.Settings.GithubAPIKey is null or "" || Infrastructure.Main.Settings.NexusAPIKey is null or "")
+                    {
+                        //Do bubble popup magic here
+                    }
 #if DEBUG
                     m_Client.Credentials = new Credentials(Environment.GetEnvironmentVariable("GITHUB_TOKEN"));
 #endif

@@ -14,6 +14,8 @@ namespace ModFinder_WOTR.Infrastructure
         [JsonProperty]
         public string NexusAPIKey;
         [JsonProperty]
+        public string GithubAPIKey;
+        [JsonProperty]
         public ModDetails[] InstalledMods = new ModDetails[] { };
         public void AddInstalled(ModDetails mod)
         {
@@ -50,6 +52,10 @@ namespace ModFinder_WOTR.Infrastructure
             {
                 this.NexusAPIKey = Encrypt(NexusAPIKey);
             }
+            if (this.GithubAPIKey != null && this.GithubAPIKey != "")
+            {
+                this.GithubAPIKey = Encrypt(GithubAPIKey);
+            }
             using (StreamWriter sw = new StreamWriter(filepath))
             using (JsonWriter writer = new JsonTextWriter(sw))
             {
@@ -68,6 +74,8 @@ namespace ModFinder_WOTR.Infrastructure
                     var result = (serializer.Deserialize<AppSettingsData>(reader));
                     if(result.NexusAPIKey != null)
                     result.NexusAPIKey = Unencrypt(result.NexusAPIKey);
+                    if (result.GithubAPIKey != null)
+                        result.GithubAPIKey = Unencrypt(result.GithubAPIKey);
                     return result;
                 }
             }
