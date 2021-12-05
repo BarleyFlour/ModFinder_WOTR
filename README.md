@@ -9,5 +9,9 @@ Features include
 
 Setup:
 >All that is needed is to enter your Nexus API Key and optionally a github API Key.
+>
 >Nexus API key can be acquired by going to the "site preferences" page on nexus, then clicking on the API tab, then scrolling down to "Personal API Key"
+>
 >Github API Key can be acquired by going to Settings, then developer settings, then Personal Access Tokens, then creating a new one.
+>
+>this Data is only stored locally and is additionally encrypted for extra safety.
