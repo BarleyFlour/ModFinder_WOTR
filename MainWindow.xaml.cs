@@ -176,7 +176,7 @@ namespace ModFinder_WOTR
                           else if(mod.Source == Infrastructure.ModSource.Nexus)
                           {
                               Debug.WriteLine(mod.NexusModID);
-                              var nexusmod = await NexusModsNET.NexusModsFactory.New(Infrastructure.Main.NexusClient).CreateModsInquirer().GetMod("pathfinderwrathoftherighteous", mod.NexusModID);
+                              var nexusmod = await NexusModsNET.NexusModsFactory.New(Infrastructure.Main.NexusClient).CreateModsInquirer().GetMod("pathfinderwrathoftherighteous", long.Parse(mod.NexusModID));
                               
                               await Dispatcher.InvokeAsync(() =>
                               {
@@ -385,7 +385,7 @@ namespace ModFinder_WOTR
         }
 
         [JsonIgnore] public string InstallButtonText => CanInstall ? LatestVersion : "up to date";
-        public long NexusModID;
+        public string NexusModID;
 
         public event PropertyChangedEventHandler PropertyChanged;
     }

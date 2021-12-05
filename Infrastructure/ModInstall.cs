@@ -48,7 +48,7 @@ namespace ModFinder_WOTR.Infrastructure.Loader
                 }
                 else if (mod.Source == ModSource.Nexus)
                 {
-                    var modde = await NexusModsNET.NexusModsFactory.New(Infrastructure.Main.NexusClient).CreateModFilesInquirer().GetModFilesAsync("pathfinderwrathoftherighteous", mod.NexusModID);
+                    var modde = await NexusModsNET.NexusModsFactory.New(Infrastructure.Main.NexusClient).CreateModFilesInquirer().GetModFilesAsync("pathfinderwrathoftherighteous", long.Parse(mod.NexusModID));
 
                     foreach (var asd in modde.ModFiles)
                     {
