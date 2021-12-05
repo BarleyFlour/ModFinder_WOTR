@@ -144,7 +144,7 @@ namespace ModFinder_WOTR
             // Close button
             closeButton.Click += async (sender, e) =>
             {
-               Close();
+                Close();
             };
 
             // Drag drop nonsense
@@ -173,17 +173,17 @@ namespace ModFinder_WOTR
                                   Debug.WriteLine($"can install: {mod.CanInstall}");
                               });
                           }
-                          else if(mod.Source == Infrastructure.ModSource.Nexus)
+                          else if (mod.Source == Infrastructure.ModSource.Nexus)
                           {
-                              Debug.WriteLine(mod.NexusModID);
+                              // Debug.WriteLine(mod.NexusModID);
                               var nexusmod = await NexusModsNET.NexusModsFactory.New(Infrastructure.Main.NexusClient).CreateModsInquirer().GetMod("pathfinderwrathoftherighteous", long.Parse(mod.NexusModID));
-                              
+
                               await Dispatcher.InvokeAsync(() =>
                               {
+                                  Debug.WriteLine("Stuff " +mod.Name + $"setting mod version to: {mod.LatestVersion}");
                                   mod.Description = nexusmod.Description;
                                   mod.LatestVersion = nexusmod.Version.StripV(); //This is not true???
                               });
-
                           }
                       }
                   }
@@ -307,7 +307,6 @@ namespace ModFinder_WOTR
 
                 int a = 0;
                 int b = 0;
-
                 for (int i = 0; i < thisComps.Length; i++)
                 {
                     int index = thisComps.Length - i - 1;
@@ -356,7 +355,7 @@ namespace ModFinder_WOTR
             {
                 if (_InstalledVersion == null || _InstalledVersion == "")
                 {
-                       return LatestVersion;
+                    return LatestVersion;
                     //return _InstalledVersion;
                 }
                 else return _InstalledVersion;

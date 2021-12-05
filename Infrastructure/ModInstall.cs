@@ -55,13 +55,25 @@ namespace ModFinder_WOTR.Infrastructure.Loader
                         Debug.WriteLine(asd.ModVersion);
                     }
                     var release = modde.ModFiles.Last();
-                    var releaselink = @"https://www.nexusmods.com/pathfinderwrathoftherighteous/mods/"+mod.NexusModID+"?tab=files&file_id="+release.FileId;
+                    var releaselink = @"https://www.nexusmods.com/pathfinderwrathoftherighteous/mods/" + mod.NexusModID + @"?tab=files^&file_id=" + release.FileId;
                     var todownload = releaselink;
-                    Debug.Write(todownload);
-                    using (var wc = new WebClient())
+                    Debug.Write(releaselink);
+                    using System.Diagnostics.Process cmd = new();
+                    cmd.StartInfo.FileName = "cmd.exe";
+                    cmd.StartInfo.RedirectStandardInput = true;
+                    cmd.StartInfo.RedirectStandardOutput = true;
+                    cmd.StartInfo.CreateNoWindow = true;
+                    cmd.StartInfo.UseShellExecute = false;
+                    cmd.Start();
+
+                    cmd.StandardInput.WriteLine("start "+releaselink); // start <link>, if you haveany'&' characters, bypass them by putting '^' before '&'
+                    cmd.StandardInput.Flush();
+                    cmd.StandardInput.Close();
+                    cmd.WaitForExit();
+                    //using (var wc = new WebClient())
                     {
-                        var asd = wc.DownloadData(todownload);
-                        Debug.WriteLine(asd);
+                        //var asd = wc.DownloadData(todownload);
+                        //Debug.WriteLine(asd);
                         /*wc.DownloadFile(todownload.BrowserDownloadUrl, tempfolder + @"\" + todownload.Name);
                         Debug.Write(tempfolder + @"\" + todownload.Name);
                         ZipFile.ExtractToDirectory(tempfolder + @"\" + todownload.Name, tempfolder.FullName, true);

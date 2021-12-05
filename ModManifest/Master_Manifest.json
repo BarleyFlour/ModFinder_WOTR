@@ -1,4 +1,42 @@
 {
+    /*
+    Templates
+        Modtypes
+            0 = Owlcat
+            1 = UMM
+        Mod Sources
+            0 = Github
+            1 = Nexus
+            2 = Other
+            3 = ModDB
+
+            Important notes
+            Name needs to be the DisplayName from your Info.json/OwlcatModificationManifest.json
+            
+            //Very important to have OwnerName and RepoName set properly or it will not work
+            Github Hosted mod 
+            {
+            "Name": "", 
+            "ModType": 1,
+            "Source": 0,
+            "OwnerAndRepo": [
+                "OwnerName",
+                "RepoName"
+            ]
+            }
+
+
+            //Nexus hosted mod
+            //very important to set the NexusModID properly or it will not work, you can find it as the last few numbers of the URL to on the mod page.
+            {
+            "Name": "Bubble Buffs",
+            "ModType": 1,
+            "Source": 1,
+            "NexusModID": "",
+            },
+
+
+    */
     "m_AllMods": [
         {
             "Name": "Respec Mod",
@@ -54,6 +92,15 @@
             "OwnerAndRepo": [
                 "Vek17",
                 "WrathMods-TabletopTweaks"
+            ]
+        },
+        {
+            "Name": "Finnean Tweaks",
+            "ModType": 1,
+            "Source": 0,
+            "OwnerAndRepo": [
+                "BarleyFlour",
+                "FinneanTweaks"
             ]
         }
     ]

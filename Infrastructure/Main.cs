@@ -33,7 +33,10 @@ namespace ModFinder_WOTR.Infrastructure
             {
                 if (m_NexusClient == null)
                 {
+#if DEBUG
                     m_NexusClient = (NexusModsNET.NexusModsClient)(NexusModsNET.NexusModsClient.Create(Environment.GetEnvironmentVariable("NEXUS_APITOKEN"),"Modfinder_WOTR","0"));
+#endif
+                    m_NexusClient = (NexusModsNET.NexusModsClient)(NexusModsNET.NexusModsClient.Create(Main.Settings.NexusAPIKey, "Modfinder_WOTR", "0"));
                 }
                 return m_NexusClient;
             }
