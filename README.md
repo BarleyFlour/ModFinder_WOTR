@@ -14,4 +14,4 @@ Setup:
 >
 >Github API Key can be acquired by going to Settings, then developer settings, then Personal Access Tokens, then creating a new one.
 >
->this Data is only stored locally and is additionally encrypted for extra safety.
+>this Data is only stored locally and is also encrypted for extra safety.
