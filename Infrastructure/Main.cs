@@ -26,6 +26,21 @@ namespace ModFinder_WOTR.Infrastructure
         }
         private static AppSettingsData m_Settings;
 
+        private static NexusModsNET.NexusModsClient m_NexusClient;
+        public static NexusModsNET.NexusModsClient NexusClient
+        {
+            get
+            {
+                if (m_NexusClient == null)
+                {
+                    m_NexusClient = (NexusModsNET.NexusModsClient)(NexusModsNET.NexusModsClient.Create(Environment.GetEnvironmentVariable("NEXUS_APITOKEN"),"Modfinder_WOTR","0"));
+                }
+                return m_NexusClient;
+            }
+
+        }
+
+
         private static GitHubClient m_Client;
         public static GitHubClient Client
         {
@@ -34,9 +49,9 @@ namespace ModFinder_WOTR.Infrastructure
                 if (m_Client == null)
                 {
                     m_Client = new GitHubClient(new ProductHeaderValue("ModFinder_WOTR"));
-                    if(Infrastructure.Main.Settings.GithubAPIKey is null or "" || Infrastructure.Main.Settings.NexusAPIKey is null or "")
+                    if(Infrastructure.Main.Settings.GithubAPIKey != null && Infrastructure.Main.Settings.GithubAPIKey != "")
                     {
-                        //Do bubble popup magic here
+                        m_Client.Credentials = new Credentials(Infrastructure.Main.Settings.GithubAPIKey);
                     }
 #if DEBUG
                     m_Client.Credentials = new Credentials(Environment.GetEnvironmentVariable("GITHUB_TOKEN"));

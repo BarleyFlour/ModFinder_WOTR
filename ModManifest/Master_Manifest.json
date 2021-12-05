@@ -31,6 +31,7 @@
             "Name": "Bubble Buffs",
             "ModType": 1,
             "Source": 1,
+            "NexusModID": 195:,
             "OwnerAndRepo": [
                 "factubsio",
                 "BubbleBuffs"
@@ -40,6 +41,7 @@
             "Name": "ToyBox (a bag of tricks)",
             "ModType": 1,
             "Source": 1,
+            "NexusModID": 8:,
             "OwnerAndRepo": [
                 "cabarius",
                 "ToyBox"

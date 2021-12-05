@@ -50,9 +50,9 @@ namespace ModFinder_WOTR
             }
             //Nexus & Github API Key Pop-up
             {
-                if(Infrastructure.Main.Settings.NexusAPIKey is null or "" || )
+                if (Infrastructure.Main.Settings.GithubAPIKey is null or "" || Infrastructure.Main.Settings.NexusAPIKey is null or "")
                 {
-
+                    //Do bubble popup magic here
                 }
             }
             //Detect currently installed mods
@@ -142,9 +142,9 @@ namespace ModFinder_WOTR
             };
 
             // Close button
-            closeButton.Click += (sender, e) =>
+            closeButton.Click += async (sender, e) =>
             {
-                Close();
+               Close();
             };
 
             // Drag drop nonsense
@@ -172,6 +172,18 @@ namespace ModFinder_WOTR
                                   Debug.WriteLine($"setting mod version to: {mod.LatestVersion}");
                                   Debug.WriteLine($"can install: {mod.CanInstall}");
                               });
+                          }
+                          else if(mod.Source == Infrastructure.ModSource.Nexus)
+                          {
+                              Debug.WriteLine(mod.NexusModID);
+                              var nexusmod = await NexusModsNET.NexusModsFactory.New(Infrastructure.Main.NexusClient).CreateModsInquirer().GetMod("pathfinderwrathoftherighteous", mod.NexusModID);
+                              
+                              await Dispatcher.InvokeAsync(() =>
+                              {
+                                  mod.Description = nexusmod.Description;
+                                  mod.LatestVersion = nexusmod.Version.StripV(); //This is not true???
+                              });
+
                           }
                       }
                   }
@@ -373,6 +385,7 @@ namespace ModFinder_WOTR
         }
 
         [JsonIgnore] public string InstallButtonText => CanInstall ? LatestVersion : "up to date";
+        public long NexusModID;
 
         public event PropertyChangedEventHandler PropertyChanged;
     }

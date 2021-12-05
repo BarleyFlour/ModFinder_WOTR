@@ -33,17 +33,43 @@ namespace ModFinder_WOTR.Infrastructure.Loader
             var tempfolder = Directory.CreateDirectory(Environment.GetEnvironmentVariable("TMP") + @"\TempModFolder" + new Random().Next());
             //Download files
             {
-                var release = await Infrastructure.Main.Client.Repository.Release.GetLatest(mod.OwnerAndRepo[0], mod.OwnerAndRepo[1]);
-                var todownload = release.Assets.First();
-                Debug.Write(todownload.BrowserDownloadUrl);
-                using (var wc = new WebClient())
+                if (mod.Source == ModSource.GitHub)
                 {
-                    wc.DownloadFile(todownload.BrowserDownloadUrl, tempfolder + @"\" + todownload.Name);
-                    Debug.Write(tempfolder + @"\" + todownload.Name);
-                    ZipFile.ExtractToDirectory(tempfolder + @"\" + todownload.Name, tempfolder.FullName, true);
-                    File.Delete(tempfolder + @"\" + todownload.Name);
+                    var release = await Infrastructure.Main.Client.Repository.Release.GetLatest(mod.OwnerAndRepo[0], mod.OwnerAndRepo[1]);
+                    var todownload = release.Assets.First();
+                    Debug.Write(todownload.BrowserDownloadUrl);
+                    using (var wc = new WebClient())
+                    {
+                        wc.DownloadFile(todownload.BrowserDownloadUrl, tempfolder + @"\" + todownload.Name);
+                        Debug.Write(tempfolder + @"\" + todownload.Name);
+                        ZipFile.ExtractToDirectory(tempfolder + @"\" + todownload.Name, tempfolder.FullName, true);
+                        File.Delete(tempfolder + @"\" + todownload.Name);
+                    }
+                }
+                else if (mod.Source == ModSource.Nexus)
+                {
+                    var modde = await NexusModsNET.NexusModsFactory.New(Infrastructure.Main.NexusClient).CreateModFilesInquirer().GetModFilesAsync("pathfinderwrathoftherighteous", mod.NexusModID);
+
+                    foreach (var asd in modde.ModFiles)
+                    {
+                        Debug.WriteLine(asd.ModVersion);
+                    }
+                    var release = modde.ModFiles.Last();
+                    var releaselink = @"https://www.nexusmods.com/pathfinderwrathoftherighteous/mods/"+mod.NexusModID+"?tab=files&file_id="+release.FileId;
+                    var todownload = releaselink;
+                    Debug.Write(todownload);
+                    using (var wc = new WebClient())
+                    {
+                        var asd = wc.DownloadData(todownload);
+                        Debug.WriteLine(asd);
+                        /*wc.DownloadFile(todownload.BrowserDownloadUrl, tempfolder + @"\" + todownload.Name);
+                        Debug.Write(tempfolder + @"\" + todownload.Name);
+                        ZipFile.ExtractToDirectory(tempfolder + @"\" + todownload.Name, tempfolder.FullName, true);
+                        File.Delete(tempfolder + @"\" + todownload.Name);*/
+                    }
                 }
             }
+            return;
             string foldertoinstallto = "";
             string foldertoinstall = "";
             var modfolder = tempfolder.EnumerateDirectories().First();
@@ -55,7 +81,7 @@ namespace ModFinder_WOTR.Infrastructure.Loader
                     foldertoinstall = tempfolder.FullName;
                     Main.OwlcatEnabledMods.Add(OwlcatManifest.UniqueName);
                     FileSystem.CopyDirectory(foldertoinstall, foldertoinstallto, true);
-                    FileSystem.DeleteDirectory(foldertoinstall,DeleteDirectoryOption.DeleteAllContents);
+                    FileSystem.DeleteDirectory(foldertoinstall, DeleteDirectoryOption.DeleteAllContents);
                     mod.InstalledVersion = OwlcatManifest.Version;
                     Main.Settings.AddInstalled(mod);
                     return;
@@ -87,8 +113,8 @@ namespace ModFinder_WOTR.Infrastructure.Loader
                 {
                     var OwlcatManifest = Newtonsoft.Json.JsonConvert.DeserializeObject<OwlcatModificationManifest>(File.ReadAllText(modfolder.FullName + @"\OwlcatModificationManifest.json"));
                     var modentry = MainWindow.instance.installedModList.Items.FirstOrDefault(a => a.Name == OwlcatManifest.DisplayName);
-                    if(modentry != null)
-                    modentry.InstalledVersion = OwlcatManifest.Version.StripV();
+                    if (modentry != null)
+                        modentry.InstalledVersion = OwlcatManifest.Version.StripV();
                     foldertoinstallto = Main.PFWotrAppdataPath + @"\Modifications\";
                     foldertoinstall = tempfolder.FullName;
                     Main.OwlcatEnabledMods.Add(OwlcatManifest.UniqueName);

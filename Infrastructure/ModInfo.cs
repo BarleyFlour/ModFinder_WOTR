@@ -17,9 +17,10 @@ namespace ModFinder_WOTR.Infrastructure
     {
         GitHub = 0,
         Nexus = 1,
-        Other = 2
+        Other = 2,
+        ModDB = 3
     }
-	/*public class ModInfo
+    /*public class ModInfo
     {
         public ModType modtype;
         ///Unique identifier without spaces.
