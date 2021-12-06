@@ -156,6 +156,24 @@
                 "Truinto",
                 "DarkCodex"
             ]
+        },
+        {
+            "Name": "No Film Grain",
+            "ModType": 1,
+            "Source": 0,
+            "OwnerAndRepo": [
+                "thehambeard",
+                "NoFilmGrainWrath"
+            ]
+        },
+        {
+            "Name": "Quick Cast",
+            "ModType": 1,
+            "Source": 0,
+            "OwnerAndRepo": [
+                "thehambeard",
+                "WIT"
+            ]
         }
     ]
 }
