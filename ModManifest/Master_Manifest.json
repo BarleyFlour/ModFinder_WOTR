@@ -102,6 +102,60 @@
                 "BarleyFlour",
                 "FinneanTweaks"
             ]
+        },
+        {
+            "Name": "Multiple Archetypes",
+            "ModType": 1,
+            "Source": 0,
+            "OwnerAndRepo": [
+                "Vek17",
+                "WrathMods-MultipleArchetypes"
+            ]
+        },
+        {
+            "Name": "Spellbook Merge",
+            "ModType": 1,
+            "Source": 0,
+            "OwnerAndRepo": [
+                "vikigenius",
+                "SpellbookMerge"
+            ]
+        },
+        {
+            "Name": "Magic Time!",
+            "ModType": 1,
+            "Source": 0,
+            "OwnerAndRepo": [
+                "Stari0n",
+                "MagicTime"
+            ]
+        },
+        {
+            "Name": "PATH OF RAGE",
+            "ModType": 1,
+            "Source": 0,
+            "OwnerAndRepo": [
+                "Balkoth-dev",
+                "WOTR_PATH_OF_RAGE"
+            ]
+        },
+        {
+            "Name": "Expanded Content",
+            "ModType": 1,
+            "Source": 0,
+            "OwnerAndRepo": [
+                "ka-dyn",
+                "ExpandedContent"
+            ]
+        },
+        {
+            "Name": "DarkCodex",
+            "ModType": 1,
+            "Source": 0,
+            "OwnerAndRepo": [
+                "Truinto",
+                "DarkCodex"
+            ]
         }
     ]
 }
