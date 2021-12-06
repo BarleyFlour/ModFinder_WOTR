@@ -79,6 +79,7 @@ namespace ModFinder_WOTR.Infrastructure
                 return Infrastructure.ModListLoader.instance.m_AllMods;
             }
         }
+        //Maybe change this to read registry and look for path?
         public static DirectoryInfo WrathPath
         {
             get
@@ -87,13 +88,17 @@ namespace ModFinder_WOTR.Infrastructure
                 {
                     var wotrdatadir = new DirectoryInfo((new DirectoryInfo(Environment.GetEnvironmentVariable("appdata")).Parent) + @"\LocalLow\Owlcat Games\Pathfinder Wrath Of The Righteous\");
                     var log = new FileInfo(wotrdatadir + "Player.log");
-                    using (StreamReader sr = new StreamReader(log.FullName))
+                    var tempfolder = Directory.CreateDirectory(Environment.GetEnvironmentVariable("TMP") + @"\TempModFolder" + new Random().Next());
+                    var templog = log.CopyTo(tempfolder.FullName+@"\Player.log");
+                    using (StreamReader sr = new StreamReader(templog.OpenRead()))
                     {
                         var firstline = sr.ReadLine();
                         firstline.Remove(0, 16).Replace(@"Wrath_Data/Managed'", "");
-                        return new DirectoryInfo(firstline.Remove(0, 16).Replace(@"Wrath_Data/Managed'", ""));
+                        m_WrathPath = new DirectoryInfo(firstline.Remove(0, 16).Replace(@"Wrath_Data/Managed'", ""));
                     }
+                    tempfolder.Delete(true);
                 }
+                return m_WrathPath;
                 throw new Exception("Unable to find Wrath Installation path, please launch the game once before starting the mod manager.");
             }
         }
