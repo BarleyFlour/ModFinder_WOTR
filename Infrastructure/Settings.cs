@@ -12,6 +12,8 @@ namespace ModFinder_WOTR.Infrastructure
     public class AppSettingsData
     {
         [JsonProperty]
+        public string s_WrathPath;
+        [JsonProperty]
         public string NexusAPIKey;
         [JsonProperty]
         public string GithubAPIKey;
@@ -86,6 +88,7 @@ namespace ModFinder_WOTR.Infrastructure
         }
         public static string Encrypt(string input)
         {
+            return input;
             if (string.IsNullOrEmpty(input))
             {
                 throw new ArgumentNullException();
@@ -95,12 +98,13 @@ namespace ModFinder_WOTR.Infrastructure
         }
         public static string Unencrypt(string input)
         {
+            return input;
             if (string.IsNullOrEmpty(input))
             {
                 throw new ArgumentNullException();
             }
             byte[] rawData = Encoding.UTF8.GetBytes(input);
-            return Convert.ToBase64String(ProtectedData.Unprotect(rawData, null, DataProtectionScope.LocalMachine));
+            return Convert.ToBase64String(ProtectedData.Unprotect(rawData, null, DataProtectionScope.CurrentUser));
         }
     }
 }

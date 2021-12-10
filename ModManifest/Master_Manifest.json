@@ -40,6 +40,7 @@
     "m_AllMods": [
         {
             "Name": "Respec Mod",
+            "Author": "Barley",
             "ModType": 1,
             "Source": 0,
             "OwnerAndRepo": [
@@ -49,6 +50,7 @@
         },
         {
             "Name": "Visual Adjustments",
+            "Author": "Barley/Spacehamster",
             "ModType": 1,
             "Source": 0,
             "OwnerAndRepo": [
@@ -58,6 +60,7 @@
         },
         {
             "Name": "Bubble Tweaks",
+            "Author": "Bubbles",
             "ModType": 1,
             "Source": 0,
             "OwnerAndRepo": [
@@ -67,6 +70,7 @@
         },
         {
             "Name": "Bubble Buffs",
+            "Author": "Bubbles",
             "ModType": 1,
             "Source": 1,
             "NexusModID": "195",
@@ -77,6 +81,7 @@
         },
         {
             "Name": "ToyBox (a bag of tricks)",
+            "Author": "Cabarius",
             "ModType": 1,
             "Source": 1,
             "NexusModID": "8",
@@ -87,6 +92,7 @@
         },
         {
             "Name": "Tabletop Tweaks",
+            "Author": "Vek17",
             "ModType": 1,
             "Source": 0,
             "OwnerAndRepo": [
@@ -96,6 +102,7 @@
         },
         {
             "Name": "Finnean Tweaks",
+            "Author": "Barley",
             "ModType": 1,
             "Source": 0,
             "OwnerAndRepo": [
@@ -105,6 +112,7 @@
         },
         {
             "Name": "Multiple Archetypes",
+            "Author": "Vek17",
             "ModType": 1,
             "Source": 0,
             "OwnerAndRepo": [
@@ -114,6 +122,7 @@
         },
         {
             "Name": "Spellbook Merge",
+            "Author": "vikigenius",
             "ModType": 1,
             "Source": 0,
             "OwnerAndRepo": [
@@ -123,6 +132,7 @@
         },
         {
             "Name": "Magic Time!",
+            "Author": "Kreaddy",
             "ModType": 1,
             "Source": 0,
             "OwnerAndRepo": [
@@ -132,6 +142,7 @@
         },
         {
             "Name": "PATH OF RAGE",
+            "Author": "Balkoth",
             "ModType": 1,
             "Source": 0,
             "OwnerAndRepo": [
@@ -141,6 +152,7 @@
         },
         {
             "Name": "Expanded Content",
+            "Author": "Kadyn",
             "ModType": 1,
             "Source": 0,
             "OwnerAndRepo": [
@@ -150,6 +162,7 @@
         },
         {
             "Name": "DarkCodex",
+            "Author": "Fumihiko",
             "ModType": 1,
             "Source": 0,
             "OwnerAndRepo": [
@@ -159,6 +172,7 @@
         },
         {
             "Name": "No Film Grain",
+            "Author": "Hambeard",
             "ModType": 1,
             "Source": 0,
             "OwnerAndRepo": [
@@ -168,6 +182,7 @@
         },
         {
             "Name": "Quick Cast",
+            "Author": "Hambeard",
             "ModType": 1,
             "Source": 0,
             "OwnerAndRepo": [

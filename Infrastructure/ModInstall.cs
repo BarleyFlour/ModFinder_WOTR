@@ -66,7 +66,7 @@ namespace ModFinder_WOTR.Infrastructure.Loader
                     cmd.StartInfo.UseShellExecute = false;
                     cmd.Start();
 
-                    cmd.StandardInput.WriteLine("start "+releaselink); // start <link>, if you haveany'&' characters, bypass them by putting '^' before '&'
+                    cmd.StandardInput.WriteLine("start " + releaselink); // start <link>, if you haveany'&' characters, bypass them by putting '^' before '&'
                     cmd.StandardInput.Flush();
                     cmd.StandardInput.Close();
                     cmd.WaitForExit();
@@ -79,16 +79,17 @@ namespace ModFinder_WOTR.Infrastructure.Loader
                         ZipFile.ExtractToDirectory(tempfolder + @"\" + todownload.Name, tempfolder.FullName, true);
                         File.Delete(tempfolder + @"\" + todownload.Name);*/
                     }
+                    return;
                 }
             }
-            return;
             string foldertoinstallto = "";
             string foldertoinstall = "";
-            var modfolder = tempfolder.EnumerateDirectories().First();
+            var modfolder = tempfolder.EnumerateDirectories().FirstOrDefault(a => File.Exists(a + @"\OwlcatModificationManifest.json") || File.Exists(a.FullName + @"\Info.json"));
+            if (modfolder == null) modfolder = tempfolder;
             {
-                if (File.Exists(modfolder.FullName + @"\OwlcatModificationManifest.json"))
+                if (File.Exists(tempfolder.FullName + @"\OwlcatModificationManifest.json"))
                 {
-                    var OwlcatManifest = Newtonsoft.Json.JsonConvert.DeserializeObject<OwlcatModificationManifest>(File.ReadAllText(modfolder.FullName + @"\OwlcatModificationManifest.json"));
+                    var OwlcatManifest = Newtonsoft.Json.JsonConvert.DeserializeObject<OwlcatModificationManifest>(File.ReadAllText(tempfolder.FullName + @"\OwlcatModificationManifest.json"));
                     foldertoinstallto = Main.PFWotrAppdataPath + @"\Modifications\";
                     foldertoinstall = tempfolder.FullName;
                     Main.OwlcatEnabledMods.Add(OwlcatManifest.UniqueName);
@@ -98,9 +99,20 @@ namespace ModFinder_WOTR.Infrastructure.Loader
                     Main.Settings.AddInstalled(mod);
                     return;
                 }
-                if (File.Exists(modfolder.FullName + @"\Info.json"))
+                if (File.Exists(tempfolder.FullName + @"\Info.json"))
                 {
-                    var UMMManifest = Newtonsoft.Json.JsonConvert.DeserializeObject<ModInfo>(File.ReadAllText(modfolder.FullName + @"\Info.json"));
+                    var UMMManifest = Newtonsoft.Json.JsonConvert.DeserializeObject<ModInfo>(File.ReadAllText(tempfolder.FullName + @"\Info.json"));
+                    foldertoinstallto = Main.WrathPath + @"\Mods\";
+                    foldertoinstall = tempfolder.FullName;
+                    FileSystem.CopyDirectory(foldertoinstall, foldertoinstallto, true);
+                    FileSystem.DeleteDirectory(foldertoinstall, DeleteDirectoryOption.DeleteAllContents);
+                    mod.InstalledVersion = UMMManifest.Version;
+                    Main.Settings.AddInstalled(mod);
+                    return;
+                }
+                else if (File.Exists(tempfolder.FullName + @"\info.json"))
+                {
+                    var UMMManifest = Newtonsoft.Json.JsonConvert.DeserializeObject<ModInfo>(File.ReadAllText(tempfolder.FullName + @"\info.json"));
                     foldertoinstallto = Main.WrathPath + @"\Mods\";
                     foldertoinstall = tempfolder.FullName;
                     FileSystem.CopyDirectory(foldertoinstall, foldertoinstallto, true);
@@ -119,6 +131,7 @@ namespace ModFinder_WOTR.Infrastructure.Loader
             ZipFile.ExtractToDirectory(ModZipPath, tempfolder.FullName, true);
             string foldertoinstallto = "";
             string foldertoinstall = "";
+            Debug.WriteLine(Main.WrathPath);
             var modfolder = tempfolder.EnumerateDirectories().First();
             {
                 if (File.Exists(modfolder.FullName + @"\OwlcatModificationManifest.json"))

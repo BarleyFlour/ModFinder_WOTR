@@ -163,6 +163,7 @@
                     <DataGrid.Background>Transparent</DataGrid.Background>
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Name" Width="*" Binding="{Binding Name, Mode=OneWay}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Author" Width="*" Binding="{Binding Author, Mode=OneWay}"></DataGridTextColumn>
                         <DataGridTextColumn Header="Version" Width="120" Binding="{Binding InstalledVersion, Mode=OneWay}"></DataGridTextColumn>
                         <DataGridTextColumn Header="Type" Width="120" Binding="{Binding ModType, Mode=OneWay}"></DataGridTextColumn>
                         <DataGridTextColumn Header="From" Width="120" Binding="{Binding Source, Mode=OneWay}"></DataGridTextColumn>
