@@ -581,4 +581,19 @@ namespace ModFinder_WOTR
 
         public event PropertyChangedEventHandler PropertyChanged;
     }
+    public class ModDetailsInternal
+    {
+        //These need to be manually filled in
+        public string Name { get; set; }
+        //Formatted as §RepoOwner§/§RepoName§
+        public string[] OwnerAndRepo { get; set; }
+        public string NexusModID { get; set; }
+        public string Author { get; set; }
+        public Infrastructure.ModType ModType { get; set; }
+        public Infrastructure.ModSource Source { get; set; }
+        //
+        public string DownloadLink { get; set; }
+        public string LatestVersion { get; set; }
+        public string Description { get; set; }
+    }
 }
