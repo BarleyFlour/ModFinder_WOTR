@@ -1,141 +1,87 @@
 ﻿using System;
-using System.IO;
-using System.Net;
 using System.Threading.Tasks;
-using System.Windows.Threading;
 using ModFinder_WOTR;
 using ModFinder_WOTR.Infrastructure;
 using Octokit;
-
-using IdentityModel.Client;
-using Newtonsoft.Json;
-using Octokit;
-using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
-using System.Net.Http;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Linq;
+using NexusModsNET;
+using ManifestUpdater.Properties;
 
-namespace ManifestUpdater
+var github = new GitHubClient(new ProductHeaderValue("ModFinder_WOTR"));
+var token = Environment.GetEnvironmentVariable("GITHUB_TOKEN");
+github.Credentials = new Credentials(token);
+
+var nexus = NexusModsClient.Create(Environment.GetEnvironmentVariable("NEXUS_APITOKEN"), "Modfinder_WOTR", "0");
+
+var details = ModFinderIO.FromString<ModListBlob>(Resources.internal_manifest);
+var tasks = new List<Task<ModDetailsInternal>>();
+
+foreach (var mod in details.m_AllMods)
 {
-    class AlsoContainerMods
+    tasks.Add(Task.Run(async () =>
     {
-        [JsonProperty] public List<ModDetailsInternal> m_AllMods;
-    }
-    class Program
-    {
-        private static NexusModsNET.NexusModsClient m_NexusClient;
-        public static NexusModsNET.NexusModsClient NexusClient
+
+        if (mod.Source == ModSource.GitHub)
         {
-            get
-            {
-                if (m_NexusClient == null)
-                {
-#if DEBUG
-                    m_NexusClient = (NexusModsNET.NexusModsClient)(NexusModsNET.NexusModsClient.Create(Environment.GetEnvironmentVariable("NEXUS_APITOKEN"), "Modfinder_WOTR", "0"));
-#else
-                    m_NexusClient = (NexusModsNET.NexusModsClient)(NexusModsNET.NexusModsClient.Create(Main.Settings.NexusAPIKey, "Modfinder_WOTR", "0"));
-#endif
-                }
-                return m_NexusClient;
-            }
-
+            var repo = await github.Repository.Get(mod.GithubOwner, mod.GithubRepo);
+            var release = await github.Repository.Release.GetLatest(mod.GithubOwner, mod.GithubRepo);
+            if (release.Assets.Count == 0)
+                return null;
+            var todownload = release.Assets[0];
+            mod.DownloadLink = todownload.BrowserDownloadUrl;
+            mod.Description = repo.Description;
+            mod.Latest = ModVersion.Parse(release.TagName); //This is not true???
+                        return mod;
         }
-        private static GitHubClient m_Client;
-        public static GitHubClient Client
+        else if (mod.Source == ModSource.Nexus)
         {
-            get
-            {
-                if (m_Client == null)
-                {
-                    m_Client = new GitHubClient(new ProductHeaderValue("ModFinder_WOTR"));
-                    //if (Infrastructure.Main.Settings.GithubAPIKey == null && Infrastructure.Main.Settings.GithubAPIKey == "")
-                    {
-                        // task.RunSynchronously();
+            var nexusFactory = NexusModsFactory.New(nexus);
+            var nexusmod = await nexusFactory.CreateModsInquirer().GetMod("pathfinderwrathoftherighteous", mod.NexusModID);
+            var modde = await nexusFactory.CreateModFilesInquirer().GetModFilesAsync("pathfinderwrathoftherighteous", mod.NexusModID);
 
-                        // m_Client.Credentials = new Credentials(Infrastructure.Main.Settings.GithubAPIKey);
-                    }
-#if DEBUG
-                    m_Client.Credentials = new Credentials(Environment.GetEnvironmentVariable("GITHUB_TOKEN"));
-#endif
-                }
-                return m_Client;
-            }
+            var release = modde.ModFiles.Last();
+
+            mod.Description = nexusmod.Description;
+            mod.Latest = ModVersion.Parse(nexusmod.Version); //This is not true???
+                        mod.DownloadLink = @"https://www.nexusmods.com/pathfinderwrathoftherighteous/mods/" + mod.NexusModID + @"?tab=files&file_id=" + release.FileId;
+
+            return mod;
         }
-        static void Main(string[] args)
-        {
-            AlsoContainerMods details = null;
-            using var wc = new WebClient();
-            {
-                string rawmanifest = wc.DownloadString(@"https://raw.githubusercontent.com/BarleyFlour/ModFinder_WOTR/master/ManifestUpdater/Resources/internal_manifest.json");
+        return null;
+    }));
+}
 
-                details = Newtonsoft.Json.JsonConvert.DeserializeObject<AlsoContainerMods>(rawmanifest);
-            }
-            var list = new List<ModDetailsInternal>();
-            foreach (var mod in details.m_AllMods)
-            {
-                _ = Task.Run(async () =>
-                {
+//We don't want to do console printing from inside the async tasks as they will interleave the output and it is confusing
+//So collect the results here and print them out
+//This will also wait for all tasks to complete
+foreach (var mod in tasks.Select(t => t.Result).Where(r => r != null))
+{
+    Console.WriteLine();
+    Log(mod.Name);
+    LogObj("  UniqueId: ", $"{mod.ModId.Identifier}_{mod.ModId.ModType}");
+    LogObj("  Download: ", mod.DownloadLink);
+    LogObj("  Latest: ", mod.Latest);
+}
 
-                    if (mod.Source == ModSource.GitHub)
-                    {
-                        Console.WriteLine("[ModFinder] ModSourceGitDescrip " + mod.Name + "\n");
-                        var repo = await Client.Repository.Get(mod.GithubOwner, mod.GithubRepo);
-                        var latest = await Client.Repository.Release.GetLatest(mod.GithubOwner, mod.GithubRepo);
-                        Console.WriteLine("[ModFinder]        got repo name: " + repo.FullName);
-                        Console.WriteLine("[ModFinder] got repo description: " + repo.Description);
-                        Console.WriteLine("[ModFinder]   got latest release (tag): " + latest.TagName);
-                        // await Dispatcher.CurrentDispatcher.InvokeAsync(() =>
-                        // {
-                        var release = await Client.Repository.Release.GetLatest(mod.GithubOwner, mod.GithubRepo);
-                        var todownload = release.Assets.First();
-                        mod.DownloadLink = todownload.BrowserDownloadUrl;
-                        mod.Description = repo.Description;
-                        mod.Latest = ModVersion.Parse(latest.TagName); //This is not true???
-                        Console.WriteLine($"setting mod version to: {mod.Latest}");
-                        list.Add(mod);
-                        // });
+var targetUser = "BarleyFlour";
+var targetRepo = "Modfinder_WOTR";
+var targetFile = "ManifestUpdater/Resources/master_manifest.json";
 
-                    }
-                    else if (mod.Source == ModFinder_WOTR.Infrastructure.ModSource.Nexus)
-                    {
-                        // Debug.WriteLine(mod.NexusModID);
-                        var nexusmod = await NexusModsNET.NexusModsFactory.New(NexusClient).CreateModsInquirer().GetMod("pathfinderwrathoftherighteous", mod.NexusModID);
+var serializedDeets = ModFinderIO.Write(details);
+var currentFile = await github.Repository.Content.GetAllContentsByRef(targetUser, targetRepo, targetFile, "master");
+var updateFile = new UpdateFileRequest("Update the mod manifest (bot)", serializedDeets, currentFile[0].Sha, "master", true);
+var result = await github.Repository.Content.UpdateFile(targetUser, targetRepo, targetFile, updateFile);
+LogObj("Updated: ", result.Commit.Sha);
 
-                        //  await Dispatcher.CurrentDispatcher.InvokeAsync(() =>
-                        // {
-
-                        mod.Description = nexusmod.Description;
-                        mod.Latest = ModVersion.Parse(nexusmod.Version); //This is not true???
-                        var modde = await NexusModsNET.NexusModsFactory.New(NexusClient).CreateModFilesInquirer().GetModFilesAsync("pathfinderwrathoftherighteous", mod.NexusModID);
-                        var release = modde.ModFiles.Last();
-                        mod.DownloadLink = @"https://www.nexusmods.com/pathfinderwrathoftherighteous/mods/" + mod.NexusModID + @"?tab=files^&file_id=" + release.FileId;
-                        Console.WriteLine("Stuff " + mod.Name + $"setting mod version to: {mod.Latest}");
-                        list.Add(mod);
-                        // });
-                    }
-                });
-            }
-            while (list.Count != details.m_AllMods.Count)
-            {
-
-            }
-            details.m_AllMods = list;
-
-            var SerializedDeets = Newtonsoft.Json.JsonConvert.SerializeObject(details,Formatting.Indented);
-            var task = Task.Run(async () =>
-            {
-                var o = await Client.Repository.Content.GetAllContents("BarleyFlour","Modfinder_WOTR", "ManifestUpdater/Resources/master_manifest.json");
-                var j = new UpdateFileRequest("Automatic Update", SerializedDeets, o.FirstOrDefault().Sha);
-                var committask = Client.Repository.Content.CreateFile("BarleyFlour", "Modfinder_WOTR", @"ManifestUpdater/Resources/master_manifest.json", j);
-                Console.WriteLine(o.FirstOrDefault()?.Sha);
-            });
-            while(task.Status != TaskStatus.RanToCompletion)
-            {
-            }
-        }
-    }
+void Log(string str)
+{
+    Console.Write("[ModFinder]  ");
+    Console.WriteLine(str);
+}
+void LogObj(string key, object value)
+{
+    Console.Write("[ModFinder]  ");
+    Console.Write(key.PadRight(16));
+    Console.WriteLine(value ?? "<null>");
 }
