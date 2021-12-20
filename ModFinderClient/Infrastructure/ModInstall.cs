@@ -154,6 +154,37 @@ namespace ModFinder_WOTR.Infrastructure
                     }
                 }
             }
+            var OwlcatModDir = new DirectoryInfo(Main.WrathDataDir).GetDirectories("Modifications");
+            if (OwlcatModDir.Length > 0)
+            {
+                foreach (var maybe in OwlcatModDir[0].GetDirectories())
+                {
+                    var infoFile = maybe.GetFiles().FirstOrDefault(f => f.Name.Equals("OwlcatModificationManifest.json", StringComparison.OrdinalIgnoreCase));
+                    if (infoFile != null)
+                    {
+                        var info = ModFinderIO.Read<OwlcatModInfo>(infoFile.FullName);
+
+                        ModId id = new(info.UniqueName, ModType.Owlcat);
+
+                        if (!ModDatabase.Instance.TryGet(id, out var mod))
+                        {
+                            ModDetailsInternal details = new();
+                            details.ModId = id;
+                            details.Name = info.DisplayName;
+                            details.Latest = ModVersion.Parse(info.Version);
+                            details.Source = ModSource.Other;
+                            details.Author = info.Author;
+                            details.Description = "";
+
+                            mod = new(details);
+                            ModDatabase.Instance.Add(mod);
+                        }
+
+                        mod.State = ModState.Installed;
+                        mod.InstalledVersion = ModVersion.Parse(info.Version);
+                    }
+                }
+            }
         }
     }
 
