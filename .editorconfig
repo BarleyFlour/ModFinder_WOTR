@@ -2,3 +2,9 @@
 
 # IDE0011: Add braces
 csharp_prefer_braces = when_multiline
+csharp_style_var_for_built_in_types=true:silent
+csharp_style_var_when_type_is_apparent=true:silent
+csharp_style_var_elsewhere=true:silent
+
+[*.{cs,vb}]
+dotnet_style_prefer_conditional_expression_over_assignment=false:silent
