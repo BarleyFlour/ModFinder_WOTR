@@ -41,7 +41,7 @@ namespace ModFinder_WOTR
             showInstalledToggle.Click += ShowInstalledToggle_Click;
 
 #if DEBUG
-            var manifest = JsonConvert.DeserializeObject<ModListBlob>(File.ReadAllText(Environment.GetEnvironmentVariable("MODFINDER_LOCAL_MANIFEST")));
+            var manifest = ModFinderIO.Read<ModListBlob>(Environment.GetEnvironmentVariable("MODFINDER_LOCAL_MANIFEST"));
 #else
             using var client = new WebClient();
             var manifest = client.DownloadString("https://URL_TO_CONVERTED_MANIFEST_HERE.json");
