@@ -91,8 +91,20 @@ namespace ManifestUpdater.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;m_AllMods&quot;: [
         ///    {
-        ///      &quot;Author&quot;: &quot;Bubbles&quot;,
-        ///      &quot;Description&quot;: &quot;[b]Imagine if setting up an auto buffing mod was easy enough you don&apos;t need a PhD, and integrated enough you don&apos;t need to open a UMM gui to configure it?\n&lt;br /&gt;\n&lt;br /&gt;\n&lt;br /&gt;\n&lt;br /&gt;\n&lt;br /&gt;\n&lt;br /&gt;WANT TO LAUGH AT CODE?????\n&lt;br /&gt;\n&lt;br /&gt;[url=https://github.com/factubsio/BubbleBuffs]factubsio/BubbleBuffs: Bubbles Ultimate Buff Bot Lite Extra Simple (BUBBLES) (github.com)[/url][/b]\n&lt;br /&gt;\n&lt;br /&gt;\n&lt;br /&gt;\n&lt;br /&gt;\n&lt;br /&gt;Items [rest of string was truncated]&quot;;.
+        ///      &quot;Author&quot;: &quot;Barley&quot;,
+        ///      &quot;Description&quot;: &quot;A respec mod for Pathfinder: Wrath of the Righteous&quot;,
+        ///      &quot;DownloadLink&quot;: &quot;https://github.com/BarleyFlour/RespecMod/releases/download/v1.09.2/RespecWrath.zip&quot;,
+        ///      &quot;GithubOwner&quot;: &quot;BarleyFlour&quot;,
+        ///      &quot;GithubRepo&quot;: &quot;RespecMod&quot;,
+        ///      &quot;ModId&quot;: {
+        ///        &quot;Identifier&quot;: &quot;RespecWrath&quot;,
+        ///        &quot;ModType&quot;: &quot;UMM&quot;
+        ///      },
+        ///      &quot;Latest&quot;: {
+        ///        &quot;Major&quot;: 1,
+        ///        &quot;Minor&quot;: 9,
+        ///        &quot;Patch&quot;: 2,
+        ///        &quot;Suffix&quot;: &quot;\u0000&quot; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Master_Manifest {
             get {

@@ -1,4 +1,6 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
 using System.Text.RegularExpressions;
 using ModFinder_WOTR.Infrastructure;
 
@@ -78,5 +80,7 @@ namespace ModFinder_WOTR
         public string Name => Details.Name;
         public ModSource Source => Details.Source;
         public string Author => Details.Author;
+
+        public IEnumerable<ChangelogEntry> Changelog => Details.Changelog ?? Enumerable.Empty<ChangelogEntry>();
     }
 }
