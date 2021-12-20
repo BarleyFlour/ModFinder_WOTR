@@ -48,7 +48,7 @@ namespace ManifestUpdater
 
         public static void Main(string[] _)
         {
-            var details = ModFinderIO.Read<ModListBlob>(Resources.Master_Manifest);
+            var details = ModFinderIO.FromString<ModListBlob>(Resources.Master_Manifest);
 
             var tasks = new List<Task<ProcessedModDetails>>();
             foreach (var mod in details.m_AllMods)
@@ -107,7 +107,7 @@ namespace ManifestUpdater
                 Log("            Id:".PadRight(20) + result.Details.ModId);
             }
 
-            ModFinderIO.Write(details, @"D:/Stuff.json");
+            ModFinderIO.Write(details, Environment.GetEnvironmentVariable("MODFINDER_LOCAL_MANIFEST"));
 
                 //Push stuff here
                 //var j = new UpdateFileRequest("Automatic Update",,);
