@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <None Remove="background.png" />
+    <None Remove="icons\drop-bg.png" />
     <None Remove="UI_Button_Click.png" />
     <None Remove="UI_Button_Default.png" />
     <None Remove="UI_Button_Disable.png" />
@@ -54,6 +55,7 @@
 
   <ItemGroup>
     <Resource Include="icons\background.png" />
+    <Resource Include="icons\drop-bg.png" />
     <Resource Include="icons\UI_Button_Click.png" />
     <Resource Include="icons\UI_Button_Default.png" />
     <Resource Include="icons\UI_Button_Disable.png" />

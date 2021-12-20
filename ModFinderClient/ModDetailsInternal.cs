@@ -1,5 +1,6 @@
 ﻿using ModFinder_WOTR.Infrastructure;
 using System;
+using System.Collections.Generic;
 
 namespace ModFinder_WOTR
 {
@@ -20,6 +21,8 @@ namespace ModFinder_WOTR
 
         //This MUST match the UMMInfo.Id or OwlcatMod.UniqueName
         public ModId ModId { get; set; }
+
+        public List<ChangelogEntry> Changelog { get; set; }
 
         public ModVersion Latest { get; set; }
 
@@ -67,6 +70,46 @@ namespace ModFinder_WOTR
         public static bool operator !=(ModId left, ModId right)
         {
             return !(left == right);
+        }
+    }
+
+    public struct ChangelogEntry
+    {
+        public ModVersion version;
+        public string contents;
+
+        public ChangelogEntry(ModVersion version, string contents)
+        {
+            this.version = version;
+            this.contents = contents;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is ChangelogEntry other &&
+                   version.Equals(other.version) &&
+                   contents == other.contents;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(version, contents);
+        }
+
+        public void Deconstruct(out ModVersion version, out string contents)
+        {
+            version = this.version;
+            contents = this.contents;
+        }
+
+        public static implicit operator (ModVersion version, string contents)(ChangelogEntry value)
+        {
+            return (value.version, value.contents);
+        }
+
+        public static implicit operator ChangelogEntry((ModVersion version, string contents) value)
+        {
+            return new ChangelogEntry(value.version, value.contents);
         }
     }
 }

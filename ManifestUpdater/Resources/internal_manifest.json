@@ -46,13 +46,6 @@
         "Identifier": "RespecWrath",
         "ModType": "UMM"
       },
-      "Latest": {
-        "Major": 0,
-        "Minor": 0,
-        "Patch": 0,
-        "Suffix": "\u0000",
-        "Valid": false
-      },
       "Name": "Respec Mod",
       "NexusModID": 0,
       "Source": "GitHub"
@@ -64,13 +57,6 @@
       "ModId": {
         "Identifier": "VisualAdjustments",
         "ModType": "UMM"
-      },
-      "Latest": {
-        "Major": 0,
-        "Minor": 0,
-        "Patch": 0,
-        "Suffix": "\u0000",
-        "Valid": false
       },
       "Name": "Visual Adjustments",
       "NexusModID": 0,
@@ -84,13 +70,6 @@
         "Identifier": "BubbleTweaks",
         "ModType": "UMM"
       },
-      "Latest": {
-        "Major": 0,
-        "Minor": 0,
-        "Patch": 0,
-        "Suffix": "\u0000",
-        "Valid": false
-      },
       "Name": "Bubble Tweaks",
       "NexusModID": 0,
       "Source": "GitHub"
@@ -102,13 +81,6 @@
       "ModId": {
         "Identifier": "BubbleBuffs",
         "ModType": "UMM"
-      },
-      "Latest": {
-        "Major": 0,
-        "Minor": 0,
-        "Patch": 0,
-        "Suffix": "\u0000",
-        "Valid": false
       },
       "Name": "Bubble Buffs",
       "NexusModID": 195,
@@ -122,13 +94,6 @@
         "Identifier": "ToyBox",
         "ModType": "UMM"
       },
-      "Latest": {
-        "Major": 0,
-        "Minor": 0,
-        "Patch": 0,
-        "Suffix": "\u0000",
-        "Valid": false
-      },
       "Name": "ToyBox (a bag of tricks)",
       "NexusModID": 8,
       "Source": "Nexus"
@@ -140,13 +105,6 @@
       "ModId": {
         "Identifier": "TabletopTweaks",
         "ModType": "UMM"
-      },
-      "Latest": {
-        "Major": 0,
-        "Minor": 0,
-        "Patch": 0,
-        "Suffix": "\u0000",
-        "Valid": false
       },
       "Name": "Tabletop Tweaks",
       "NexusModID": 0,
@@ -160,13 +118,6 @@
         "Identifier": "FinneanTweaks",
         "ModType": "UMM"
       },
-      "Latest": {
-        "Major": 0,
-        "Minor": 0,
-        "Patch": 0,
-        "Suffix": "\u0000",
-        "Valid": false
-      },
       "Name": "Finnean Tweaks",
       "NexusModID": 0,
       "Source": "GitHub"
@@ -178,13 +129,6 @@
       "ModId": {
         "Identifier": "MultipleArchetypes",
         "ModType": "UMM"
-      },
-      "Latest": {
-        "Major": 0,
-        "Minor": 0,
-        "Patch": 0,
-        "Suffix": "\u0000",
-        "Valid": false
       },
       "Name": "Multiple Archetypes",
       "NexusModID": 0,
@@ -198,13 +142,6 @@
         "Identifier": "SpellbookMerge",
         "ModType": "UMM"
       },
-      "Latest": {
-        "Major": 0,
-        "Minor": 0,
-        "Patch": 0,
-        "Suffix": "\u0000",
-        "Valid": false
-      },
       "Name": "Spellbook Merge",
       "NexusModID": 0,
       "Source": "GitHub"
@@ -216,13 +153,6 @@
       "ModId": {
         "Identifier": "Magictime",
         "ModType": "UMM"
-      },
-      "Latest": {
-        "Major": 0,
-        "Minor": 0,
-        "Patch": 0,
-        "Suffix": "\u0000",
-        "Valid": false
       },
       "Name": "Magic Time!",
       "NexusModID": 0,
@@ -236,13 +166,6 @@
         "Identifier": "WOTR_PATH_OF_RAGE",
         "ModType": "UMM"
       },
-      "Latest": {
-        "Major": 0,
-        "Minor": 0,
-        "Patch": 0,
-        "Suffix": "\u0000",
-        "Valid": false
-      },
       "Name": "PATH OF RAGE",
       "NexusModID": 0,
       "Source": "GitHub"
@@ -254,13 +177,6 @@
       "ModId": {
         "Identifier": "ExpandedContent",
         "ModType": "UMM"
-      },
-      "Latest": {
-        "Major": 0,
-        "Minor": 0,
-        "Patch": 0,
-        "Suffix": "\u0000",
-        "Valid": false
       },
       "Name": "Expanded Content",
       "NexusModID": 0,
@@ -274,13 +190,6 @@
         "Identifier": "DarkCodex",
         "ModType": "UMM"
       },
-      "Latest": {
-        "Major": 0,
-        "Minor": 0,
-        "Patch": 0,
-        "Suffix": "\u0000",
-        "Valid": false
-      },
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
@@ -293,13 +202,6 @@
         "Identifier": "NoFilmGrainWrath",
         "ModType": "UMM"
       },
-      "Latest": {
-        "Major": 0,
-        "Minor": 0,
-        "Patch": 0,
-        "Suffix": "\u0000",
-        "Valid": false
-      },
       "Name": "No Film Grain",
       "NexusModID": 0,
       "Source": "GitHub"
@@ -311,13 +213,6 @@
       "ModId": {
         "Identifier": "QuickCast",
         "ModType": "UMM"
-      },
-      "Latest": {
-        "Major": 0,
-        "Minor": 0,
-        "Patch": 0,
-        "Suffix": "\u0000",
-        "Valid": false
       },
       "Name": "Quick Cast",
       "NexusModID": 0,

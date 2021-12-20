@@ -15,6 +15,7 @@
                         -->
         <ImageBrush x:Key="OwlThumbHover" ImageSource="pack://application:,,,/icons/UI_ScrollVertical_Handl_Hover.png" Stretch="Fill" ViewboxUnits="Absolute" Viewbox="0, 7, 23, 81"></ImageBrush>
         <ImageBrush x:Key="OwlThumbDrag" ImageSource="pack://application:,,,/icons/UI_ScrollVertical_Handl_Click.png" Stretch="Fill" ViewboxUnits="Absolute" Viewbox="0, 7, 23, 81"></ImageBrush>
+        <ImageBrush x:Key="drop-bg" ImageSource="pack://application:,,,/icons/drop-bg.png" Stretch="Fill"></ImageBrush>
         <ImageBrush x:Key="button-bg-default" ImageSource="pack://application:,,,/icons/UI_Button_Default.png" Stretch="Fill"></ImageBrush>
         <ImageBrush x:Key="button-bg-hover" ImageSource="pack://application:,,,/icons/UI_Button_Hover.png" Stretch="Fill"></ImageBrush>
         <ImageBrush x:Key="button-bg-click" ImageSource="pack://application:,,,/icons/UI_Button_Click.png" Stretch="Fill"></ImageBrush>
@@ -346,13 +347,12 @@
                     <Button x:Name="lookButton" VerticalAlignment="Top" Grid.Column="2" Style="{StaticResource LookButtonSquare}" Width="32" Height="32" ToolTip="Re-scan installed mods" Click="LookButton_Click"/>
                 </Grid>
                 <DockPanel DockPanel.Dock="Bottom">
-                    <Grid x:Name="dropTarget" Height="100" AllowDrop="True">
-                        <Rectangle Stroke="Black" StrokeDashArray="1,2" RadiusX="8" RadiusY="8">
-                            <Rectangle.Fill>
-                                <SolidColorBrush Color="Orange" Opacity="0.2"></SolidColorBrush>
-                            </Rectangle.Fill>
+                    <Grid x:Name="dropTarget" Height="100" AllowDrop="True" Margin="0,10,0,0">
+                        <Rectangle Fill="{StaticResource drop-bg}" Opacity="0.7" Stroke="{x:Null}" >
                         </Rectangle>
-                        <TextBlock FontSize="30" FontStyle="Italic" FontFamily="Constantia" Foreground="DarkSlateGray" Padding="0,0,0,10" VerticalAlignment="Center" HorizontalAlignment="Center">Drag zips here to install</TextBlock>
+                        <TextBlock FontSize="42" FontStyle="Italic" FontFamily="Constantia" Foreground="DarkGray" Padding="0,0,0,10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            Drag zips here to install
+                        </TextBlock>
                     </Grid>
                 </DockPanel>
                 <DataGrid AutoGenerateColumns="false" Name="installedMods" RowBackground="Transparent" SelectionUnit="FullRow" ItemsSource="{Binding Items}" RowHeight="40" VerticalScrollBarVisibility="Visible" SelectionMode="Single">
@@ -398,7 +398,8 @@
                                         <Button Grid.Column="1" x:Name="MoreOptions" Style="{StaticResource OwlButton}"  Height="30"  Content="..." Tag="{Binding}" Click="MoreOptions_Click">
                                             <Button.ContextMenu>
                                                 <ContextMenu Style="{StaticResource OwlContextMenu}">
-                                                    <MenuItem Header="Open home page"></MenuItem>
+                                                    <MenuItem Header="Show description" Click="ShowModDescription"></MenuItem>
+                                                    <MenuItem Header="Show changelog" Click="ShowModChangelog"></MenuItem>
                                                     <MenuItem Header="Uninstall" IsEnabled="{Binding CanUninstall}"></MenuItem>
                                                 </ContextMenu>
                                             </Button.ContextMenu>
@@ -416,7 +417,7 @@
         </DockPanel>
         <local:NonTopPopup
             x:Name="DescriptionPopup"
-            MinWidth="700" MinHeight="600" MaxWidth="700" MaxHeight="600"
+            MinWidth="900" MinHeight="600" MaxWidth="900" MaxHeight="600"
             PlacementTarget="{Binding ElementName=root}" Placement="Center"
             AllowsTransparency="True" PopupAnimation="Fade">
             <DockPanel>
@@ -474,9 +475,10 @@
                                 <Button x:Name="closePopup" DockPanel.Dock="Right" Width="24" Height="24" Style="{StaticResource CloseButton}" Click="ClosePopup_Click"></Button>
                                 <TextBlock Text="{Binding Name}" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold" Margin="10"></TextBlock>
                             </DockPanel>
-                            <ScrollViewer>
-                                <TextBox IsReadOnly="True" Text="{Binding DescriptionAsText, Mode=OneWay}" FontSize="16" TextWrapping="WrapWithOverflow" Background="Transparent" BorderThickness="0"></TextBox>
-                            </ScrollViewer>
+                            <!--<ScrollViewer>-->
+                                <!--<TextBox IsReadOnly="True" Text="{Binding DescriptionAsText, Mode=OneWay}" FontSize="16" TextWrapping="WrapWithOverflow" Background="Transparent" BorderThickness="0"></TextBox>-->
+                                <FlowDocumentScrollViewer x:Name="Contents" FontSize="16" Background="Transparent" BorderThickness="0"></FlowDocumentScrollViewer>
+                            <!--</ScrollViewer>-->
                         </DockPanel>
                     </DockPanel>
                 </DockPanel>
