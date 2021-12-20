@@ -1,0 +1,327 @@
+{
+    /*
+    Templates
+        Modtypes
+            0 = Owlcat
+            1 = UMM
+        Mod Sources
+            0 = Github
+            1 = Nexus
+            2 = Other
+            3 = ModDB
+
+            Important notes
+            Name needs to be the DisplayName from your Info.json/OwlcatModificationManifest.json
+            
+            //Very important to have OwnerName and RepoName set properly or it will not work
+            Github Hosted mod 
+            {
+            "Name": "", 
+            "ModType": 1,
+            "Source": 0,
+            "OwnerAndRepo": [
+                "OwnerName",
+                "RepoName"
+            ]
+            }
+
+
+            //Nexus hosted mod
+            //very important to set the NexusModID properly or it will not work, you can find it as the last few numbers of the URL to on the mod page.
+            {
+            "Name": "Bubble Buffs",
+            "ModType": 1,
+            "Source": 1,
+            "NexusModID": "",
+            },
+
+
+    */
+    "m_AllMods": [
+    {
+      "Author": "Barley",
+      "GithubOwner": "BarleyFlour",
+      "GithubRepo": "RespecMod",
+      "ModId": {
+        "Identifier": "RespecWrath",
+        "ModType": "UMM"
+      },
+      "Latest": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 0,
+        "Suffix": "\u0000",
+        "Valid": false
+      },
+      "Name": "Respec Mod",
+      "NexusModID": 0,
+      "Source": "GitHub"
+    },
+    {
+      "Author": "Barley/Spacehamster",
+      "GithubOwner": "BarleyFlour",
+      "GithubRepo": "WrathVisualAdjustmentsMod",
+      "ModId": {
+        "Identifier": "VisualAdjustments",
+        "ModType": "UMM"
+      },
+      "Latest": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 0,
+        "Suffix": "\u0000",
+        "Valid": false
+      },
+      "Name": "Visual Adjustments",
+      "NexusModID": 0,
+      "Source": "GitHub"
+    },
+    {
+      "Author": "Bubbles",
+      "GithubOwner": "factubsio",
+      "GithubRepo": "BubbleTweaks",
+      "ModId": {
+        "Identifier": "BubbleTweaks",
+        "ModType": "UMM"
+      },
+      "Latest": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 0,
+        "Suffix": "\u0000",
+        "Valid": false
+      },
+      "Name": "Bubble Tweaks",
+      "NexusModID": 0,
+      "Source": "GitHub"
+    },
+    {
+      "Author": "Bubbles",
+      "GithubOwner": "factubsio",
+      "GithubRepo": "BubbleBuffs",
+      "ModId": {
+        "Identifier": "BubbleBuffs",
+        "ModType": "UMM"
+      },
+      "Latest": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 0,
+        "Suffix": "\u0000",
+        "Valid": false
+      },
+      "Name": "Bubble Buffs",
+      "NexusModID": 195,
+      "Source": "Nexus"
+    },
+    {
+      "Author": "Narria",
+      "GithubOwner": "cabarius",
+      "GithubRepo": "ToyBox",
+      "ModId": {
+        "Identifier": "ToyBox",
+        "ModType": "UMM"
+      },
+      "Latest": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 0,
+        "Suffix": "\u0000",
+        "Valid": false
+      },
+      "Name": "ToyBox (a bag of tricks)",
+      "NexusModID": 8,
+      "Source": "Nexus"
+    },
+    {
+      "Author": "Vek17",
+      "GithubOwner": "Vek17",
+      "GithubRepo": "WrathMods-TabletopTweaks",
+      "ModId": {
+        "Identifier": "TabletopTweaks",
+        "ModType": "UMM"
+      },
+      "Latest": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 0,
+        "Suffix": "\u0000",
+        "Valid": false
+      },
+      "Name": "Tabletop Tweaks",
+      "NexusModID": 0,
+      "Source": "GitHub"
+    },
+    {
+      "Author": "Barley",
+      "GithubOwner": "BarleyFlour",
+      "GithubRepo": "FinneanTweaks",
+      "ModId": {
+        "Identifier": "FinneanTweaks",
+        "ModType": "UMM"
+      },
+      "Latest": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 0,
+        "Suffix": "\u0000",
+        "Valid": false
+      },
+      "Name": "Finnean Tweaks",
+      "NexusModID": 0,
+      "Source": "GitHub"
+    },
+    {
+      "Author": "Vek17",
+      "GithubOwner": "Vek17",
+      "GithubRepo": "WrathMods-MultipleArchetypes",
+      "ModId": {
+        "Identifier": "MultipleArchetypes",
+        "ModType": "UMM"
+      },
+      "Latest": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 0,
+        "Suffix": "\u0000",
+        "Valid": false
+      },
+      "Name": "Multiple Archetypes",
+      "NexusModID": 0,
+      "Source": "GitHub"
+    },
+    {
+      "Author": "vikigenius",
+      "GithubOwner": "vikigenius",
+      "GithubRepo": "SpellbookMerge",
+      "ModId": {
+        "Identifier": "SpellbookMerge",
+        "ModType": "UMM"
+      },
+      "Latest": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 0,
+        "Suffix": "\u0000",
+        "Valid": false
+      },
+      "Name": "Spellbook Merge",
+      "NexusModID": 0,
+      "Source": "GitHub"
+    },
+    {
+      "Author": "Kreaddy",
+      "GithubOwner": "Stari0n",
+      "GithubRepo": "MagicTime",
+      "ModId": {
+        "Identifier": "Magictime",
+        "ModType": "UMM"
+      },
+      "Latest": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 0,
+        "Suffix": "\u0000",
+        "Valid": false
+      },
+      "Name": "Magic Time!",
+      "NexusModID": 0,
+      "Source": "GitHub"
+    },
+    {
+      "Author": "Balkoth",
+      "GithubOwner": "Balkoth-dev",
+      "GithubRepo": "WOTR_PATH_OF_RAGE",
+      "ModId": {
+        "Identifier": "WOTR_PATH_OF_RAGE",
+        "ModType": "UMM"
+      },
+      "Latest": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 0,
+        "Suffix": "\u0000",
+        "Valid": false
+      },
+      "Name": "PATH OF RAGE",
+      "NexusModID": 0,
+      "Source": "GitHub"
+    },
+    {
+      "Author": "Kadyn",
+      "GithubOwner": "ka-dyn",
+      "GithubRepo": "ExpandedContent",
+      "ModId": {
+        "Identifier": "ExpandedContent",
+        "ModType": "UMM"
+      },
+      "Latest": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 0,
+        "Suffix": "\u0000",
+        "Valid": false
+      },
+      "Name": "Expanded Content",
+      "NexusModID": 0,
+      "Source": "GitHub"
+    },
+    {
+      "Author": "Fumihiko",
+      "GithubOwner": "Truinto",
+      "GithubRepo": "DarkCodex",
+      "ModId": {
+        "Identifier": "DarkCodex",
+        "ModType": "UMM"
+      },
+      "Latest": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 0,
+        "Suffix": "\u0000",
+        "Valid": false
+      },
+      "Name": "DarkCodex",
+      "NexusModID": 0,
+      "Source": "GitHub"
+    },
+    {
+      "Author": "Hambeard",
+      "GithubOwner": "thehambeard",
+      "GithubRepo": "NoFilmGrainWrath",
+      "ModId": {
+        "Identifier": "NoFilmGrainWrath",
+        "ModType": "UMM"
+      },
+      "Latest": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 0,
+        "Suffix": "\u0000",
+        "Valid": false
+      },
+      "Name": "No Film Grain",
+      "NexusModID": 0,
+      "Source": "GitHub"
+    },
+    {
+      "Author": "Hambeard",
+      "GithubOwner": "thehambeard",
+      "GithubRepo": "WIT",
+      "ModId": {
+        "Identifier": "QuickCast",
+        "ModType": "UMM"
+      },
+      "Latest": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 0,
+        "Suffix": "\u0000",
+        "Valid": false
+      },
+      "Name": "Quick Cast",
+      "NexusModID": 0,
+      "Source": "GitHub"
+    }
+  ]
+}
