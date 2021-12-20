@@ -81,6 +81,19 @@ namespace ManifestUpdater.Properties {
         ///            {
         ///            &quot;Name&quot;: &quot;&quot;,         /// [rest of string was truncated]&quot;;.
         /// </summary>
+        internal static string internal_manifest {
+            get {
+                return ResourceManager.GetString("internal_manifest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;m_AllMods&quot;: [
+        ///    {
+        ///      &quot;Author&quot;: &quot;Bubbles&quot;,
+        ///      &quot;Description&quot;: &quot;[b]Imagine if setting up an auto buffing mod was easy enough you don&apos;t need a PhD, and integrated enough you don&apos;t need to open a UMM gui to configure it?\n&lt;br /&gt;\n&lt;br /&gt;\n&lt;br /&gt;\n&lt;br /&gt;\n&lt;br /&gt;\n&lt;br /&gt;WANT TO LAUGH AT CODE?????\n&lt;br /&gt;\n&lt;br /&gt;[url=https://github.com/factubsio/BubbleBuffs]factubsio/BubbleBuffs: Bubbles Ultimate Buff Bot Lite Extra Simple (BUBBLES) (github.com)[/url][/b]\n&lt;br /&gt;\n&lt;br /&gt;\n&lt;br /&gt;\n&lt;br /&gt;\n&lt;br /&gt;Items [rest of string was truncated]&quot;;.
+        /// </summary>
         internal static string Master_Manifest {
             get {
                 return ResourceManager.GetString("Master_Manifest", resourceCulture);
