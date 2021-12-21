@@ -120,8 +120,6 @@ namespace ModFinder_WOTR.Infrastructure
                     mod.State = ModState.NotInstalled;
             }
 
-            //TODO: DETECT OWLCAT MODS HERE
-
             var wrath = Main.WrathPath;
             var modDir = wrath.GetDirectories("Mods");
             if (modDir.Length > 0)
