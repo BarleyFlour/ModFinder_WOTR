@@ -13,6 +13,17 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
+    - name: Setup .NET 5.x
+      uses: actions/setup-dotnet@v1
+      with:
+        # Semantic version range syntax or exact version of a dotnet version
+        dotnet-version: '5.x'
+    - name: Install dependencies 1
+      run: dotnet add package Newtonsoft.Json
+    - name: Install dependencies 2
+      run: dotnet add package NexusModsNET
+    - name: Install dependencies 3
+      run: dotnet add package Octokit
     - name: Install dependencies
       run: dotnet restore "./ManifestUpdater"
     - name: Build code
