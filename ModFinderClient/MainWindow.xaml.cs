@@ -36,7 +36,7 @@ namespace ModFinder_WOTR
             var manifest = ModFinderIO.Read<ModListBlob>(Environment.GetEnvironmentVariable("MODFINDER_LOCAL_MANIFEST"));
 #else
             using var client = new WebClient();
-            var manifest = client.DownloadString("https://github.com/BarleyFlour/ModFinder_WOTR/blob/master/ManifestUpdater/Resources/master_manifest.json");
+            var manifest = ModFinderIO.Read<ModListBlob>(client.DownloadString("https://github.com/BarleyFlour/ModFinder_WOTR/blob/master/ManifestUpdater/Resources/master_manifest.json"));
 #endif
 
             installedMods.SelectedCellsChanged += (sender, e) =>
