@@ -32,7 +32,7 @@ namespace ModFinder_WOTR.Infrastructure
             var file = Main.CachePath(name);
             if (!File.Exists(file))
             {
-                WebClient web = new();
+                System.Net.WebClient web = new();
                 await web.DownloadFileTaskAsync(mod.DownloadLink, file);
             }
 
