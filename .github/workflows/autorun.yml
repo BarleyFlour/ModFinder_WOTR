@@ -1,9 +1,8 @@
 name: .NET Core
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    paths:
+      - 'ManifestUpdater/Resources/internal_manifest.json'
 jobs:
   build:
     runs-on: windows-latest
