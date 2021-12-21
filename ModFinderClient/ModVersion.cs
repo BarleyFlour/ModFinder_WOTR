@@ -33,6 +33,7 @@ namespace ModFinder_WOTR
 
         public static ModVersion Parse(string raw)
         {
+            if (raw == null) return new ModVersion();
             Regex extractVersion = new(@"[^\d]*(\d+)[^\d]*(\d+)[^\d]*(\d*)(.*)");
             var match = extractVersion.Match(raw);
             ModVersion version = new();
