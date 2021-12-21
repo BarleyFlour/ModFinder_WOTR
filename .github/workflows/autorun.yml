@@ -30,7 +30,7 @@ jobs:
     - name: Install dependencies 3
       run: dotnet add package Octokit
     - name: Install dependencies
-      run: dotnet restore "./ManifestUpdater"
+      run: dotnet restore "./ManifestUpdater" --configuration Debug
     - name: Build code
       run: dotnet build "./ManifestUpdater" --configuration Debug
     - name: Test code 
