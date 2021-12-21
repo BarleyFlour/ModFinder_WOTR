@@ -13,6 +13,7 @@ using System.Windows.Documents;
 using System.Windows.Media;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using System.Net;
 
 namespace ModFinder_WOTR
 {
@@ -35,7 +36,7 @@ namespace ModFinder_WOTR
             var manifest = ModFinderIO.Read<ModListBlob>(Environment.GetEnvironmentVariable("MODFINDER_LOCAL_MANIFEST"));
 #else
             using var client = new WebClient();
-            var manifest = client.DownloadString("https://URL_TO_CONVERTED_MANIFEST_HERE.json");
+            var manifest = client.DownloadString("https://github.com/BarleyFlour/ModFinder_WOTR/blob/master/ManifestUpdater/Resources/master_manifest.json");
 #endif
 
             installedMods.SelectedCellsChanged += (sender, e) =>
