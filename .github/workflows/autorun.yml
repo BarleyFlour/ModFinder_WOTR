@@ -36,4 +36,4 @@ jobs:
       with:
         path: "./ManifestUpdater/ManifestUpdater.csproj" # optional, default is .
     - name: Test code 
-      run: dotnet test "./ManifestUpdater"
+      run: dotnet test "./ManifestUpdater/ManifestUpdater.csproj"
