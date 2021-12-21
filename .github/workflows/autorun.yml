@@ -13,4 +13,4 @@ jobs:
         # Semantic version range syntax or exact version of a dotnet version
         dotnet-version: '5.x'
     - name: Test code 
-      run: dotnet test "./ManifestUpdater/ManifestUpdater"
+      run: dotnet test "./ManifestUpdater"
