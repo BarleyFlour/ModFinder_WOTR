@@ -12,11 +12,5 @@ jobs:
       with:
         # Semantic version range syntax or exact version of a dotnet version
         dotnet-version: '5.x'
-    - name: Install dependencies 1
-      run: dotnet add package Newtonsoft.Json
-    - name: Install dependencies 2
-      run: dotnet add package NexusModsNET
-    - name: Install dependencies 3
-      run: dotnet add package Octokit
     - name: Test code 
       run: dotnet test "./ManifestUpdater/ManifestUpdater.csproj"
