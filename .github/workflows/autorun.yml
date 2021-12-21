@@ -19,3 +19,5 @@ jobs:
       run: dotnet build "./ManifestUpdater" --configuration Release --no-restore
     - name: Test code 
       run: dotnet test "./ManifestUpdater" --no-restore --verbosity normal
+    - name: Test code 
+      run: dotnet run "./ManifestUpdater"
