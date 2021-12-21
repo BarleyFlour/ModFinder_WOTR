@@ -12,5 +12,8 @@ jobs:
       with:
         # Semantic version range syntax or exact version of a dotnet version
         dotnet-version: '5.x'
+        
+    - name: Build code
+      run: dotnet build "./ManifestUpdater" --configuration Release
     - name: Test code 
-      run: dotnet test "ManifestUpdater/ManifestUpdater.csproj"
+      run: dotnet test "./ManifestUpdater" --configuration Release
