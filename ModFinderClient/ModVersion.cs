@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Text.RegularExpressions;
 
 namespace ModFinder_WOTR
@@ -34,11 +35,20 @@ namespace ModFinder_WOTR
         {
             Regex extractVersion = new(@"[^\d]*(\d+)[^\d]*(\d+)[^\d]*(\d*)(.*)");
             var match = extractVersion.Match(raw);
-            ModVersion version;
-            version.Major = int.Parse(match.Groups[1].Value);
-            version.Minor = int.Parse(match.Groups[2].Value);
-            version.Patch = int.Parse(match.Groups[3].Length > 0 ? match.Groups[3].Value : "0");
-            version.Suffix = (match.Groups[4].Success && match.Groups[4].Length == 1) ? match.Groups[4].Value[0] : default;
+            ModVersion version = new();
+            if (!match.Success)
+                return version;
+            if (!int.TryParse(match.Groups[1].Value, out version.Major))
+                return version;
+            if (!int.TryParse(match.Groups[2].Value, out version.Minor))
+                return version;
+            if (match.Groups[3].Success && match.Groups[3].Length > 0)
+                if (!int.TryParse(match.Groups[3].Value, out version.Patch))
+                    return version;
+
+            if (match.Groups[4].Success && match.Groups[4].Length == 1)
+                version.Suffix = match.Groups[4].Value[0];
+
             return version;
         }
 

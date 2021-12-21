@@ -1,14 +1,29 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Linq;
+using System;
 using System.IO;
 
 namespace ModFinder_WOTR
 {
+    public class ModVersionConverter : JsonConverter<ModVersion>
+    {
+        public override ModVersion ReadJson(JsonReader reader, Type objectType, ModVersion existingValue, bool hasExistingValue, JsonSerializer serializer)
+        {
+            return ModVersion.Parse(reader.Value as string);
+        }
+
+        public override void WriteJson(JsonWriter writer, ModVersion value, JsonSerializer serializer)
+        {
+            writer.WriteValue(value.ToString());
+        }
+    }
     /// <summary>
     /// IO utilities for the app
     /// </summary>
     public static class ModFinderIO
     {
+        private static ModVersionConverter modVersionConverter = new();
         private static JsonSerializer Json
         {
             get
@@ -18,6 +33,7 @@ namespace ModFinder_WOTR
                     Formatting = Formatting.Indented
                 };
                 json.Converters.Add(new StringEnumConverter());
+                json.Converters.Add(modVersionConverter);
                 return json;
             }
         }

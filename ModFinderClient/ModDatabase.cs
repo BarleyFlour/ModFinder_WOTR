@@ -52,7 +52,7 @@ namespace ModFinder_WOTR
         {
             if (mod.State == ModState.NotInstalled)
                 _ = Installed.Remove(mod);
-            else if (mod.State == ModState.Installed)
+            else if (mod.State == ModState.Installed && !Installed.Contains(mod))
                 Installed.Add(mod);
         }
 

@@ -8,6 +8,11 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using ModFinder_WOTR.Infrastructure;
 using System;
+using System.Text;
+using System.Windows.Documents;
+using System.Windows.Media;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace ModFinder_WOTR
 {
@@ -83,34 +88,19 @@ namespace ModFinder_WOTR
             using var opened = ZipFile.OpenRead(path);
             return opened.Entries.Any(a => a.Name.Equals("OwlcatModificationManifest.json", StringComparison.OrdinalIgnoreCase) || a.Name.Equals("Info.json", StringComparison.OrdinalIgnoreCase));
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void ClosePopup_Click(object sender, RoutedEventArgs e)
         {
             DescriptionPopup.IsOpen = false;
         }
 
-        private void DataGridRow_MouseEnter(object sender, MouseEventArgs e)
-        {
-        }
-
         private void DataGridRow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Debug.WriteLine("AKLSJDKLajsD");
             DescriptionPopup.IsOpen = false;
         }
 
         private void DataGridRow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
-            var details = (sender as DataGridRow)?.Item as ModDetails;
-            if (details == null)
-                return;
-            DescriptionPopup.IsOpen = true;
-            DescriptionPopup.DataContext = details;
+            DescriptionPopup.IsOpen = false;
         }
 
         private void DropTarget_DragOver(object sender, DragEventArgs e)
@@ -173,12 +163,76 @@ namespace ModFinder_WOTR
             button.ContextMenu.DataContext = button.Tag;
             button.ContextMenu.StaysOpen = true;
             button.ContextMenu.IsOpen = true;
-
         }
 
         private void LookButton_Click(object sender, RoutedEventArgs e)
         {
             ModInstall.ParseInstalledMods();
         }
+
+        private void ShowModDescription(object sender, RoutedEventArgs e)
+        {
+            var mod = (sender as MenuItem).DataContext as ModDetails;
+            ShowPopup(mod, "description");
+        }
+
+        private void ShowModChangelog(object sender, RoutedEventArgs e)
+        {
+            var mod = (sender as MenuItem).DataContext as ModDetails;
+            ShowPopup(mod, "changelog");
+        }
+
+        private void ShowPopup(ModDetails mod, string contentType)
+        {
+            var proxy = new DescriptionProxy(mod, contentType);
+            DescriptionPopup.DataContext = proxy;
+            var contents = DescriptionPopup.FindName("Contents") as FlowDocumentScrollViewer;
+            contents.Document = proxy.Render();
+            DescriptionPopup.IsOpen = true;
+        }
     }
+
+    public class DescriptionProxy
+    {
+        private readonly ModDetails Mod;
+        private readonly string DescriptionType;
+
+        public DescriptionProxy(ModDetails mod, string descriptionType)
+        {
+            Mod = mod;
+            DescriptionType = descriptionType;
+        }
+
+        public string Name => Mod.Name + "   (" + Mod.InstalledVersion.ToString() + ")";
+        internal FlowDocument Render()
+        {
+            var doc = new FlowDocument();
+
+
+            if (DescriptionType == "description")
+            {
+                try
+                {
+
+                    BBCodeRenderer.Render(doc, Mod.DescriptionAsText);
+                }
+                catch (Exception)
+                {
+                    doc.Blocks.Add(new Paragraph(new Run(Mod.DescriptionAsText)));
+
+                }
+            }
+            else if (DescriptionType == "changelog")
+            {
+                ChangelogRenderer.Render(doc, Mod);
+            }
+            else
+            {
+                doc.Blocks.Add(new Paragraph(new Run("<<<ERROR>>>")));
+            }
+
+            return doc;
+        }
+    }
+
 }

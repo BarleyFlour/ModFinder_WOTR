@@ -7,12 +7,15 @@ using System.Collections.Generic;
 using System.Linq;
 using NexusModsNET;
 using ManifestUpdater.Properties;
+using System.IO;
 
 var github = new GitHubClient(new ProductHeaderValue("ModFinder_WOTR"));
 var token = Environment.GetEnvironmentVariable("GITHUB_TOKEN");
 github.Credentials = new Credentials(token);
 
 var nexus = NexusModsClient.Create(Environment.GetEnvironmentVariable("NEXUS_APITOKEN"), "Modfinder_WOTR", "0");
+
+var contents = Resources.internal_manifest;
 
 var details = ModFinderIO.FromString<ModListBlob>(Resources.internal_manifest);
 var tasks = new List<Task<ModDetailsInternal>>();
@@ -25,26 +28,49 @@ foreach (var mod in details.m_AllMods)
         if (mod.Source == ModSource.GitHub)
         {
             var repo = await github.Repository.Get(mod.GithubOwner, mod.GithubRepo);
-            var release = await github.Repository.Release.GetLatest(mod.GithubOwner, mod.GithubRepo);
-            if (release.Assets.Count == 0)
+            var allReleases = await github.Repository.Release.GetAll(mod.GithubOwner, mod.GithubRepo);
+            var latestRelease = await github.Repository.Release.GetLatest(mod.GithubOwner, mod.GithubRepo);
+            if (latestRelease.Assets.Count == 0)
                 return null;
-            var todownload = release.Assets[0];
+            var todownload = latestRelease.Assets[0];
+
+            mod.Changelog = new();
+            foreach (var release in allReleases)
+            {
+                var version = ModVersion.Parse(release.TagName);
+                mod.Changelog.Add((version, release.Body.Replace("\r\n", "\n")));
+            }
+            mod.Changelog.Sort((a, b) => a.version.CompareTo(b.version));
+
             mod.DownloadLink = todownload.BrowserDownloadUrl;
             mod.Description = repo.Description;
-            mod.Latest = ModVersion.Parse(release.TagName); //This is not true???
-                        return mod;
+            mod.Latest = ModVersion.Parse(latestRelease.TagName); //This is not true???
+            return mod;
         }
         else if (mod.Source == ModSource.Nexus)
         {
             var nexusFactory = NexusModsFactory.New(nexus);
             var nexusmod = await nexusFactory.CreateModsInquirer().GetMod("pathfinderwrathoftherighteous", mod.NexusModID);
+            var changelog = await nexusFactory.CreateModsInquirer().GetModChangelogs("pathfinderwrathoftherighteous", mod.NexusModID);
             var modde = await nexusFactory.CreateModFilesInquirer().GetModFilesAsync("pathfinderwrathoftherighteous", mod.NexusModID);
 
             var release = modde.ModFiles.Last();
 
+            if (changelog != null)
+            {
+                mod.Changelog = new();
+                foreach (var entry in changelog)
+                {
+                    var version = ModVersion.Parse(entry.Key);
+                    mod.Changelog.Add((version, string.Join("\n", entry.Value)));
+                }
+
+                mod.Changelog.Sort((a, b) => a.version.CompareTo(b.version));
+            }
+
             mod.Description = nexusmod.Description;
             mod.Latest = ModVersion.Parse(nexusmod.Version); //This is not true???
-                        mod.DownloadLink = @"https://www.nexusmods.com/pathfinderwrathoftherighteous/mods/" + mod.NexusModID + @"?tab=files&file_id=" + release.FileId;
+            mod.DownloadLink = @"https://www.nexusmods.com/pathfinderwrathoftherighteous/mods/" + mod.NexusModID + @"?tab=files&file_id=" + release.FileId;
 
             return mod;
         }
@@ -71,8 +97,13 @@ var targetFile = "ManifestUpdater/Resources/master_manifest.json";
 var serializedDeets = ModFinderIO.Write(details);
 var currentFile = await github.Repository.Content.GetAllContentsByRef(targetUser, targetRepo, targetFile, "master");
 var updateFile = new UpdateFileRequest("Update the mod manifest (bot)", serializedDeets, currentFile[0].Sha, "master", true);
+
+#if DEBUG
+File.WriteAllText(Environment.GetEnvironmentVariable("MODFINDER_LOCAL_MANIFEST"), serializedDeets);
+#else
 var result = await github.Repository.Content.UpdateFile(targetUser, targetRepo, targetFile, updateFile);
 LogObj("Updated: ", result.Commit.Sha);
+#endif
 
 void Log(string str)
 {
