@@ -215,19 +215,17 @@
         "ModType": "UMM"
       },
       "Name": "Quick Cast",
-      "NexusModID": 0,
       "Source": "GitHub"
     },
     {
-      "Author": "Hambeard",
-      "GithubOwner": "thehambeard",
-      "GithubRepo": "WIT",
+      "Author": "Arkive",
+      "GithubOwner": "ArkiveDev",
+      "GithubRepo": "PuzzleSkip",
       "ModId": {
-        "Identifier": "QuickCast",
+        "Identifier": "PuzzleSkip",
         "ModType": "UMM"
       },
-      "Name": "Quick Cast",
-      "NexusModID": 0,
+      "Name": "Puzzle Skip",
       "Source": "GitHub"
     }
   ]
