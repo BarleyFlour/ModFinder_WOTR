@@ -10,7 +10,7 @@ using ManifestUpdater.Properties;
 using System.IO;
 
 var github = new GitHubClient(new ProductHeaderValue("ModFinder_WOTR"));
-var token = Environment.GetEnvironmentVariable("BARLEY_TOKEN");
+var token = Environment.GetEnvironmentVariable("GITHUB_TOKEN");
 
 github.Credentials = new Credentials(token);
 
