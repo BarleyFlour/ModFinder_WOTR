@@ -3,6 +3,8 @@ on:
   push:
     paths:
       - 'ManifestUpdater/Resources/internal_manifest.json'
+      
+      
 jobs:
 
   build:
@@ -21,4 +23,4 @@ jobs:
     - name: Test code 
       run: dotnet test "./ManifestUpdater" --no-restore --verbosity normal
     - name: Test code 
-      run: dotnet run --project ./ManifestUpdater --${{ secrets.GITHUB_TOKEN }}
+      run: dotnet run --project ./ManifestUpdater --${{ secrets.BARLEY_TOKEN }}
