@@ -1,5 +1,5 @@
 {
-    /*
+    /*d
     Templates
         Modtypes
             0 = Owlcat
@@ -203,6 +203,18 @@
         "ModType": "UMM"
       },
       "Name": "No Film Grain",
+      "NexusModID": 0,
+      "Source": "GitHub"
+    },
+    {
+      "Author": "Hambeard",
+      "GithubOwner": "thehambeard",
+      "GithubRepo": "WIT",
+      "ModId": {
+        "Identifier": "QuickCast",
+        "ModType": "UMM"
+      },
+      "Name": "Quick Cast",
       "NexusModID": 0,
       "Source": "GitHub"
     },
