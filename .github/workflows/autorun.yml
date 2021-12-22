@@ -6,6 +6,7 @@ on:
       
 env:
   BARLEY_TOKEN: ${{ secrets.BARLEY_TOKEN }}
+  NEXUS_APITOKEN: ${{ secrets.NEXUS_APITOKEN }}
 jobs:
 
   build:
