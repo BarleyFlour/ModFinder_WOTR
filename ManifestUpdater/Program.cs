@@ -103,12 +103,12 @@ var asd = System.Security.Cryptography.SHA1.
 if (currentFile[0].Sha)*/
 var updateFile = new UpdateFileRequest("Update the mod manifest (bot)", serializedDeets, currentFile[0].Sha, "master", true);
 
-#if DEBUG
+/*#if DEBUG
 File.WriteAllText(Environment.GetEnvironmentVariable("MODFINDER_LOCAL_MANIFEST"), serializedDeets);
-#else
+#else*/
 var result = await github.Repository.Content.UpdateFile(targetUser, targetRepo, targetFile, updateFile);
 LogObj("Updated: ", result.Commit.Sha);
-#endif
+//#endif
 
 void Log(string str)
 {
