@@ -3,7 +3,7 @@
     {
       "Author": "Barley",
       "Description": "A respec mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/BarleyFlour/RespecMod/releases/download/v1.09.2/RespecWrath.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/RespecMod/releases/download/v1.09.3/RespecWrath.zip",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "RespecMod",
       "ModId": {
@@ -134,9 +134,13 @@
         {
           "version": "1.9.2",
           "contents": ">Fixed Mythic Deleveling not working."
+        },
+        {
+          "version": "1.9.3",
+          "contents": ">Fixed for game version 1.1.6"
         }
       ],
-      "Latest": "1.9.2",
+      "Latest": "1.9.3",
       "Name": "Respec Mod",
       "NexusModID": 0,
       "Source": "GitHub"
@@ -144,7 +148,7 @@
     {
       "Author": "Barley/Spacehamster",
       "Description": "Modify backpacks, helmets, hats and class outfits",
-      "DownloadLink": "https://github.com/BarleyFlour/WrathVisualAdjustmentsMod/releases/download/v1.13.5/VisualAdjustments.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/WrathVisualAdjustmentsMod/releases/download/v1.13.6/VisualAdjustments.zip",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "WrathVisualAdjustmentsMod",
       "ModId": {
@@ -287,9 +291,13 @@
         {
           "version": "1.13.5",
           "contents": ">Hide Mythic now properly works in the inventory menu.\n>your character will now properly refresh in the inventory UI."
+        },
+        {
+          "version": "1.13.6",
+          "contents": ">Removed custom warpaint colors (Owlcat refactored Warpaint code, can still use EE picker though)\n"
         }
       ],
-      "Latest": "1.13.5",
+      "Latest": "1.13.6",
       "Name": "Visual Adjustments",
       "NexusModID": 0,
       "Source": "GitHub"
@@ -820,7 +828,7 @@
     {
       "Author": "Vek17",
       "Description": "Tabletop Tweaks is a mod that seeks to adjust the cRPG rules to more closely follow the tabletop ruleset. Additionally it adds content missing from the base game. ",
-      "DownloadLink": "https://github.com/Vek17/WrathMods-TabletopTweaks/releases/download/v1.10.3a/TabletopTweaks.zip",
+      "DownloadLink": "https://github.com/Vek17/WrathMods-TabletopTweaks/releases/download/v1.10.4/TabletopTweaks.zip",
       "GithubOwner": "Vek17",
       "GithubRepo": "WrathMods-TabletopTweaks",
       "ModId": {
@@ -1039,9 +1047,13 @@
         {
           "version": "1.10.3a",
           "contents": "## Version 1.10.3\n* Haramaki now counts as light armor for effects that depend on it (can still be equipped without proficiency)\n* Selective metamagic now requires 10 ranks of knowledge arcana\n* Spells that are not valid for selective metamagic can no longer be made selective\n* You can no longer full attack after moving while mounted\n* Lunge is now selectable as a feat\n    * You can increase the reach of your melee attacks by 5 feet until the end of your turn by taking a –2 penalty to your AC until your next turn. You must decide to use this ability before any attacks are made.\n* Added Lunging Spell Touch Feat\n    * You can increase the reach of your spells’ melee touch attacks by 5 feet until the end of your turn by taking a –2 penalty to your AC until your next turn. You must decide to use this ability before you attempt any attacks on your turn.\n* Added Mounted Skirmisher Feat\n    * If your mount moves its speed or less, you can still take a full-attack action.\n* Added Horse Master Feat\n    * Use your character level to determine your effective druid level for determining the powers and abilities of your mount.\n    \n## Version 1.10.3a\n* Chinese localization updated by @1onepower"
+        },
+        {
+          "version": "1.10.4",
+          "contents": "## Version 1.10.4\n* Now works with 1.1.6e\n* Fix for trick riding not working properly in all cases\n* Allied Spellcaster no longer applies globally\n* Fixed Aeon Greater Bane applying twice\n* Removed unneeded Second Breath patch"
         }
       ],
-      "Latest": "1.10.3a",
+      "Latest": "1.10.4",
       "Name": "Tabletop Tweaks",
       "NexusModID": 0,
       "Source": "GitHub"
@@ -1464,79 +1476,31 @@
       "Source": "GitHub"
     },
     {
-      "Author": "Hambeard",
-      "Description": "Pathfinder: WotR Inventory Tweak",
-      "DownloadLink": "https://github.com/thehambeard/WIT/releases/download/0.1.7beta/QuickCast.zip",
-      "GithubOwner": "thehambeard",
-      "GithubRepo": "WIT",
+      "Author": "Arkive",
+      "Description": "Mod for Pathfinder: Wrath of the Righteous. Allows skipping puzzles.",
+      "DownloadLink": "https://github.com/ArkiveDev/PuzzleSkip/releases/download/v1.2.0/PuzzleSkip.zip",
+      "GithubOwner": "ArkiveDev",
+      "GithubRepo": "PuzzleSkip",
       "ModId": {
-        "Identifier": "QuickCast",
+        "Identifier": "PuzzleSkip",
         "ModType": "UMM"
       },
       "Changelog": [
         {
           "version": "0.0.1",
-          "contents": "Initial alpha version"
+          "contents": "Early test-release. Contains skips for the first 5 slab puzzles. Just bring the slabs to the correct puzzle map."
         },
         {
-          "version": "0.0.2",
-          "contents": "Minor Update"
+          "version": "1.0.0",
+          "contents": "Includes skips all the slab puzzles (Secrets of Creation quest)"
         },
         {
-          "version": "0.0.3",
-          "contents": "Fixed bug that would desync the mouse from a movable window."
-        },
-        {
-          "version": "0.0.4",
-          "contents": "Fix performance iss\n"
-        },
-        {
-          "version": "0.0.5",
-          "contents": "Fixed Arcanist Spells\nIncreased performance marginally\nAdd bombs to the potion list"
-        },
-        {
-          "version": "0.0.6",
-          "contents": "Fixes cantrips not casting."
-        },
-        {
-          "version": "0.0.7",
-          "contents": "Fixes party not being updated at capital."
-        },
-        {
-          "version": "0.1.0",
-          "contents": "QuickCast"
-        },
-        {
-          "version": "0.1.1",
-          "contents": "Version 0.1.1\n* Redid the conversion/additional UI as spells like Shades takes up too much screen\n* Add support for metamagic\n* Bound min/max to ctrl-z\n* Sorted Conversion spells by name"
-        },
-        {
-          "version": "0.1.2",
-          "contents": "* Added additional window will pop up on the left side of the window when main window is on right side of screen."
-        },
-        {
-          "version": "0.1.3",
-          "contents": "* Fixed bug where wrong spell casting from additional menu"
-        },
-        {
-          "version": "0.1.4",
-          "contents": "Fixed issue with pick up an item type for the first time displaying as if you do not have any of those items."
-        },
-        {
-          "version": "0.1.5",
-          "contents": "* Adds tool tips\n* Fixes Toybox color conflict"
-        },
-        {
-          "version": "0.1.6",
-          "contents": "* Fixed Meta-magic bug"
-        },
-        {
-          "version": "0.1.7",
-          "contents": "Fixed Meta-magic not showing spells properly"
+          "version": "1.2.0",
+          "contents": "Adds skip for Mask puzzle in Nameless Ruins.\nAdds skips for arrow and floor symbol puzzles in The Enigma. (No skip for final circular puzzle yet.)"
         }
       ],
-      "Latest": "0.1.7",
-      "Name": "Quick Cast",
+      "Latest": "1.2.0",
+      "Name": "Puzzle Skip",
       "NexusModID": 0,
       "Source": "GitHub"
     }
