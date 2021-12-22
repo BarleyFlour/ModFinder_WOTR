@@ -4,12 +4,14 @@ on:
     paths:
       - 'ManifestUpdater/Resources/internal_manifest.json'
       
-      
+env:
+  BARLEY_TOKEN: ${{ secrets.BARLEY_TOKEN }}
 jobs:
 
   build:
     runs-on: windows-latest
     steps:
+
     - name: Checkout GitHub actions
       uses: actions/checkout@v2
     - name: Setup .NET Core
@@ -23,4 +25,4 @@ jobs:
     - name: Test code 
       run: dotnet test "./ManifestUpdater" --no-restore --verbosity normal
     - name: Test code 
-      run: dotnet run --project ./ManifestUpdater --${{ secrets.BARLEY_TOKEN }}
+      run: dotnet run --project ./ManifestUpdater 
