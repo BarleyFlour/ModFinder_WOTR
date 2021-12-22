@@ -18,15 +18,5 @@ jobs:
 
     - name: Checkout GitHub actions
       uses: actions/checkout@v2
-   # - name: Setup .NET Core
-   #   uses: actions/setup-dotnet@v1
-   #   with:
-   #     dotnet-version: 5.0.x
-   # - name: Install dependencies
-   #   run: dotnet restore "./ManifestUpdater"
-   # - name: Build code
-   #   run: dotnet build "./ManifestUpdater" --configuration Release --no-restore
-   # - name: Test code 
-   #   run: dotnet test "./ManifestUpdater" --no-restore --verbosity normal
     - name: Run Updater
       run: dotnet run --project ./ManifestUpdater 
