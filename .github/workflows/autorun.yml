@@ -4,6 +4,7 @@ on:
     paths:
       - 'ManifestUpdater/Resources/internal_manifest.json'
 jobs:
+
   build:
     runs-on: windows-latest
     steps:
@@ -13,27 +14,11 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
-    - name: Set up .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-          dotnet-version: ${{ env.DOTNET_VERSION }}
-      
-    - name: Setup .NET 5.x
-      uses: actions/setup-dotnet@v1
-      with:
-        # Semantic version range syntax or exact version of a dotnet version
-        dotnet-version: '5.x'
-    - name: Install dependencies 1
-      run: dotnet add package Newtonsoft.Json
-    - name: Install dependencies 2
-      run: dotnet add package NexusModsNET
-    - name: Install dependencies 3
-      run: dotnet add package Octokit
     - name: Install dependencies
       run: dotnet restore "./ManifestUpdater"
-    - name: Install dependencies
-      run: dotnet restore
     - name: Build code
-      run: dotnet build "./ManifestUpdater" --configuration Release
+      run: dotnet build "./ManifestUpdater" --configuration Release --no-restore
     - name: Test code 
       run: dotnet test "./ManifestUpdater" --no-restore --verbosity normal
+    - name: Test code 
+      run: dotnet run --project ./ManifestUpdater --${{ secrets.GITHUB_TOKEN }}
