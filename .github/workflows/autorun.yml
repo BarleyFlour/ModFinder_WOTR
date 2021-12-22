@@ -5,7 +5,7 @@ on:
       - 'ManifestUpdater/Resources/internal_manifest.json'
       
 env:
-  BARLEY_TOKEN: ${{ secrets.BARLEY_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   NEXUS_APITOKEN: ${{ secrets.NEXUS_APITOKEN }}
 jobs:
 
