@@ -12,7 +12,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        Mainn(args);
+        var asd = Task.Factory.StartNew(() =>
+        {
+            Mainn(args);
+        });
+        asd.Wait();
     }
     static async void Mainn(string[] args)
     {
@@ -20,7 +24,7 @@ class Program
         var github = new GitHubClient(new ProductHeaderValue("ModFinder_WOTR"));
         var token = Environment.GetEnvironmentVariable(asd);
 
-        github.Credentials = new Credentials(token);
+        github.Credentials = new Credentials(asd);
 
         var nexus = NexusModsClient.Create(Environment.GetEnvironmentVariable("NEXUS_APITOKEN"), "Modfinder_WOTR", "0");
 
