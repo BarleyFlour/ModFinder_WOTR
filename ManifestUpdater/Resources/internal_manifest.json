@@ -1,5 +1,5 @@
 {
-    /*/
+    /*dd
     Templates
         Modtypes
             0 = Owlcat
@@ -215,7 +215,17 @@
         "ModType": "UMM"
       },
       "Name": "Quick Cast",
-      "NexusModID": 0,
+      "Source": "GitHub"
+    },
+    {
+      "Author": "Arkive",
+      "GithubOwner": "ArkiveDev",
+      "GithubRepo": "PuzzleSkip",
+      "ModId": {
+        "Identifier": "PuzzleSkip",
+        "ModType": "UMM"
+      },
+      "Name": "Puzzle Skip",
       "Source": "GitHub"
     }
   ]
