@@ -12,6 +12,10 @@ namespace ModFinder_WOTR.Infrastructure
     {
         public static async Task<InstallResult> InstallMod(ModDetails toInstall)
         {
+            if(ModCaching.CachedMods.Any(a => a.ModIdentifier == toInstall.Identifier))
+            {
+                ModCaching.RestoreMod(toInstall);
+            }
             if (toInstall.Source == ModSource.Nexus)
             {
                 Process.Start("explorer", '"' + toInstall.DownloadLink + '"').Dispose();

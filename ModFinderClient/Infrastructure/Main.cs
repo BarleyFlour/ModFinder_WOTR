@@ -23,7 +23,7 @@ namespace ModFinder_WOTR.Infrastructure
         public static string AppFolder {
             get
             {
-                var root = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ModfindeR_WOTR");
+                var root = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Modfinder_WOTR");
                 if (!Directory.Exists(root))
                     _ = Directory.CreateDirectory(root);
                 return root;

@@ -97,18 +97,9 @@ var targetFile = "ManifestUpdater/Resources/master_manifest.json";
 
 var serializedDeets = ModFinderIO.Write(details);
 var currentFile = await github.Repository.Content.GetAllContentsByRef(targetUser, targetRepo, targetFile, "master");
-/*var header = "blob #{" + sizeof(serializedDeets) + "}\0";
-var combined = header + serializedDeets;
-var asd = System.Security.Cryptography.SHA1.
-if (currentFile[0].Sha)*/
 var updateFile = new UpdateFileRequest("Update the mod manifest (bot)", serializedDeets, currentFile[0].Sha, "master", true);
-
-/*#if DEBUG
-File.WriteAllText(Environment.GetEnvironmentVariable("MODFINDER_LOCAL_MANIFEST"), serializedDeets);
-#else*/
 var result = await github.Repository.Content.UpdateFile(targetUser, targetRepo, targetFile, updateFile);
 LogObj("Updated: ", result.Commit.Sha);
-//#endif
 
 void Log(string str)
 {
