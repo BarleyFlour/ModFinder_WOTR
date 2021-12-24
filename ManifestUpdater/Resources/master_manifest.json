@@ -1072,6 +1072,10 @@
         {
           "version": "1.0.0",
           "contents": "Initial Release"
+        },
+        {
+          "version": "1.0.1",
+          "contents": ">Now has a OwlcatModification version (use included installer or manually install, dont install both versions).\n>Removed Lethal enchant from tier 1.\n>Added Agile, Cruel, Disruption & Keen to tier 1.\nAdded Furyborn and Deteriorative to tier 2.\n>Moved Heartseeker & Improved critical multiplier from tier 2 to tier 1."
         }
       ],
       "Latest": "1.0.0",
