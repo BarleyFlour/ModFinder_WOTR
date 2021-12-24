@@ -98,8 +98,19 @@ var targetFile = "ManifestUpdater/Resources/master_manifest.json";
 var serializedDeets = ModFinderIO.Write(details);
 var currentFile = await github.Repository.Content.GetAllContentsByRef(targetUser, targetRepo, targetFile, "master");
 var updateFile = new UpdateFileRequest("Update the mod manifest (bot)", serializedDeets, currentFile[0].Sha, "master", true);
-var result = await github.Repository.Content.UpdateFile(targetUser, targetRepo, targetFile, updateFile);
-LogObj("Updated: ", result.Commit.Sha);
+var newblob = new NewBlob();
+newblob.Content = serializedDeets;
+var blob = await github.Git.Blob.Create("BarleyFlour", "ModFinder_WOTR",newblob);
+if(blob.Sha != updateFile.Sha)
+{
+    var result = await github.Repository.Content.UpdateFile(targetUser, targetRepo, targetFile, updateFile);
+    LogObj("Updated: ", result.Commit.Sha);
+}
+else
+{
+    LogObj("No Update: ", "Matching SHA's");
+}
+
 
 void Log(string str)
 {
