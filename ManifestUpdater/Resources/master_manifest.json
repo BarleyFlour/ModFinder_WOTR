@@ -1172,7 +1172,7 @@
     {
       "Author": "Kreaddy",
       "Description": "Mod for Pathfinder: Wrath of the Righteous focused on adding mechanical content, mostly for spellcasting characters.",
-      "DownloadLink": "https://github.com/Stari0n/MagicTime/releases/download/v1.3.3/magic-time-v1.3.3.zip",
+      "DownloadLink": "https://github.com/Stari0n/MagicTime/releases/download/v1.3.7/magic_time_v1.3.7.zip",
       "GithubOwner": "Stari0n",
       "GithubRepo": "MagicTime",
       "ModId": {
@@ -1191,9 +1191,13 @@
         {
           "version": "1.3.3",
           "contents": "- Fixed crash occuring when Worldcrawl is loaded before.\n- Fixed Warsighted being considered homebrew."
+        },
+        {
+          "version": "1.3.7",
+          "contents": "- Added the Blood Arcanist and Pact Wizard archetypes.\n- Added the Intensified Spell metamagic feat.\n- Added the Favorite Metamagic - Intensified mythic ability.\n- Updated Metamagic Insight to take intensified spells into consideration.\n- (arkive) Fixed repository."
         }
       ],
-      "Latest": "1.3.3",
+      "Latest": "1.3.7",
       "Name": "Magic Time!",
       "NexusModID": 0,
       "Source": "GitHub"
