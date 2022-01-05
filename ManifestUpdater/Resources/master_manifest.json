@@ -3,7 +3,7 @@
     {
       "Author": "Barley",
       "Description": "A respec mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/BarleyFlour/RespecMod/releases/download/v1.09.3/RespecWrath.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/RespecMod/releases/download/v1.10.0/Download.this.RespecWrath.zip",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "RespecMod",
       "ModId": {
@@ -138,9 +138,13 @@
         {
           "version": "1.9.3",
           "contents": ">Fixed for game version 1.1.6"
+        },
+        {
+          "version": "1.10.0",
+          "contents": ">Reworked logic touching AddClassLevels.LevelUp, this means increased compatibility with other mods.\n>Said rework should also help with any issues regarding deity selection/background not sticking.\n"
         }
       ],
-      "Latest": "1.9.3",
+      "Latest": "1.10.0",
       "Name": "Respec Mod",
       "NexusModID": 0,
       "Source": "GitHub"
