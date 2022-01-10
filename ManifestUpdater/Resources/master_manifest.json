@@ -1209,7 +1209,7 @@
     {
       "Author": "Balkoth",
       "Description": "A mod of Owlcat's Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Balkoth-dev/WOTR_PATH_OF_RAGE/releases/download/1.0.1/WOTR_PATH_OF_RAGE.zip",
+      "DownloadLink": "https://github.com/Balkoth-dev/WOTR_PATH_OF_RAGE/releases/download/Release/WOTR_PATH_OF_RAGE.zip",
       "GithubOwner": "Balkoth-dev",
       "GithubRepo": "WOTR_PATH_OF_RAGE",
       "ModId": {
@@ -1218,15 +1218,11 @@
       },
       "Changelog": [
         {
-          "version": "1.0.0",
-          "contents": "How to Install\n1. Download and install Unity Mod Manager, make sure it is at least version 0.23.0\n2. Run Unity Mod Manger and set it up to find Wrath of the Righteous\n3. Download the WOTR_PATH_OF_RAGE mod\n4. Install the mod by dragging the zip file from step 3 into the Unity Mod Manager window under the Mods tab"
-        },
-        {
-          "version": "1.0.1",
-          "contents": "How to Install\n\nDownload and install Unity Mod Manager, make sure it is at least version 0.23.0\nRun Unity Mod Manger and set it up to find Wrath of the Righteous\nDownload the WOTR_PATH_OF_RAGE mod\nInstall the mod by dragging the zip file from step 3 into the Unity Mod Manager window under the Mods tab\n\nChanges in this version:\n* Fixed Demon Rage so that it no longer stays if triggered in a cutscene\n* Updated Unleashed Demon so that you may polymorph into a Sin Guzzler at Rank 9 at will for 24 hours.\nKNOWN ISSUE: Sin Guzzler seems to be showing up regardless of your demonology selected at mythic rank 9. This will be fixed in a subsequent patch. For now it will simply not let you use the ability unless you selected Unleashed Demon.\n"
+          "version": "-",
+          "contents": "How to Install\n\nDownload and install Unity Mod Manager, make sure it is at least version 0.23.0\nRun Unity Mod Manger and set it up to find Wrath of the Righteous\nDownload the WOTR_PATH_OF_RAGE mod\nInstall the mod by dragging the zip file from step 3 into the Unity Mod Manager window under the Mods tab\n\nChanges in this version:\n\n* Fixed text on Demon Rage to correctly state that it starts at 12 rounds instead of 18\n* Demon Blast correctly is now given at rank 4 instead of rank 3"
         }
       ],
-      "Latest": "1.0.1",
+      "Latest": "-",
       "Name": "PATH OF RAGE",
       "NexusModID": 0,
       "Source": "GitHub"
