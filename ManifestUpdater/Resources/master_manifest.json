@@ -1176,7 +1176,7 @@
     {
       "Author": "Kreaddy",
       "Description": "Mod for Pathfinder: Wrath of the Righteous focused on adding mechanical content, mostly for spellcasting characters.",
-      "DownloadLink": "https://github.com/Stari0n/MagicTime/releases/download/v1.3.7/magic_time_v1.3.7.zip",
+      "DownloadLink": "https://github.com/Stari0n/MagicTime/releases/download/v1.3.9/magic_time_v1.3.9.zip",
       "GithubOwner": "Stari0n",
       "GithubRepo": "MagicTime",
       "ModId": {
@@ -1199,9 +1199,13 @@
         {
           "version": "1.3.7",
           "contents": "- Added the Blood Arcanist and Pact Wizard archetypes.\n- Added the Intensified Spell metamagic feat.\n- Added the Favorite Metamagic - Intensified mythic ability.\n- Updated Metamagic Insight to take intensified spells into consideration.\n- (arkive) Fixed repository."
+        },
+        {
+          "version": "1.3.9",
+          "contents": "- Fixed Blood Arcanist with the Arcane bloodline being stuck at level 8.\n- Added the Dazing Spell metamagic feat.\n- Added the Favorite Metamagic - Dazing mythic ability.\n- Added the Material Freedom mythic ability (allows you to ignore a specific material component in spells).\n- Updated Metamagic Insight to take dazing spells into consideration."
         }
       ],
-      "Latest": "1.3.7",
+      "Latest": "1.3.9",
       "Name": "Magic Time!",
       "NexusModID": 0,
       "Source": "GitHub"
