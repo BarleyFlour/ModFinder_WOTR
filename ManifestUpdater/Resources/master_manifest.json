@@ -1339,7 +1339,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.1.4-dev/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.1.5-dev/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1398,9 +1398,13 @@
         {
           "version": "1.1.4",
           "contents": "## [1.1.4]\n- changed restriction on Kinetic Whip, so it can be used whenever a Kinetic Blade is equipped\n- added Butchering Axe and Impact enchantment"
+        },
+        {
+          "version": "1.1.5",
+          "contents": "## [1.1.5]\n- added createMindShield: Wild Talent, half Psychokineticist's penalties\n- added patchJudgementAura: Everlasting Judgement also applies to Judgement Aura\n- added option to change Psychokineticist's main stat (does not update ingame descriptions)"
         }
       ],
-      "Latest": "1.1.4",
+      "Latest": "1.1.5",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
