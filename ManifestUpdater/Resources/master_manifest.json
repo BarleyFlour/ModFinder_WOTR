@@ -3,7 +3,7 @@
     {
       "Author": "Barley",
       "Description": "A respec mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/BarleyFlour/RespecMod/releases/download/v1.10.1/Download_This_RespecWrath.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/RespecMod/releases/download/v1.10.2/Download_This_RespecWrath.zip",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "RespecMod",
       "ModId": {
@@ -146,9 +146,13 @@
         {
           "version": "1.10.1",
           "contents": ">Fixed an issue where on level-up you would have excessive levels in the progression view."
+        },
+        {
+          "version": "1.10.2",
+          "contents": "### Only for Game Version 1.2.0 ###\n>Fixed for game version v1.2.0."
         }
       ],
-      "Latest": "1.10.1",
+      "Latest": "1.10.2",
       "Name": "Respec Mod",
       "NexusModID": 0,
       "Source": "GitHub"
@@ -1073,7 +1077,7 @@
     {
       "Author": "Barley",
       "Description": null,
-      "DownloadLink": "https://github.com/BarleyFlour/FinneanTweaks/releases/download/1.0.0/FinneanTweaks.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/FinneanTweaks/releases/download/v1.0.1/DownloadThis.-FinneanTweaks.zip",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "FinneanTweaks",
       "ModId": {
@@ -1084,9 +1088,13 @@
         {
           "version": "1.0.0",
           "contents": "Initial Release"
+        },
+        {
+          "version": "1.0.1",
+          "contents": "### FOR 1.2 BETA ONLY ###\n\n>Removed Lethal enchant from tier 1.\n>Added Agile, Cruel, Disruption & Keen to tier 1.\n>Added Furyborn and Deteriorative to tier 2.\n>Moved Heartseeker & Improved critical multiplier from tier 2 to tier 1.\n"
         }
       ],
-      "Latest": "1.0.0",
+      "Latest": "1.0.1",
       "Name": "Finnean Tweaks",
       "NexusModID": 0,
       "Source": "GitHub"
