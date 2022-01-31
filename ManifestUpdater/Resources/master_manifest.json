@@ -160,7 +160,7 @@
     {
       "Author": "Barley/Spacehamster",
       "Description": "Modify backpacks, helmets, hats and class outfits",
-      "DownloadLink": "https://github.com/BarleyFlour/WrathVisualAdjustmentsMod/releases/download/v1.13.6/VisualAdjustments.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/WrathVisualAdjustmentsMod/releases/download/v1.13.7/Download_This_VisualAdjustments.zip",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "WrathVisualAdjustmentsMod",
       "ModId": {
@@ -307,9 +307,13 @@
         {
           "version": "1.13.6",
           "contents": ">Removed custom warpaint colors (Owlcat refactored Warpaint code, can still use EE picker though)\n"
+        },
+        {
+          "version": "1.13.7",
+          "contents": "###For Beta 1.2.0 only###\n>For Beta 1.2.0 only\n>EE's are now loaded runtime instead of a hardcoded list\n>Fixed for Beta 1.2.0"
         }
       ],
-      "Latest": "1.13.6",
+      "Latest": "1.13.7",
       "Name": "Visual Adjustments",
       "NexusModID": 0,
       "Source": "GitHub"
