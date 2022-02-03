@@ -1278,7 +1278,7 @@
     {
       "Author": "Kadyn",
       "Description": "Seeking to expand and add to content in Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.2.7/ExpandedContent.zip",
+      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.2.8/ExpandedContent.zip",
       "GithubOwner": "ka-dyn",
       "GithubRepo": "ExpandedContent",
       "ModId": {
@@ -1351,6 +1351,10 @@
           "contents": "**Expanded Content** V0.2.7:\n- New **Inquisitor Archetype, Living Scripture**: The living scripture literally wields the sacred word of his deity, memorizing scripture to smite the foes of his god with divine might. Unlike most inquisitors, a living scripture focuses on careful study of divine scripture, valuing knowledge over intuition.\n\n- (@𝓗𝓲-𝓜𝓸𝓬𝓴 (Great Weapons)#9700) - 4 new **deities** to choose from:\n- **Wukong**: Sun Wukong, the Monkey King, is the Tian Xia god of trickery, nature, and drunkenness.\n- **Fumeiyoshi**: Fumeiyoshi is considered the patron of undead and of the oni and both frequently worship him; he is also often worshipped by former paladins or samurai who have fallen from grace or been somehow dishonoured.\n- **Daikitsu**: Known as the Lady of Foxes, Daikitsu usually appears as beautiful kitsune woman with snow-white fur and nine tails. She is also the patron of kitsune, who venerate her as the mother of their race.\n- **Dahak**: Dragons believe Dahak was one of the original gods created by Apsu and Tiamat at the beginning of creation. While the other deities began to create, Dahak chose to destroy. He is credited with transforming Hell into a place of agony and flame. He is also believed to be the creator of the metallic dragons, which he formed solely to hunt as sport.\n"
         },
         {
+          "version": "0.2.8",
+          "contents": "**Expanded Content** V0.2.8\n-Added 74 new **deities**\n\n- The remaining deities of Tian Xia\n- The Osirion Pantheon\n- The Elven Pantheon\n- The remaining Empyreal Lords\n- A few requests such as  Besmara and Treerazor\n\n Fixed UI issues and Priest of Balance deitiy selection"
+        },
+        {
           "version": "0.2.65",
           "contents": "**Large amount of fixes to Anti-Paladin:**\n-All cruelties now function as they should and no longer apply two saving throws.\n-Cruelties now toggleable for easier visibility.\n-Mythic ability to increase the number of toggleable cruelties at once added\n-Aura of Absolution now works as intended\n-Channel negative energy now scales correctly\n-Enemies are now affected by all penalties to saving throws from antipaladin auras\n-Channel Profane Corruption's tooltip now better describes what it does\n-Touch of Profane Corruption now looks more evil\n-Updated Plague Bringer Description\n-Profane Weapon Bond now works as intended through all levels\n\n**Oathbreaker Updates/New Archetype - Castigator:**\n-Added a new **Archetype** focused on retribution to Oathbreaker, proposed by Badger\n-Changed the visuals for Oathbreaker's Bane"
         },
@@ -1367,7 +1371,7 @@
           "contents": "Expanded Content v0.2.67c Hotfix - \n-** (bje259)**Fixed the progression of Sinful Absolution (AntiPaladin) and Bane (Oathbreaker). They now receive the proper amounts of uses of theses abilities.\n"
         }
       ],
-      "Latest": "0.2.7",
+      "Latest": "0.2.8",
       "Name": "Expanded Content",
       "NexusModID": 0,
       "Source": "GitHub"
