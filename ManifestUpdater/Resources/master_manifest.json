@@ -1375,7 +1375,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.1.5-dev/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.1.6-dev/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1438,9 +1438,13 @@
         {
           "version": "1.1.5",
           "contents": "## [1.1.5]\n- added createMindShield: Wild Talent, half Psychokineticist's penalties\n- added patchJudgementAura: Everlasting Judgement also applies to Judgement Aura\n- added option to change Psychokineticist's main stat (does not update ingame descriptions)"
+        },
+        {
+          "version": "1.1.6",
+          "contents": "- fixed improved hunter's bond not showing up in feat selection"
         }
       ],
-      "Latest": "1.1.5",
+      "Latest": "1.1.6",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
