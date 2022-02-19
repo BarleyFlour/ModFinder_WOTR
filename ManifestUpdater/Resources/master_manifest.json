@@ -321,7 +321,7 @@
     {
       "Author": "Bubbles",
       "Description": "Non-gameplay tweaks for Pathfinder - Wrath of the Righteous",
-      "DownloadLink": "https://github.com/factubsio/BubbleTweaks/releases/download/REL_1_11_0/BubbleTweaks-1.11.0.zip",
+      "DownloadLink": "https://github.com/factubsio/BubbleTweaks/releases/download/REL_1_12_0/BubbleTweaks-1.12.0.zip",
       "GithubOwner": "factubsio",
       "GithubRepo": "BubbleTweaks",
       "ModId": {
@@ -400,9 +400,13 @@
         {
           "version": "1.11.0",
           "contents": "**Beta 1.2 only**\n\nUpdate to beta 1.2\n\nStops spamming exceptions from statistics to the log window."
+        },
+        {
+          "version": "1.12.0",
+          "contents": "Adds a \"Pause Fade Strength\" slider to the options menu - adjusts how strong the background fade effect is while paused."
         }
       ],
-      "Latest": "1.11.0",
+      "Latest": "1.12.0",
       "Name": "Bubble Tweaks",
       "NexusModID": 0,
       "Source": "GitHub"
