@@ -1387,7 +1387,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.1.7-dev/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.1.8-dev/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1458,9 +1458,13 @@
         {
           "version": "1.1.7",
           "contents": "## [1.1.7]\n- added Patch_FixAreaEffectDamage which prevents area effects from running simultaneously OnEnter and OnRound e.g. dealing double damage\n- extended Control_AreaEffects functionality to cutscenes (needs testing)\n- added events to advanced patch manager\n- disabled patches show warnings, if a requirement isn't met"
+        },
+        {
+          "version": "1.1.8",
+          "contents": "## [1.1.8]\n- removed Patch_FixAreaEffectDamage\n- added Patch_FixAreaDoubleDamage, which doesn't have overlapping issues\n- added Patch_FixAreaEndOfTurn to deal damage at the end of each unit's turn, instead all at once during the caster's turn\n- added option to disable new features by default"
         }
       ],
-      "Latest": "1.1.7",
+      "Latest": "1.1.8",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
