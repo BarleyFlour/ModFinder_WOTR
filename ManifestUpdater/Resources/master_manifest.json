@@ -404,6 +404,10 @@
         {
           "version": "1.12.0",
           "contents": "Adds a \"Pause Fade Strength\" slider to the options menu - adjusts how strong the background fade effect is while paused."
+        },
+        {
+          "version": "1.13.0",
+          "contents": "Adds circle indicators for aoe, you can configure colors and stuff by playing with `aoe_indicators.json` in the mod folder."
         }
       ],
       "Latest": "1.12.0",
