@@ -314,7 +314,7 @@
         },
         {
           "version": "1.13.7",
-          "contents": "###For Beta 1.2.0 only###\n>For Beta 1.2.0 only\n>EE's are now loaded runtime instead of a hardcoded list\n>Fixed for Beta 1.2.0"
+          "contents": "For game version 1.2.0\n>EE's are now loaded runtime instead of a hardcoded list\n>Fixed for Beta 1.2.0"
         }
       ],
       "Latest": "1.13.7",
@@ -872,7 +872,7 @@
     {
       "Author": "Vek17",
       "Description": "Tabletop Tweaks is a mod that seeks to adjust the cRPG rules to more closely follow the tabletop ruleset. Additionally it adds content missing from the base game. ",
-      "DownloadLink": "https://github.com/Vek17/TabletopTweaks-Core/releases/download/v1.11.1/TabletopTweaks.zip",
+      "DownloadLink": "https://github.com/Vek17/TabletopTweaks-Core/releases/download/v1.11.2/TabletopTweaks.zip",
       "GithubOwner": "Vek17",
       "GithubRepo": "WrathMods-TabletopTweaks",
       "ModId": {
@@ -1103,9 +1103,13 @@
         {
           "version": "1.11.1",
           "contents": "### **This is for 1.2.0 beta only**\n\n## Version 1.11.1\n\n* Fixes\n    * General\n        * Elemental Bloodline spells now work more correctly with metamagics.\n        * Additive critical range increases are no longer multiplied by keen/improved critical. This includes trickster improved improved critical.\n        * Fixed issue where bolstered metamagic was granting an unrelated stat boost.\n    * Mythic Abiltiies\n        * Ascendant Element bypasses elemental immunities again.\n    * Spells\n        * Vamperic Blade no longer triggers extra fake attacks.\n    * Aeon\n        * Aeon 10th level now correctly ignores energy immunities of chaotic characters.\n        * Aeon Gaze buffs now all have proper icons.\n    * Sorcerer\n        * Elemental Bloodline arcanas now correctly show up in character creation.\n* Reworks\n    * Aeon \n        * Aeon no longer gets all gaze selections at all times. With the new gazes this no longer feels needed.\n    * Azata\n        * Incredible Might now grants a mythic bonus instead of a morale bonus.\n    * Lich\n        * Deadly Magic is now usable 3 + half mythic rank rounds per day.\n        * Decaying Touch has been rebuilt to prevent abuse cases but should work exactly as described now.\n        * Eclipse Chill is now usable 3 + half mythic rank rounds per day.\n        * Eclipse Chill DC is now 10 + 1/2 character level + twice your mythic rank.\n        * Tainted Sneak Attack DC is now 10 + 1/2 character level + twice your mythic rank.\n        * Tainted Sneak Attack now works on spells."
+        },
+        {
+          "version": "1.11.2",
+          "contents": "* Fixes\n    * Feats\n        * Destructive Dispel's prerequisites have been updated.\n        * Dispel Synergy's prerequisites have been updated.\n    * Spells\n        * Frightful Aspect now correctly applies fear when hit in melee.\n        * Winds Of Fall now works.\n        * Perfect Form can no longer be stacked multiple time for multiple stat boosts.\n    * Mythic Abilities\n        * Expose Vulnerability\n            * Now no longer critically hits and procs additional weapons effects.\n    * Mythic Feats\n        * Expaned Arsenal now interacts correctly with School Mastery and Varisian Tatto.\n    * Units\n        * Staunton Vane (Boss) now has the correct feats instead of using random default feats.\n    * Magus\n        * Eldritch Schon can now take the new bloodlines.\n    * Aeon\n        * Power of Law now works correctly with Reroll effects.\n    * Demon\n        * Brimorak Aspect now properly applies to all spells.\n    * Items\n        * Stormlord's Resolve can now be deactivated immediatly instead of taking 1 turn to turn off.\n    * Homebrew Reworks\n        * Dimensional Retribution\n            * Rework of Dimensional Retribution to make it work more like dweomercat leap. This means it is an automatic action that teleports you and does an attack of opportunity.\n* New Arcane Discoveries\n    * Alchemical Affinity\n        * Whenever you cast a spell that appears on both the wizard and alchemist spell lists, you treat your caster level as 1 higher than normal and the save DC of such spells increases by 1.\n    * Idealize\n        * When a transmutation spell you cast grants an enhancement bonus to an ability score, that bonus increases by 2. At 20th level, the bonus increases by 4.\n    * Knowledge Is Power\n        * You add your Intelligence modifier on combat maneuver checks and to your CMD.\n    * Opposition Research\n        * Select one Wizard opposition school; preparing spells of this school now only requires one spell slot of the appropriate level instead of two.\n    * Yuelral's Blessing\n        * Whenever you cast a spell that appears on both the wizard and druid spell lists, you treat your caster level as 1 higher than normal and the save DC of such spells increases by 1.\n* New Items\n    * Lesser Burning Metamagic Rod\n        * Avaiable from skeletal merchant in act 2.\n    * Lesser Intensified Metamagic Rod\n        * Avaiable from skeletal merchant in act 2.\n    * Lesser Piercing Metamagic Rod\n        * Avaiable from Defender's Heart scroll vender.\n    * Burning Metamagic Rod\n        * Avaiable from skeletal merchant in act 3.\n    * Flaring Metamagic Rod\n        * Avaiable from scroll merchant in Drezen during act 3.\n    * Intensified Metamagic Rod\n        * Avaiable from skeletal merchant in act 3.\n    * Piercing Metamagic Rod\n        * Avaiable from scroll vender in act 2 warcamp.\n    * Rime Metamagic Rod\n        * Avaiable from skeletal merchant in act 3.\n    * Greater Burning Metamagic Rod\n        * Avaiable from magic merchant in the fleshmarkets.\n    * Greater Flaring Metamagic Rod\n        * Avaiable from scroll merchant in Drezen during act 5.\n    * Greater Intensified Metamagic Rod\n        * Avaiable from skeletal merchant in act 5.\n    * Greater Rime Metamagic Rod\n        * Avaiable from magic merchant in the fleshmarkets."
         }
       ],
-      "Latest": "1.11.1",
+      "Latest": "1.11.2",
       "Name": "Tabletop Tweaks",
       "NexusModID": 0,
       "Source": "GitHub"
@@ -1127,7 +1131,7 @@
         },
         {
           "version": "1.0.1",
-          "contents": "### FOR 1.2 BETA ONLY ###\n\n>Removed Lethal enchant from tier 1.\n>Added Agile, Cruel, Disruption & Keen to tier 1.\n>Added Furyborn and Deteriorative to tier 2.\n>Moved Heartseeker & Improved critical multiplier from tier 2 to tier 1.\n"
+          "contents": "For Game Version 1.2.0\n\n>Removed Lethal enchant from tier 1.\n>Added Agile, Cruel, Disruption & Keen to tier 1.\n>Added Furyborn and Deteriorative to tier 2.\n>Moved Heartseeker & Improved critical multiplier from tier 2 to tier 1.\n"
         }
       ],
       "Latest": "1.0.1",
