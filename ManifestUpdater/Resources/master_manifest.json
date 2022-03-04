@@ -1419,7 +1419,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.1.8-dev/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/DarkCodex/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1427,6 +1427,10 @@
         "ModType": "UMM"
       },
       "Changelog": [
+        {
+          "version": "-",
+          "contents": "## [1.2.0]\n- updated to game version 1.2\n- added Patch_AbilityGroups that merges similar abilities into foldable categories"
+        },
         {
           "version": "1.0.2",
           "contents": "first release; largely untested"
@@ -1496,7 +1500,7 @@
           "contents": "## [1.1.8]\n- removed Patch_FixAreaEffectDamage\n- added Patch_FixAreaDoubleDamage, which doesn't have overlapping issues\n- added Patch_FixAreaEndOfTurn to deal damage at the end of each unit's turn, instead all at once during the caster's turn\n- added option to disable new features by default"
         }
       ],
-      "Latest": "1.1.8",
+      "Latest": "-",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
