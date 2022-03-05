@@ -325,7 +325,7 @@
     {
       "Author": "Bubbles",
       "Description": "Non-gameplay tweaks for Pathfinder - Wrath of the Righteous",
-      "DownloadLink": "https://github.com/factubsio/BubbleTweaks/releases/download/REL_1_14_2/BubbleTweaks-1.14.2.zip",
+      "DownloadLink": "https://github.com/factubsio/BubbleTweaks/releases/download/REL_1_14_3/BubbleTweaks-1.14.3.zip",
       "GithubOwner": "factubsio",
       "GithubRepo": "BubbleTweaks",
       "ModId": {
@@ -424,9 +424,13 @@
         {
           "version": "1.14.2",
           "contents": "fix json error"
+        },
+        {
+          "version": "1.14.3",
+          "contents": "fix army disband (and army info)"
         }
       ],
-      "Latest": "1.14.2",
+      "Latest": "1.14.3",
       "Name": "Bubble Tweaks",
       "NexusModID": 0,
       "Source": "GitHub"
