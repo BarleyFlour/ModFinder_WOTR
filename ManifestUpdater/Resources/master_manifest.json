@@ -1300,7 +1300,12 @@
         "Identifier": "WOTR_PATH_OF_RAGE",
         "ModType": "UMM"
       },
-      "Changelog": [],
+      "Changelog": [
+        {
+          "version": "1.0.5",
+          "contents": "How to Install\n\nDownload and install Unity Mod Manager, make sure it is at least version 0.23.0\nRun Unity Mod Manger and set it up to find Wrath of the Righteous\nDownload the WOTR_PATH_OF_RAGE mod\nInstall the mod by dragging the zip file from step 3 into the Unity Mod Manager window under the Mods tab\n\nChanges in this version:\n\nDemon Lord aspects fix removed as it was fixed in 1.2\nFixes autometamagic so that it will work on spells that are not originally part of a spellbook but added later. This is important for Arcane Bloodline for Bloodragers.\nAdds a new mythic ability called Mighty Demon Rage. This allows you to cast a demon spell of fourth level or lower as a swift action while Demon Raging.\nDemon Rage changed to allow you to turn it off and on in the same turn, allowing you to rage-cycle using Demon Rage."
+        }
+      ],
       "Latest": "1.0.5",
       "Name": "PATH OF RAGE",
       "NexusModID": 0,
@@ -1609,6 +1614,10 @@
         "ModType": "UMM"
       },
       "Changelog": [
+        {
+          "version": "0.0.1",
+          "contents": "Early test-release. Contains skips for the first 5 slab puzzles. Just bring the slabs to the correct puzzle map."
+        },
         {
           "version": "1.0.0",
           "contents": "Includes skips all the slab puzzles (Secrets of Creation quest)"
