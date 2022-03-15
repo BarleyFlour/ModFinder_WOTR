@@ -1009,10 +1009,6 @@
           "contents": "* fixed mounted maniac not triggering\n* fixed coup de grace not causing sneak attack damage\n* trickster UMD2 now allows you to ignore equipment restrictions as the description states\n* bolster should now be allowed on sticky touch spells like shocking grasp\n* empower should now be allowed on sticky touch spells like shocking grasp\n* maximize should now be allowed on sticky touch spells like shocking grasp\n* bolster splash damage should not longer hit you (unless you targeted a friendly)"
         },
         {
-          "version": "1.3.3",
-          "contents": "* fixed mounted maniac not triggering\n* fixed coup de grace not causing sneak attack damage\n* trickster UMD2 now allows you to ignore equipment restrictions as the description states\n* bolster should now be allowed on sticky touch spells like shocking grasp\n* empower should now be allowed on sticky touch spells like shocking grasp\n* maximize should now be allowed on sticky touch spells like shocking grasp\n* bolster splash damage should not longer hit you (unless you targeted a friendly)"
-        },
-        {
           "version": "1.3.4a",
           "contents": "v1.3.4\n* added precision critical mythic ability\n* rowdy's vital force now correctly deals precision damage\n* profane ascension now works correctly for dexterity and strength based characters\n* sword saint's perfect critical now correctly costs 2 points of pool instead of 1\n\nv1.3.4a\n* fixed issue where weapon materials didn't apply correctly\n* fixed issues where activiatable abilities with resources spent incorrecty\n* fixed issue where vital force was not properly applied to melee attacks"
         },
@@ -1059,6 +1055,10 @@
         {
           "version": "1.7.0",
           "contents": "* arcane bloodrage rework (Thanks to @bguns)\n* added lecturer backgorund"
+        },
+        {
+          "version": "1.8.0",
+          "contents": "* Aeon Mythic Rework\n    * Aeon Bane is now a free action to activate instead of a swift\n    * Aeon Bane usages now scale at 2x Mythic level + Character level\n    * Aeon Greater Bane damage is now rolled into the main weapon attack instead of a separate instance\n    * Aeon Greater Bane now allows you to cast swift action spells as a move action\n    * Aeon Gaze selection is no longer limited on the first selection and all selections are available\n    * Aeon Gaze now functions like Inquisitor Judgments where multiple can be activated for the same swift action and resouce usage\n    * Aeon Gaze DC has been adjusted from 15 + 2x Mythic Level to 10 + 1/2 Character Level + 2x Mythic level\n        * This takes the DC range from DC 21-35 to DC 21-40 (+2 vs Chaotic)\n* fixed armor specilization cap being lower than it should have been\n* made nature oracle AC conversion more consistant\n* advanced armor training should now increase heavy armor movement speed again"
         },
         {
           "version": "1.8.1",
