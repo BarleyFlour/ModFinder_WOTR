@@ -913,6 +913,10 @@
           "contents": "**Target Version: 0.6.0**\n\n* fixed vital strike crits\n* fixed bug where charge bonus damage could sometimes apply too often\n* added magical aptitude feat\n* added scholar feat\n* added self-sufficent feat\n* added shingle runner feat\n* added street smarts feat\n* fixed bloodrager caster level\n* added metamagic rager"
         },
         {
+          "version": "0.4.1",
+          "contents": "**Target Version: 0.6.0**\n\n* Fixed bug where auto metamagic was not always applying"
+        },
+        {
           "version": "0.5.0",
           "contents": "Target Version: 0.8.0\n\n    Updated for Beta3\n\n"
         },
@@ -985,6 +989,10 @@
           "contents": "* spell combat now works with spells that have variants"
         },
         {
+          "version": "1.2.4",
+          "contents": "* fixed issue with broken cantrips with spell combat\n* added mythic spell combat"
+        },
+        {
           "version": "1.3.0",
           "contents": "* mythic spell combat now works with UMD3s spellbook\n* fixed feat selections missing relevant feats\n* fix coup de grace DC scaling (HUGE thanks to @Perunq)\n* additional spell selections from feats now happen before normal spell selections"
         },
@@ -995,6 +1003,10 @@
         {
           "version": "1.3.2",
           "contents": "* extra slayer talents should now allow all slayers\n* coup de grace is now working again (opps)\n* The holy symbol of Iomedae no longer turns itself off"
+        },
+        {
+          "version": "1.3.3",
+          "contents": "* fixed mounted maniac not triggering\n* fixed coup de grace not causing sneak attack damage\n* trickster UMD2 now allows you to ignore equipment restrictions as the description states\n* bolster should now be allowed on sticky touch spells like shocking grasp\n* empower should now be allowed on sticky touch spells like shocking grasp\n* maximize should now be allowed on sticky touch spells like shocking grasp\n* bolster splash damage should not longer hit you (unless you targeted a friendly)"
         },
         {
           "version": "1.3.4a",
