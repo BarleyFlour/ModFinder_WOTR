@@ -1566,10 +1566,6 @@
           "contents": "Fixed Arcanist Spells\nIncreased performance marginally\nAdd bombs to the potion list"
         },
         {
-          "version": "0.0.6",
-          "contents": "Fixes cantrips not casting."
-        },
-        {
           "version": "0.0.7",
           "contents": "Fixes party not being updated at capital."
         },
