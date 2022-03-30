@@ -1427,7 +1427,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.2.1-dev/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.2.0-dev/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1510,9 +1510,13 @@
         {
           "version": "1.2.1",
           "contents": "[1.2.1.1]\n- removed patchDispelMagic as Destructive Dispel has been fixed in 1.2 update\n- added more patch comments\n- added Chain Infusion\n- added Enduring Spells to spell-like abilities and items again\n- added option to reduce limitless cost to 0\n- added Expanded Element which adds feat to select new elements\n- added Patch_UnlockClassLevels which enables all classes to level up to 40 (albeit no features beyond 20)\n- added Unlock Kineticist which adds features up to level 40\n- added Demon Mastery\n- fixed ice impale dealing twice as much damage\n- fixed issues with Patch_FixAreaDoubleDamage that had no UnitEnter actions\n- fixed cackle/chant not showing up in prediction bar\n- fixed area effects being invisible after cutscenes\n- fixed loading issue\n- fixed Resourceful Caster causing all spell being broken after some cutscenes\n- ~~improved loading time significantly~~ reverted to fix a bug\n- extended ability groups, now accessible via file \"DefGroups.json\""
+        },
+        {
+          "version": "1.2.2",
+          "contents": "[1.2.2]\n- added logic to organize ability groups via drag&drop\n- added Dark Elementalist soul power to burn boni\n- added option to dismiss any spell regardless of who casted it (default off)\n- fixed Limitless Arcane Pool not applying to Eldritch Scion\n- fixed Enduring Spells not able to apply to enchantment spells (like Magic Weapon)\n- rewrote blueprint loading, which should fix previous issues with it and still be quite fast"
         }
       ],
-      "Latest": "1.2.1",
+      "Latest": "1.2.0",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
