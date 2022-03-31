@@ -1427,7 +1427,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.2.0-dev/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.2.3-dev/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1514,9 +1514,13 @@
         {
           "version": "1.2.2",
           "contents": "[1.2.2]\n- added logic to organize ability groups via drag&drop\n- added Dark Elementalist soul power to burn boni\n- added option to dismiss any spell regardless of who casted it (default off)\n- fixed Limitless Arcane Pool not applying to Eldritch Scion\n- fixed Enduring Spells not able to apply to enchantment spells (like Magic Weapon)\n- rewrote blueprint loading, which should fix previous issues with it and still be quite fast"
+        },
+        {
+          "version": "1.2.3",
+          "contents": "[1.2.3]\n- fixed Arcane Weapon buff not getting replaced on cast\n- fixed ability group not showing up"
         }
       ],
-      "Latest": "1.2.0",
+      "Latest": "1.2.3",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
