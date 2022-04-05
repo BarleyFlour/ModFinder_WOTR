@@ -28,20 +28,8 @@
           "contents": "Fixed an issue with not being able to pick background/deity on character creation.\nMade it so that things like \"Original stats\" and \"Full Story Companion Respec\" don't show when the MC/Mercenary is selected."
         },
         {
-          "version": "1.1.2",
-          "contents": "Fixed an issue with not being able to pick background/deity on character creation.\nMade it so that things like \"Original stats\" and \"Full Story Companion Respec\" don't show when the MC/Mercenary is selected."
-        },
-        {
           "version": "1.1.3",
           "contents": "Fixed an issue that caused a whole lotta stuff to break."
-        },
-        {
-          "version": "1.1.3",
-          "contents": "Fixed an issue that caused a whole lotta stuff to break."
-        },
-        {
-          "version": "1.2.0",
-          "contents": "Updated for 1.00.0"
         },
         {
           "version": "1.2.0",
@@ -92,6 +80,10 @@
           "contents": "Added the ability to Preserve Voice/Alignment/Birthday/Name/Portrait (Thanks pheonix99)\nfixed for 1.0.3c"
         },
         {
+          "version": "1.6.1",
+          "contents": "Fixed an issue where leveling wouldnt \"stick\"\nFixed an issue where you couldnt tick \"Preserve Voice\" or \"Preserve Portrait\"\nFixed an issue where the game would freeze after respeccing (i think)"
+        },
+        {
           "version": "1.6.2",
           "contents": "Fixed for patch 1.0.5\nFixed some issues where some companions would retain things from their original classes.\n"
         },
@@ -118,6 +110,10 @@
         {
           "version": "1.6.8",
           "contents": ">Should now retain Swarm Size for Swarm That Walks\n>Now gives you back your Stat Books (Tomes of x +2, Manual of x +2, etc...)\n>Should Now Preserve EE Picker and FX Picker settings from Visual Adjustments\n"
+        },
+        {
+          "version": "1.7.0",
+          "contents": ">Added the ability to level down instead of doing a full respec (Both Mythic and normal class levels) (might also be buggy)\n>Fixed Hilor respec being affected\n>Added an option to respec companion from their base level (i.e hilor respec+)\n>Fixed the MC retaining the boosts from Tomes/Manuals"
         },
         {
           "version": "1.7.1",
@@ -150,6 +146,10 @@
         {
           "version": "1.10.1",
           "contents": ">Fixed an issue where on level-up you would have excessive levels in the progression view."
+        },
+        {
+          "version": "1.10.2",
+          "contents": "### Only for Game Version 1.2.0 ###\n>Fixed for game version v1.2.0."
         },
         {
           "version": "1.10.3",
@@ -1645,6 +1645,10 @@
         {
           "version": "0.0.1",
           "contents": "Early test-release. Contains skips for the first 5 slab puzzles. Just bring the slabs to the correct puzzle map."
+        },
+        {
+          "version": "1.0.0",
+          "contents": "Includes skips all the slab puzzles (Secrets of Creation quest)"
         },
         {
           "version": "1.2.0",
