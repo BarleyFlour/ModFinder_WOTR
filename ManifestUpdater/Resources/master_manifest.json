@@ -1322,7 +1322,7 @@
     {
       "Author": "Kadyn",
       "Description": "Seeking to expand and add to content in Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.2.91/ExpandedContent.zip",
+      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.2.92/ExpandedContent.zip",
       "GithubOwner": "ka-dyn",
       "GithubRepo": "ExpandedContent",
       "ModId": {
@@ -1421,9 +1421,13 @@
         {
           "version": "0.2.91",
           "contents": "**Expanded Content** V0.2.91\n\n-Added Achaekek\n-Fixed bug where companions would forget their faiths\n-Cleaned up Temple Champion"
+        },
+        {
+          "version": "0.2.92",
+          "contents": "Hotfix\n-Sosiel now worships the correct god (may need a respec if he joined you recently)"
         }
       ],
-      "Latest": "0.2.91",
+      "Latest": "0.2.92",
       "Name": "Expanded Content",
       "NexusModID": 0,
       "Source": "GitHub"
