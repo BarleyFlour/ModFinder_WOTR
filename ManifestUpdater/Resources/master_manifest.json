@@ -3,7 +3,7 @@
     {
       "Author": "Barley",
       "Description": "A respec mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/BarleyFlour/RespecMod/releases/download/v1.10.3/Download_This_RespecWrath.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/RespecMod/releases/download/v1.10.4/Download_This_RespecWrath.zip",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "RespecMod",
       "ModId": {
@@ -154,9 +154,13 @@
         {
           "version": "1.10.3",
           "contents": "Fixed for non-beta 1.2.0"
+        },
+        {
+          "version": "1.10.4",
+          "contents": "Updated for 1.3.0 and fixed an issue where DLC2 companions wouldnt be detected as story companions and therefore not be able to be properly respecced."
         }
       ],
-      "Latest": "1.10.3",
+      "Latest": "1.10.4",
       "Name": "Respec Mod",
       "NexusModID": 0,
       "Source": "GitHub"
