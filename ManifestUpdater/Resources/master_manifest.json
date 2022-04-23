@@ -912,7 +912,7 @@
     {
       "Author": "Vek17",
       "Description": "Tabletop Tweaks is a mod that seeks to adjust the cRPG rules to more closely follow the tabletop ruleset. Additionally it adds content missing from the base game. ",
-      "DownloadLink": "https://github.com/Vek17/TabletopTweaks-Base/releases/download/v2.1.0/TabletopTweaks-Base.zip",
+      "DownloadLink": "https://github.com/Vek17/TabletopTweaks-Base/releases/download/v2.1.1/TabletopTweaks-Base.zip",
       "GithubOwner": "Vek17",
       "GithubRepo": "WrathMods-TabletopTweaks",
       "ModId": {
@@ -1155,9 +1155,13 @@
         {
           "version": "2.1.0",
           "contents": "## Version 2.1.0\n* Fixes\n    * Systems\n        * Fixed Concealment checks for invisibility.\n        * Size shifts are now supported from Fine to Colossal.\n        * Charge damage multipliers should now work correctly again.\n        * Prebuffs will be applied at a more correct level instead of nearly always CL 20.\n        * Saves will now properly remember who cast buffs which should fix several bugs including idealize discovery not working on save load.\n    * Feats\n        * Cleave\n            * Cleave now checks for adjacency to the last target (Adjacent = within 5ft) instead of just reach.\n        * Cleaving Finish\n            * Cleaving Finish now checks for adjacency to the last target (Adjacent = within 5ft) instead of just reach.\n        * Toppling Bash\n            * Toppling Bash's action cost has been removed for now due to bugs breaking action econemy when toggled. This is still limited to once per round.\n    * Spells\n        * Animal Growth\n            * Animal Growth should now work correctly with animal companions.\n        * Corrupt Magic\n            * Corrupt Magic now uses a single dispel roll for all buffs like other dispels.\n        * Death Ward\n            * Death Ward now Suppresses existing negative levels.\n        * Mind Blank\n            * Mind blank now makes you immune to detection with divination effects like see invisibility and true seeing.\n        * Zero State\n            * Zero State now uses a single dispel roll for all buffs like other dispels.\n    * Armor\n        * Singing Steel\n            * Singing Steel now works.\n    * Equipment\n        * Flawless Belt Of Physical Perfection 8\n            * Now increases critical hit range by 1 in all cases.\n            * Now appears as a DLC1 reward.\n    * Alchemist\n        * Fixed Incense Fog scaling incorrectly if you took expanded area.\n    * Cavalier\n        * Order of the Star's Calling ability should now properly apply bonuses.\n    * Hunter\n        * Fixed Divine Hunter's animal companion getting unlimited smites.\n    * Rogue\n        * Dispelling Attack now uses the correct CL and no longer removes debuffs.\n* Added Mythic Feats\n\t* Cleave (Mythic)\n\t\t* Whenever you use Cleave or Cleaving Finish, your attacks can be made against a foe that is within your reach."
+        },
+        {
+          "version": "2.1.1",
+          "contents": "## Version 2.1.1\n* Fixes\n    * Hotfix for immortal mythic enemies."
         }
       ],
-      "Latest": "2.1.0",
+      "Latest": "2.1.1",
       "Name": "Tabletop Tweaks",
       "NexusModID": 0,
       "Source": "GitHub"
