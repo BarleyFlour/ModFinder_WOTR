@@ -1354,7 +1354,7 @@
     {
       "Author": "Kadyn",
       "Description": "Seeking to expand and add to content in Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.2.92/ExpandedContent.zip",
+      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.2.93/ExpandedContent.zip",
       "GithubOwner": "ka-dyn",
       "GithubRepo": "ExpandedContent",
       "ModId": {
@@ -1457,9 +1457,13 @@
         {
           "version": "0.2.92",
           "contents": "Hotfix\n-Sosiel now worships the correct god (may need a respec if he joined you recently)"
+        },
+        {
+          "version": "0.2.93",
+          "contents": "**Expanded Content** V0.2.93\n\n-Added Kerkamoth, an Inevitable Deity\n-Fixed bug with Deity Selection regarding Sosiel\n"
         }
       ],
-      "Latest": "0.2.92",
+      "Latest": "0.2.93",
       "Name": "Expanded Content",
       "NexusModID": 0,
       "Source": "GitHub"
@@ -1485,7 +1489,7 @@
         },
         {
           "version": "0.3.0",
-          "contents": "[0.3.0]\n- fixed json syntax error\n- added basic syntax validation\n\nChanged release to 64 bit. Installation requires .NET 5 framework."
+          "contents": "[0.3.0]\n- fixed json syntax error\n- added basic syntax validation\n\nChanged release to 64 bit. Installation requires .NET 5 framework (32-bit?)."
         },
         {
           "version": "1.0.2",
