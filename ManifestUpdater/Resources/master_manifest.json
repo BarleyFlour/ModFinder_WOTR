@@ -1483,7 +1483,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.2.7/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.2.8/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1602,9 +1602,13 @@
         {
           "version": "1.2.7",
           "contents": "[1.2.7]\n- fixed quickened abilities taking more time than normal, if you already have used your swift action\n- fixed freebie feats\n- fixed Mad Magic not working under most conditions"
+        },
+        {
+          "version": "1.2.8",
+          "contents": "[1.2.8]\n- added limitless azata songs\n- fixed possible memory leak\n- added logic to edit ability groups while pressing shift\n- added logic to display all abilities while ability groups are unlocked\n- added spell groups\n- added icon border (ability group is black, spell group is gray)\n- changed drag behaviour; action slots dragged into groups will be placed left or right depending on which side is closer"
         }
       ],
-      "Latest": "1.2.7",
+      "Latest": "1.2.8",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
