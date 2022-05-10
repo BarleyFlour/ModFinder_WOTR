@@ -1362,7 +1362,7 @@
     {
       "Author": "Kadyn",
       "Description": "Seeking to expand and add to content in Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.2.94/ExpandedContent.zip",
+      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.3.0/ExpandedContent.zip",
       "GithubOwner": "ka-dyn",
       "GithubRepo": "ExpandedContent",
       "ModId": {
@@ -1473,9 +1473,13 @@
         {
           "version": "0.2.94",
           "contents": "**Expanded Content** V0.2.94\n\nArchetypes\n- Added Mantis Zealot - A assassin Warpriest of Achaekek\n- Added Mooncaller - A Druid bound to the cycles of the moon\n\nDeities\n- Alseta - The God of doors and transitions\n- Atropos - Psychopomp usher of fate, sleep and youth\n- Barzahk - Psychopomp usher of compasses, travellers and vigils\n- Ceyannan - Psychopomp usher of final words, lost souls and searches"
+        },
+        {
+          "version": "0.3.0",
+          "contents": "**Expanded Content** V0.3.0\n\nDomains\n- Scalykind Domain\n- Blood Subdomain\n- Caves Subdomain\n\nAs Scalykind is a normal Domain, a few deities who had replacement domains now have the correct ones, this is a list of deities with domains swapped for Scalykind;\nApsu - Community\nDahak - Community\nSobek - Animal\nApep - Animal\nNalinivati - Animal\nRagadahn - Animal\nJalaijatali - Animal\n \nAlso fixed Oathbreaker multiclassing and a few other small issues."
         }
       ],
-      "Latest": "0.2.94",
+      "Latest": "0.3.0",
       "Name": "Expanded Content",
       "NexusModID": 0,
       "Source": "GitHub"
