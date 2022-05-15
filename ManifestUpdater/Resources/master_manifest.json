@@ -1505,7 +1505,7 @@
         },
         {
           "version": "0.3.0",
-          "contents": "[0.3.0]\n- fixed json syntax error\n- added basic syntax validation\n\nChanged release to 64 bit. Installation requires .NET 5 framework (32-bit?)."
+          "contents": "NOTE: future updates found here: https://github.com/Truinto/BlueprintPurge/releases\n\n[0.3.0]\n- fixed json syntax error\n- added basic syntax validation\n\nChanged release to 64 bit. Installation requires .NET 5 framework (32-bit?)."
         },
         {
           "version": "1.0.2",
