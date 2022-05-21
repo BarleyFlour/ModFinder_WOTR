@@ -1540,6 +1540,10 @@
           "contents": ""
         },
         {
+          "version": "1.1.0",
+          "contents": "NOTE: If your save does not load, open the settings and try with Debug2 flag enabled. This will delete traps when you load your save. Make a new save afterwards and disable the flag again!\n\n## [1.1.0]\n- fix for missing area effects\n- added Kineticist.createHurricaneQueen\n- added Mythic.patchBoundlessHealing: Boundless Healing also grants healing spells to spellbooks\n- added Mythic.patchVarious: allow quicken metamagic on demon teleport spell\n- added Patch_AlwaysAChance: feat 'Always A Chance' will critical succeed on a natural 1 and apply to more checks (saving throws, skill checks)\n- added Mythic.patchRangingShots: doesn't get weaker when hitting\n- added Mythic.patchWanderingHex: can swap hex at will, instead of once per day (which wasn't in the description anyway)\n- updated for game version 1.1.0i\n- added debugflag 2 that removes trap data from save games (without this my save wouldn't load)"
+        },
+        {
           "version": "1.1.1",
           "contents": "fixed a crash"
         },
@@ -1570,6 +1574,10 @@
         {
           "version": "1.1.8",
           "contents": "## [1.1.8]\n- removed Patch_FixAreaEffectDamage\n- added Patch_FixAreaDoubleDamage, which doesn't have overlapping issues\n- added Patch_FixAreaEndOfTurn to deal damage at the end of each unit's turn, instead all at once during the caster's turn\n- added option to disable new features by default"
+        },
+        {
+          "version": "1.2.0",
+          "contents": "## [1.2.0]\n- updated to game version 1.2\n- added Patch_AbilityGroups that merges similar abilities into foldable categories"
         },
         {
           "version": "1.2.1",
