@@ -189,6 +189,26 @@
           "contents": "Added more equipment to the overrides function as well as making the view override show the name of the doll you're overriding.\nFixed a bug where using the Respec Mod would cause character's outfits to disappear.\nAdded the ability to change the visuals of characters not currently in your party."
         },
         {
+          "version": "1.1.1",
+          "contents": "fixed a bug where upon entering an area adjustments would not be correctly applied."
+        },
+        {
+          "version": "1.2.0",
+          "contents": "Updated for beta 3"
+        },
+        {
+          "version": "1.2.1",
+          "contents": "Fixed a bug where when changing the race of your doll and using equipment override certain pieces of equipment would clip into your model.\nFixed a bug with companions and them not working properly with visual adjusments.\nAdded masks to the \"Helmet\" category"
+        },
+        {
+          "version": "1.2.2",
+          "contents": "Fixed \"Create Doll\" & \"Destroy Doll\", however you have to reload/enter/exit area for destroy doll to work."
+        },
+        {
+          "version": "1.3.0",
+          "contents": "Fixed for 0.8.1 \nimprovements to the UI \nfixed removing cloaks for certain classes (Ranger, Inquisitor, Rogue) \nfixed having to reload save when destroying doll\nfixed issues regarding certain companions and creating dolls\nfixed an issue with resetting dolls."
+        },
+        {
           "version": "1.4.0",
           "contents": "Added an option to unlock hair styles (Like Hair Unlocker for Kingmaker). Thanks to SpaceHamster for letting me use his code for that.\nAdded color pickers (HSV, HTML, RGB) for Primary & Secondary Outfit colors aswell as for Hair & Skin colors.\nFixed Sheaths hovering aside their weapon\nAdded a feature to hide sheaths (Mostly)"
         },
