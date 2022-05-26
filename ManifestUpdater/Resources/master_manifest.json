@@ -1617,7 +1617,7 @@
         },
         {
           "version": "1.3.1",
-          "contents": "[1.3.1]\n- added Boundless Injury: Boundless Healing also applies to inflict wound spells and grants those to spellbooks\n- added spell Bladed Dash and Greater Bladed Dash !! target not working\n- fixed hexes not being available to sylvan trickster\n- fixed rogue talents not being available to sylvan trickster\n- fixed Cursing Gaze not being available to sylvan trickster\n- added Ascendant Summons: buffed Ascendant Summons by +4 stats and DR 10\n- fixed metal and blue flame blasts selectable before having their prerequisites"
+          "contents": "[1.3.1]\n- added Boundless Injury: Boundless Healing also applies to inflict wound spells and grants those to spellbooks\n- added spell Bladed Dash and Greater Bladed Dash\n- fixed hexes not being available to sylvan trickster\n- fixed rogue talents not being available to sylvan trickster\n- fixed Cursing Gaze not being available to sylvan trickster\n- added Ascendant Summons: buffed Ascendant Summons by +4 stats and DR 10\n- fixed metal and blue flame blasts selectable before having their prerequisites"
         }
       ],
       "Latest": "1.3.1",
