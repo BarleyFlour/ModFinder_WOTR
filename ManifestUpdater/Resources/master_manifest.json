@@ -1487,7 +1487,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.1/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.2/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1618,9 +1618,13 @@
         {
           "version": "1.3.1",
           "contents": "[1.3.1]\n- added Boundless Injury: Boundless Healing also applies to inflict wound spells and grants those to spellbooks\n- added spell Bladed Dash and Greater Bladed Dash\n- fixed hexes not being available to sylvan trickster\n- fixed rogue talents not being available to sylvan trickster\n- fixed Cursing Gaze not being available to sylvan trickster\n- added Ascendant Summons: buffed Ascendant Summons by +4 stats and DR 10\n- fixed metal and blue flame blasts selectable before having their prerequisites"
+        },
+        {
+          "version": "1.3.2",
+          "contents": "[1.3.2]\n- fixed Boundless Healing spell levels\n- fixed Greater Bladed Dash not dealing damage\n- fixed Bladed Dash attack bonus too high\n- fixed Bladed Dash not working with Spell Combat\n- fixed Bladed Dash not working with reach metamagic\n- fixed Ascendant Summons description\n- changed Bladed Dash modifier being less ambiguous"
         }
       ],
-      "Latest": "1.3.1",
+      "Latest": "1.3.2",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
