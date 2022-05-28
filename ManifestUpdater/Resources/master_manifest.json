@@ -1487,7 +1487,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.2/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.3/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1622,9 +1622,13 @@
         {
           "version": "1.3.2",
           "contents": "[1.3.2]\n- fixed Boundless Healing spell levels\n- fixed Greater Bladed Dash not dealing damage\n- fixed Bladed Dash attack bonus too high\n- fixed Bladed Dash not working with Spell Combat\n- fixed Bladed Dash not working with reach metamagic\n- fixed Ascendant Summons description\n- changed Bladed Dash modifier being less ambiguous"
+        },
+        {
+          "version": "1.3.3",
+          "contents": "[1.3.3]\n- fixed more Boundless Healing spell levels\n- fixed Bladed Dash being too short, will use caster's reach\n- fixed Bladed Dash showing the line indicator\n- fixed ability tooltip always claiming to target all\n- added Fix Spell Element Change: fixes Elemental Bloodline and Spell Focus interaction"
         }
       ],
-      "Latest": "1.3.2",
+      "Latest": "1.3.3",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
