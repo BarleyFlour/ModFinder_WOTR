@@ -1491,7 +1491,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.4/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.5/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1634,9 +1634,13 @@
         {
           "version": "1.3.4",
           "contents": "[1.3.4]\n- increased Bladed Dash reach a bit, which should fix not hitting some enemies\n- fixed Fix Spell Element Change :P"
+        },
+        {
+          "version": "1.3.5",
+          "contents": "[1.3.5]\n- changed Bladed Dash, so if the spells target is a unit, it will always be hit; reduced reach again\n- fixed null exception in Patch_ChangeSpellElement"
         }
       ],
-      "Latest": "1.3.4",
+      "Latest": "1.3.5",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
