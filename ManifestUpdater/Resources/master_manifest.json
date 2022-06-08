@@ -1511,7 +1511,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.5/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.7/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1662,9 +1662,13 @@
         {
           "version": "1.3.6",
           "contents": "[1.3.6]\n- added Butchering Axe weapon proficiency, which is now required to use it\n- fixed Elemental Focus not applying to spell-like abilities\n- added Additional Traits, metamagic traits\n- added fix for Master Shapeshifter: ensures polymorph buffs grant boni\n- added freebooter to swift hunter's bond\n- fixed AC malus of Flensing Strike not updating\n- changed installation path, so files should extract correctly for everybody"
+        },
+        {
+          "version": "1.3.7",
+          "contents": "[1.3.7]\n- added Orc-Atavism; Kindred-Raised Half-Elf regain Elven Immunity\n- fixed bug that made metamagic traits unselectable"
         }
       ],
-      "Latest": "1.3.5",
+      "Latest": "1.3.7",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
