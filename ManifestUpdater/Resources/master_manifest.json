@@ -1515,7 +1515,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.7/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.8/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1670,9 +1670,13 @@
         {
           "version": "1.3.7",
           "contents": "[1.3.7]\n- added Orc-Atavism; Kindred-Raised Half-Elf regain Elven Immunity\n- fixed bug that made metamagic traits unselectable"
+        },
+        {
+          "version": "1.3.8",
+          "contents": "[1.3.8]\n- added fix for Arcane bloodline; Metamagic Adept and Arcane Apotheosis\n- fixed crash during save, if a character has Arcane Apotheosis"
         }
       ],
-      "Latest": "1.3.7",
+      "Latest": "1.3.8",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
