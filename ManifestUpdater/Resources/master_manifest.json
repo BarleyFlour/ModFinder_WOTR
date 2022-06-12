@@ -1515,7 +1515,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.8/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.9/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1674,9 +1674,13 @@
         {
           "version": "1.3.8",
           "contents": "[1.3.8]\n- added fix for Arcane bloodline; Metamagic Adept and Arcane Apotheosis\n- fixed crash during save, if a character has Arcane Apotheosis"
+        },
+        {
+          "version": "1.3.9",
+          "contents": "[1.3.9]\n- fixed Metamagic Adept to retaining through saves\n- fixed fix of Master Shapeshifter ;)"
         }
       ],
-      "Latest": "1.3.8",
+      "Latest": "1.3.9",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
