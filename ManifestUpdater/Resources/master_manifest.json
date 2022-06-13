@@ -36,16 +36,8 @@
           "contents": "Updated for 1.00.0"
         },
         {
-          "version": "1.2.0",
-          "contents": "Updated for 1.00.0"
-        },
-        {
           "version": "1.2.1",
           "contents": "Fixed an issue where it would not let you progress past the ability score phase.\n"
-        },
-        {
-          "version": "1.2.2",
-          "contents": "Somewhat fixed an issue where you would receive excessive amounts of equipment after respec (you now only get 1 set)\nFixed an issue where the Ability Score slider would affect Character Creation\n"
         },
         {
           "version": "1.2.2",
@@ -92,6 +84,10 @@
           "contents": "Fixed an issue where leveling wouldnt \"stick\"\nFixed an issue where you couldnt tick \"Preserve Voice\" or \"Preserve Portrait\"\nFixed an issue where the game would freeze after respeccing (i think)"
         },
         {
+          "version": "1.6.2",
+          "contents": "Fixed for patch 1.0.5\nFixed some issues where some companions would retain things from their original classes.\n"
+        },
+        {
           "version": "1.6.3",
           "contents": "Fixed Deity/Background Selection."
         },
@@ -106,6 +102,10 @@
         {
           "version": "1.6.6",
           "contents": "Added automatic scroll refunding (i.e You get scrolls that the character copied into their spellbooks back on respec)\nFixed an issue where the Light of the Angel ability would be removed on respec.\nFixed an issue where Feats gained from books would be removed on respec."
+        },
+        {
+          "version": "1.6.7",
+          "contents": "Fixed an issue where MC would wrongly retain certain class features."
         },
         {
           "version": "1.6.8",
@@ -1564,28 +1564,12 @@
           "contents": ""
         },
         {
-          "version": "1.0.7",
-          "contents": ""
-        },
-        {
-          "version": "1.0.8",
-          "contents": ""
-        },
-        {
           "version": "1.0.8",
           "contents": ""
         },
         {
           "version": "1.0.9",
           "contents": ""
-        },
-        {
-          "version": "1.0.9",
-          "contents": ""
-        },
-        {
-          "version": "1.1.0",
-          "contents": "NOTE: If your save does not load, open the settings and try with Debug2 flag enabled. This will delete traps when you load your save. Make a new save afterwards and disable the flag again!\n\n## [1.1.0]\n- fix for missing area effects\n- added Kineticist.createHurricaneQueen\n- added Mythic.patchBoundlessHealing: Boundless Healing also grants healing spells to spellbooks\n- added Mythic.patchVarious: allow quicken metamagic on demon teleport spell\n- added Patch_AlwaysAChance: feat 'Always A Chance' will critical succeed on a natural 1 and apply to more checks (saving throws, skill checks)\n- added Mythic.patchRangingShots: doesn't get weaker when hitting\n- added Mythic.patchWanderingHex: can swap hex at will, instead of once per day (which wasn't in the description anyway)\n- updated for game version 1.1.0i\n- added debugflag 2 that removes trap data from save games (without this my save wouldn't load)"
         },
         {
           "version": "1.1.0",
@@ -1610,6 +1594,10 @@
         {
           "version": "1.1.5",
           "contents": "## [1.1.5]\n- added createMindShield: Wild Talent, half Psychokineticist's penalties\n- added patchJudgementAura: Everlasting Judgement also applies to Judgement Aura\n- added option to change Psychokineticist's main stat (does not update ingame descriptions)"
+        },
+        {
+          "version": "1.1.6",
+          "contents": "- fixed improved hunter's bond not showing up in feat selection"
         },
         {
           "version": "1.1.7",
@@ -1656,6 +1644,14 @@
           "contents": "[1.2.8]\n- added limitless azata songs\n- fixed possible memory leak\n- added logic to edit ability groups while pressing shift\n- added logic to display all abilities while ability groups are unlocked\n- added spell groups\n- added icon border (ability group is black, spell group is gray)\n- changed drag behaviour; action slots dragged into groups will be placed left or right depending on which side is closer"
         },
         {
+          "version": "1.3.0",
+          "contents": "[1.3.0]\n- changed project framework\n- removed ability/spell groups\nUpdate Instructions:\nOn request, Ability/Spell Groups have been made into its own mod here: https://github.com/Truinto/SpellPouch/releases/tag/v1.0.0\nIf you have used any Groups in DarkCodex, you need to install SpellPouch to keep using this feature."
+        },
+        {
+          "version": "1.3.1",
+          "contents": "[1.3.1]\n- added Boundless Injury: Boundless Healing also applies to inflict wound spells and grants those to spellbooks\n- added spell Bladed Dash and Greater Bladed Dash\n- fixed hexes not being available to sylvan trickster\n- fixed rogue talents not being available to sylvan trickster\n- fixed Cursing Gaze not being available to sylvan trickster\n- added Ascendant Summons: buffed Ascendant Summons by +4 stats and DR 10\n- fixed metal and blue flame blasts selectable before having their prerequisites"
+        },
+        {
           "version": "1.3.2",
           "contents": "[1.3.2]\n- fixed Boundless Healing spell levels\n- fixed Greater Bladed Dash not dealing damage\n- fixed Bladed Dash attack bonus too high\n- fixed Bladed Dash not working with Spell Combat\n- fixed Bladed Dash not working with reach metamagic\n- fixed Ascendant Summons description\n- changed Bladed Dash modifier being less ambiguous"
         },
@@ -1666,6 +1662,10 @@
         {
           "version": "1.3.4",
           "contents": "[1.3.4]\n- increased Bladed Dash reach a bit, which should fix not hitting some enemies\n- fixed Fix Spell Element Change :P"
+        },
+        {
+          "version": "1.3.5",
+          "contents": "[1.3.5]\n- changed Bladed Dash, so if the spells target is a unit, it will always be hit; reduced reach again\n- fixed null exception in Patch_ChangeSpellElement"
         },
         {
           "version": "1.3.6",
