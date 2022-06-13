@@ -1382,7 +1382,7 @@
     {
       "Author": "Kadyn",
       "Description": "Seeking to expand and add to content in Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.3.51/ExpandedContent.zip",
+      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.3.6/ExpandedContent.zip",
       "GithubOwner": "ka-dyn",
       "GithubRepo": "ExpandedContent",
       "ModId": {
@@ -1503,11 +1503,15 @@
           "contents": "**Expanded Content** V0.3.5 Drakes and Dragons\n\nDrake Companions\nLimited to certain archetypes; Draconic Druid, Silver Champion, Drake Warden. Reworked from tabletop to work in a CRPG setting.\nComes in 7 colours.\n\nNew Archetypes\nDraconic Druid, Druid\nSilver Champion, Paladin\nDrake Warden, Ranger\n\nNew Mythic Ability\nMythic Drake - Grants new powers to your drake depending on breed of drake and drake powers selected during leveling, ranging from unlocking their draconic bloodline to mythic breath attacks.\n\nNew Subdomain\nDragon Subdomain\n\nBig thanks to SweetCowBacon, Raven Embers and Steve for helping me test stuff.\n\nKnown issue - Drake Companion will not have their name until ether loading the save or leveling.\n"
         },
         {
+          "version": "0.3.6",
+          "contents": "**Expanded Content** V0.3.6\n\nNew Subdomains\n- Archon (Good & Law)\n- Demon (Chaos & Evil)\n- Ice (Water)\n- Revelation (Sun)\n- Storm (Weather)\n- Undead (Death)\n- Wind (Air)\n\nNew Deities\n- Kurgess, Ydersius, Zyphus, Nocticula and Ssila'mashnik\n\nNew icons for the demon lord deities\n\nAivu as a animal companion now disabled in UMM by default"
+        },
+        {
           "version": "0.3.51",
           "contents": "**Expanded Content** V0.3.51\n\nFixes for the melee drake mythic ability and Dragon Subdomain\n\nDrakes now have alignments matching their colour\n\nYou will need to respec to reset your drakes alignment."
         }
       ],
-      "Latest": "0.3.51",
+      "Latest": "0.3.6",
       "Name": "Expanded Content",
       "NexusModID": 0,
       "Source": "GitHub"
