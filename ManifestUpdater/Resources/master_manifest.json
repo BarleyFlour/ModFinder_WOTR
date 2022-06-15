@@ -1284,6 +1284,10 @@
           "contents": "* Fixed bug not accounting for Eldritch Scion having separate spellbook from Magus"
         },
         {
+          "version": "1.3.3",
+          "contents": "* Allow Azata to merge with Arcanist"
+        },
+        {
           "version": "1.3.4",
           "contents": "* Demon can now merge with Sorcerer\n* Fixed bug not accounting for Sage Sorcerer having separate spellbook"
         },
