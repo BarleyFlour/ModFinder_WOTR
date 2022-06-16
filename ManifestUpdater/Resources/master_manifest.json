@@ -205,10 +205,6 @@
           "contents": "Fixed \"Create Doll\" & \"Destroy Doll\", however you have to reload/enter/exit area for destroy doll to work."
         },
         {
-          "version": "1.3.0",
-          "contents": "Fixed for 0.8.1 \nimprovements to the UI \nfixed removing cloaks for certain classes (Ranger, Inquisitor, Rogue) \nfixed having to reload save when destroying doll\nfixed issues regarding certain companions and creating dolls\nfixed an issue with resetting dolls."
-        },
-        {
           "version": "1.4.0",
           "contents": "Added an option to unlock hair styles (Like Hair Unlocker for Kingmaker). Thanks to SpaceHamster for letting me use his code for that.\nAdded color pickers (HSV, HTML, RGB) for Primary & Secondary Outfit colors aswell as for Hair & Skin colors.\nFixed Sheaths hovering aside their weapon\nAdded a feature to hide sheaths (Mostly)"
         },
