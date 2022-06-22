@@ -941,6 +941,10 @@
           "contents": "**Target Version: 0.6.0**\n\n* fixed vital strike crits\n* fixed bug where charge bonus damage could sometimes apply too often\n* added magical aptitude feat\n* added scholar feat\n* added self-sufficent feat\n* added shingle runner feat\n* added street smarts feat\n* fixed bloodrager caster level\n* added metamagic rager"
         },
         {
+          "version": "0.4.0",
+          "contents": "**Target Version: 0.6.0**\n\n* fixed vital strike crits\n* fixed bug where charge bonus damage could sometimes apply too often\n* added magical aptitude feat\n* added scholar feat\n* added self-sufficent feat\n* added shingle runner feat\n* added street smarts feat\n* fixed bloodrager caster level\n* added metamagic rager"
+        },
+        {
           "version": "0.4.1",
           "contents": "**Target Version: 0.6.0**\n\n* Fixed bug where auto metamagic was not always applying"
         },
@@ -1039,10 +1043,6 @@
         {
           "version": "1.3.4a",
           "contents": "v1.3.4\n* added precision critical mythic ability\n* rowdy's vital force now correctly deals precision damage\n* profane ascension now works correctly for dexterity and strength based characters\n* sword saint's perfect critical now correctly costs 2 points of pool instead of 1\n\nv1.3.4a\n* fixed issue where weapon materials didn't apply correctly\n* fixed issues where activiatable abilities with resources spent incorrecty\n* fixed issue where vital force was not properly applied to melee attacks"
-        },
-        {
-          "version": "1.3.5",
-          "contents": "* shatter defenses now works like in tabletop\n* extra feat mythic feat can now only be taken once\n* extra mythic ability mythic feat can now only be taken once\n* improvements to natual armor stacking rules\n* added mythic shatter defenses\n* added nature soul @Aegonek \n* added animal ally @Aegonek "
         },
         {
           "version": "1.3.6",
