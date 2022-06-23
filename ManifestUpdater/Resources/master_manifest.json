@@ -1519,7 +1519,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.11/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.12/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1690,9 +1690,13 @@
         {
           "version": "1.3.11",
           "contents": "[1.3.11]\n- renamed Hexcrafter to Magus category\n- added Sword Saint Any Weapon: allow Sword Saint to pick any weapon focus; default off"
+        },
+        {
+          "version": "1.3.12",
+          "contents": "[1.3.12]\n- added Patch Fix Arcanist Spontaneous Metamagic: allows arcanist to use non memorized metamagic, but increases casting time\n- fixed Sacred Summons not showing up"
         }
       ],
-      "Latest": "1.3.11",
+      "Latest": "1.3.12",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
