@@ -1382,7 +1382,7 @@
     {
       "Author": "Kadyn",
       "Description": "Seeking to expand and add to content in Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.3.6/ExpandedContent.zip",
+      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.3.61/ExpandedContent.zip",
       "GithubOwner": "ka-dyn",
       "GithubRepo": "ExpandedContent",
       "ModId": {
@@ -1509,9 +1509,13 @@
         {
           "version": "0.3.51",
           "contents": "**Expanded Content** V0.3.51\n\nFixes for the melee drake mythic ability and Dragon Subdomain\n\nDrakes now have alignments matching their colour\n\nYou will need to respec to reset your drakes alignment."
+        },
+        {
+          "version": "0.3.61",
+          "contents": "**Expanded Content** V0.3.61\n\nFixed all reported bugs with Oathbreaker and Dreadknight!!\n\nAdded Gold Drake type\n\nNew Archetypes\n- Clutch Thief, Homebrew rogue archetype with a young drake companion\n- Claw of the False Wyrm, Evil Silver Champion variant using Dreadknight instead of Paladin and worshiping Dahak\n\n  "
         }
       ],
-      "Latest": "0.3.6",
+      "Latest": "0.3.61",
       "Name": "Expanded Content",
       "NexusModID": 0,
       "Source": "GitHub"
