@@ -945,6 +945,10 @@
           "contents": "**Target Version: 0.6.0**\n\n* Fixed bug where auto metamagic was not always applying"
         },
         {
+          "version": "0.4.1",
+          "contents": "**Target Version: 0.6.0**\n\n* Fixed bug where auto metamagic was not always applying"
+        },
+        {
           "version": "0.5.0",
           "contents": "Target Version: 0.8.0\n\n    Updated for Beta3\n\n"
         },
@@ -1059,10 +1063,6 @@
         {
           "version": "1.4.1",
           "contents": "* favorite metamagic bolstered is now pickable\n* fixed cases where it was sometimes impossible to complete levelup due to the DR rework"
-        },
-        {
-          "version": "1.5.0b",
-          "contents": "* added new archetypes (big thanks to @factubsio for their work on these)\n    * nature fang\n        * A druid/slayer hybrid archetype who trades wild shape for studied target and slayer talents\n    * divine commander\n        * A warpriest/cavalier hybrid archetype who trades blessings and some bonus feats for a divine mount and the tactician ability\n* added erastil's blessing feat (Thanks @factubsio)\n* added stalwart and improved stalwart feats (Thanks @bguns)\n* fixed issues with ContextRankConfigs giving incorrect progressions in some cases. Unsure of the scope of the bug but things should work more correctly now.\n\n**v1.5.0a**\n*  fixed issue where ContextRankConfigs would sometimes calculate incorrectly if only one archetype was setup\n\n**v1.5.0b**\n* fixed issue where ContextRankConfigs would sometimes calculate incorrectly for classes without an archetype"
         },
         {
           "version": "1.5.1",
