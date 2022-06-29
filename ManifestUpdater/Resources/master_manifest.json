@@ -1701,7 +1701,7 @@
         },
         {
           "version": "1.3.13",
-          "contents": "[1.3.13]\n- fixed sticky spells not working with Boundless Injury\n- allowed arcanist to use temporary known spells without preparing them\n- added Venom Infusion; infusion: applies sickened or poisons the target"
+          "contents": "[1.3.13]\n- fixed sticky spells not working with Boundless Injury\n- allowed arcanist to use temporary known spells without preparing them\n- added Venom Infusion; infusion: applies sickened or poisons the target\n- fixed Orc Atavism Ferocity not in UI"
         }
       ],
       "Latest": "1.3.13",
