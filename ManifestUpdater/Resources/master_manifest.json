@@ -12,6 +12,10 @@
       },
       "Changelog": [
         {
+          "version": "1.0.0",
+          "contents": "Fixed for Beta 3\nNew Versioning"
+        },
+        {
           "version": "1.1.0",
           "contents": "Fixed a plethora of bugs including but not limited to:\nGetting a background selection when not doing full respec,\nGetting Deity choice when not doing full respec,\nPotentially stacking BaB when respeccing (not sure on this one since its hard for me to recreate)"
         },
@@ -20,8 +24,24 @@
           "contents": "Fixed an issue with stacking BAB. (for real this time, i hope)"
         },
         {
+          "version": "1.1.2",
+          "contents": "Fixed an issue with not being able to pick background/deity on character creation.\nMade it so that things like \"Original stats\" and \"Full Story Companion Respec\" don't show when the MC/Mercenary is selected."
+        },
+        {
           "version": "1.1.3",
           "contents": "Fixed an issue that caused a whole lotta stuff to break."
+        },
+        {
+          "version": "1.2.0",
+          "contents": "Updated for 1.00.0"
+        },
+        {
+          "version": "1.2.1",
+          "contents": "Fixed an issue where it would not let you progress past the ability score phase.\n"
+        },
+        {
+          "version": "1.2.2",
+          "contents": "Somewhat fixed an issue where you would receive excessive amounts of equipment after respec (you now only get 1 set)\nFixed an issue where the Ability Score slider would affect Character Creation\n"
         },
         {
           "version": "1.2.3",
@@ -1370,6 +1390,10 @@
         "ModType": "UMM"
       },
       "Changelog": [
+        {
+          "version": "0.0.1",
+          "contents": "Hello! This is my first time ever releasing a mod! Huge thanks to everyone in the modding discord\n\nDeities:\n-Allows worship of the Green Faith.\n-Allows worship of Areshkagal.\n-Allows worship of Baphomet.\n-Allows worship of Kabriri.\n-Allows worship of Deskari.\n-Allows worship of Pulura.\n-Allows worship of the player (Lich Deity with Deathly Divinity attached.)\n\nRacial Archetypes:\n-Allows the Stonelord archetype.\n-Allows the Phantasmal Mage archetype.\n-Allows the Reformed Fiend archetype.\n-Allows the Cavalier of the Paw archetype.\n-Allows the Spell Dancer archetype.\n-Allows the Student of Stone archetype.\n-Allows the Purifier archetype.\n-Allows the Master of All archetype.\n-Allows the Wildland Shaman archetype.\n-Allows the Imitator archetype.\n-Allows the Nine-Tailed Heir archetype.\n-Allows the Cruoromancer archetype.\n"
+        },
         {
           "version": "0.0.1a",
           "contents": "*Updated to add compatibility for TableTop Tweaks\n\nHello! This is my first time ever releasing a mod! Huge thanks to everyone in the modding discord\n\nDeities:\n-Allows worship of the Green Faith.\n-Allows worship of Areshkagal.\n-Allows worship of Baphomet.\n-Allows worship of Kabriri.\n-Allows worship of Deskari.\n-Allows worship of Pulura.\n-Allows worship of the player (Lich Deity with Deathly Divinity attached.)\n\nRacial Archetypes:\n-Allows the Stonelord archetype.\n-Allows the Phantasmal Mage archetype.\n-Allows the Reformed Fiend archetype.\n-Allows the Cavalier of the Paw archetype.\n-Allows the Spell Dancer archetype.\n-Allows the Student of Stone archetype.\n-Allows the Purifier archetype.\n-Allows the Master of All archetype.\n-Allows the Wildland Shaman archetype.\n-Allows the Imitator archetype.\n-Allows the Nine-Tailed Heir archetype.\n-Allows the Cruoromancer archetype.\n\n"
