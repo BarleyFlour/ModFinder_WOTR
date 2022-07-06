@@ -1592,14 +1592,6 @@
           "contents": "- fixed Bleeding Attack's funny damage resolution by apply it to weapon attacks instead of attack rolls"
         },
         {
-          "version": "1.1.4",
-          "contents": "## [1.1.4]\n- changed restriction on Kinetic Whip, so it can be used whenever a Kinetic Blade is equipped\n- added Butchering Axe and Impact enchantment"
-        },
-        {
-          "version": "1.1.5",
-          "contents": "## [1.1.5]\n- added createMindShield: Wild Talent, half Psychokineticist's penalties\n- added patchJudgementAura: Everlasting Judgement also applies to Judgement Aura\n- added option to change Psychokineticist's main stat (does not update ingame descriptions)"
-        },
-        {
           "version": "1.1.6",
           "contents": "- fixed improved hunter's bond not showing up in feat selection"
         },
