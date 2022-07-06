@@ -941,6 +941,10 @@
           "contents": "**Target Version: 0.6.0**\n\n* fixed vital strike crits\n* fixed bug where charge bonus damage could sometimes apply too often\n* added magical aptitude feat\n* added scholar feat\n* added self-sufficent feat\n* added shingle runner feat\n* added street smarts feat\n* fixed bloodrager caster level\n* added metamagic rager"
         },
         {
+          "version": "0.4.1",
+          "contents": "**Target Version: 0.6.0**\n\n* Fixed bug where auto metamagic was not always applying"
+        },
+        {
           "version": "0.5.0",
           "contents": "Target Version: 0.8.0\n\n    Updated for Beta3\n\n"
         },
