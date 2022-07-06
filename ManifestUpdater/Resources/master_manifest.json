@@ -941,10 +941,6 @@
           "contents": "**Target Version: 0.6.0**\n\n* fixed vital strike crits\n* fixed bug where charge bonus damage could sometimes apply too often\n* added magical aptitude feat\n* added scholar feat\n* added self-sufficent feat\n* added shingle runner feat\n* added street smarts feat\n* fixed bloodrager caster level\n* added metamagic rager"
         },
         {
-          "version": "0.4.1",
-          "contents": "**Target Version: 0.6.0**\n\n* Fixed bug where auto metamagic was not always applying"
-        },
-        {
           "version": "0.5.0",
           "contents": "Target Version: 0.8.0\n\n    Updated for Beta3\n\n"
         },
@@ -1590,6 +1586,14 @@
         {
           "version": "1.1.3",
           "contents": "- fixed Bleeding Attack's funny damage resolution by apply it to weapon attacks instead of attack rolls"
+        },
+        {
+          "version": "1.1.4",
+          "contents": "## [1.1.4]\n- changed restriction on Kinetic Whip, so it can be used whenever a Kinetic Blade is equipped\n- added Butchering Axe and Impact enchantment"
+        },
+        {
+          "version": "1.1.5",
+          "contents": "## [1.1.5]\n- added createMindShield: Wild Talent, half Psychokineticist's penalties\n- added patchJudgementAura: Everlasting Judgement also applies to Judgement Aura\n- added option to change Psychokineticist's main stat (does not update ingame descriptions)"
         },
         {
           "version": "1.1.6",
