@@ -1592,8 +1592,20 @@
           "contents": "- fixed Bleeding Attack's funny damage resolution by apply it to weapon attacks instead of attack rolls"
         },
         {
+          "version": "1.1.3",
+          "contents": "- fixed Bleeding Attack's funny damage resolution by apply it to weapon attacks instead of attack rolls"
+        },
+        {
           "version": "1.1.4",
           "contents": "## [1.1.4]\n- changed restriction on Kinetic Whip, so it can be used whenever a Kinetic Blade is equipped\n- added Butchering Axe and Impact enchantment"
+        },
+        {
+          "version": "1.1.4",
+          "contents": "## [1.1.4]\n- changed restriction on Kinetic Whip, so it can be used whenever a Kinetic Blade is equipped\n- added Butchering Axe and Impact enchantment"
+        },
+        {
+          "version": "1.1.5",
+          "contents": "## [1.1.5]\n- added createMindShield: Wild Talent, half Psychokineticist's penalties\n- added patchJudgementAura: Everlasting Judgement also applies to Judgement Aura\n- added option to change Psychokineticist's main stat (does not update ingame descriptions)"
         },
         {
           "version": "1.1.5",
@@ -1618,10 +1630,6 @@
         {
           "version": "1.2.1",
           "contents": "[1.2.1.1]\n- removed patchDispelMagic as Destructive Dispel has been fixed in 1.2 update\n- added more patch comments\n- added Chain Infusion\n- added Enduring Spells to spell-like abilities and items again\n- added option to reduce limitless cost to 0\n- added Expanded Element which adds feat to select new elements\n- added Patch_UnlockClassLevels which enables all classes to level up to 40 (albeit no features beyond 20)\n- added Unlock Kineticist which adds features up to level 40\n- added Demon Mastery\n- fixed ice impale dealing twice as much damage\n- fixed issues with Patch_FixAreaDoubleDamage that had no UnitEnter actions\n- fixed cackle/chant not showing up in prediction bar\n- fixed area effects being invisible after cutscenes\n- fixed loading issue\n- fixed Resourceful Caster causing all spell being broken after some cutscenes\n- ~~improved loading time significantly~~ reverted to fix a bug\n- extended ability groups, now accessible via file \"DefGroups.json\""
-        },
-        {
-          "version": "1.2.2",
-          "contents": "[1.2.2]\n- added logic to organize ability groups via drag&drop\n- added Dark Elementalist soul power to burn boni\n- added option to dismiss any spell regardless of who casted it (default off)\n- fixed Limitless Arcane Pool not applying to Eldritch Scion\n- fixed Enduring Spells not able to apply to enchantment spells (like Magic Weapon)\n- rewrote blueprint loading, which should fix previous issues with it and still be quite fast"
         },
         {
           "version": "1.2.3",
@@ -1654,10 +1662,6 @@
         {
           "version": "1.3.1",
           "contents": "[1.3.1]\n- added Boundless Injury: Boundless Healing also applies to inflict wound spells and grants those to spellbooks\n- added spell Bladed Dash and Greater Bladed Dash\n- fixed hexes not being available to sylvan trickster\n- fixed rogue talents not being available to sylvan trickster\n- fixed Cursing Gaze not being available to sylvan trickster\n- added Ascendant Summons: buffed Ascendant Summons by +4 stats and DR 10\n- fixed metal and blue flame blasts selectable before having their prerequisites"
-        },
-        {
-          "version": "1.3.2",
-          "contents": "[1.3.2]\n- fixed Boundless Healing spell levels\n- fixed Greater Bladed Dash not dealing damage\n- fixed Bladed Dash attack bonus too high\n- fixed Bladed Dash not working with Spell Combat\n- fixed Bladed Dash not working with reach metamagic\n- fixed Ascendant Summons description\n- changed Bladed Dash modifier being less ambiguous"
         },
         {
           "version": "1.3.3",
@@ -1702,10 +1706,6 @@
         {
           "version": "1.3.13",
           "contents": "[1.3.13]\n- fixed sticky spells not working with Boundless Injury\n- allowed arcanist to use temporary known spells without preparing them\n- added Venom Infusion; infusion: applies sickened or poisons the target\n- fixed Orc Atavism Ferocity not in UI"
-        },
-        {
-          "version": "1.3.14",
-          "contents": "[1.3.14]\n- fixed Orc Atavism Ferocity not in UI\n- fixed Venom Infusion applying to all attacks, not just blasts\n- added Dirty Fighting combat feat\n- added Spell Perfection\n"
         }
       ],
       "Latest": "1.3.14",
