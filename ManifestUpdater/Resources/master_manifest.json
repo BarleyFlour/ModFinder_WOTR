@@ -1523,7 +1523,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.14/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.15/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1706,9 +1706,13 @@
         {
           "version": "1.3.14",
           "contents": "[1.3.14]\n- fixed Orc Atavism Ferocity not in UI\n- fixed Venom Infusion applying to all attacks, not just blasts\n- added Dirty Fighting combat feat\n- added Spell Perfection\n"
+        },
+        {
+          "version": "1.3.15",
+          "contents": "[1.3.15]\n- added references to KineticistExpandedElements; will fix interactions with substance infusions\n- fixed Venom Infusion's poison from \"2 saves\" to \"2 consecutive saves\"; simplified damage calculation which might fix bugs;\n\tit deals dex damage, if target is immune to con damage; target is sickended while poisoned; reduced burn by 1;\n\tfixed DC being dex based, instead of main stat\n- added more checks to Spell Perfection\n- fixed Dirty Fighting granting all maneuver feats instead of just the action; this might need a respec, if you already took that feat\n- added Razortusk to Orc Atavism\n- fixed kinetic weapons not registering as melee weapon for some abilities\n- fixed Blood Kineticist Bleed Infusion and some strings\n- reversed some butchering axe changes until bugs are fixed"
         }
       ],
-      "Latest": "1.3.14",
+      "Latest": "1.3.15",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
