@@ -929,22 +929,6 @@
       },
       "Changelog": [
         {
-          "version": "0.2.0",
-          "contents": "**Target Version: 0.6.0**\n\n* added one handed weapon toggle\n* fixed slashing grace\n* fixed fencing grace\n* two handed fighter can now take advanced weapon training feats\n* two handed fighter training now properly works with fighter training effects\n* fighter advanced weapon training now properly respect prerequisites\n* added trained grace advanced weapon training\n* added trained throw advanced weapon training\n* fixed issue with buffs that could sometimes break lighting\n\n"
-        },
-        {
-          "version": "0.3.0",
-          "contents": "**Target Version: 0.6.0**\n\n* fixed mounted combat\n* fixed indomitable mount\n* fixed spirited charge\n* fixed cavalier supreme charge \n* fixed cavalier transfixing charge \n* added cavalier mobility\n* longspears are now treated as lances for the purposes of mounted bonus damage"
-        },
-        {
-          "version": "0.4.0",
-          "contents": "**Target Version: 0.6.0**\n\n* fixed vital strike crits\n* fixed bug where charge bonus damage could sometimes apply too often\n* added magical aptitude feat\n* added scholar feat\n* added self-sufficent feat\n* added shingle runner feat\n* added street smarts feat\n* fixed bloodrager caster level\n* added metamagic rager"
-        },
-        {
-          "version": "0.4.1",
-          "contents": "**Target Version: 0.6.0**\n\n* Fixed bug where auto metamagic was not always applying"
-        },
-        {
           "version": "0.5.0",
           "contents": "Target Version: 0.8.0\n\n    Updated for Beta3\n\n"
         },
