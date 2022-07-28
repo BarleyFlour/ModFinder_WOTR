@@ -1624,6 +1624,10 @@
           "contents": "[1.2.2]\n- added logic to organize ability groups via drag&drop\n- added Dark Elementalist soul power to burn boni\n- added option to dismiss any spell regardless of who casted it (default off)\n- fixed Limitless Arcane Pool not applying to Eldritch Scion\n- fixed Enduring Spells not able to apply to enchantment spells (like Magic Weapon)\n- rewrote blueprint loading, which should fix previous issues with it and still be quite fast"
         },
         {
+          "version": "1.2.2",
+          "contents": "[1.2.2]\n- added logic to organize ability groups via drag&drop\n- added Dark Elementalist soul power to burn boni\n- added option to dismiss any spell regardless of who casted it (default off)\n- fixed Limitless Arcane Pool not applying to Eldritch Scion\n- fixed Enduring Spells not able to apply to enchantment spells (like Magic Weapon)\n- rewrote blueprint loading, which should fix previous issues with it and still be quite fast"
+        },
+        {
           "version": "1.2.3",
           "contents": "[1.2.3]\n- fixed Arcane Weapon buff not getting replaced on cast\n- fixed ability group not showing up"
         },
@@ -1678,10 +1682,6 @@
         {
           "version": "1.3.7",
           "contents": "[1.3.7]\n- added Orc-Atavism; Kindred-Raised Half-Elf regain Elven Immunity\n- fixed bug that made metamagic traits unselectable"
-        },
-        {
-          "version": "1.3.8",
-          "contents": "[1.3.8]\n- added fix for Arcane bloodline; Metamagic Adept and Arcane Apotheosis\n- fixed crash during save, if a character has Arcane Apotheosis"
         },
         {
           "version": "1.3.9",
