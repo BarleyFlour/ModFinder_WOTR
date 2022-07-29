@@ -920,7 +920,7 @@
     {
       "Author": "Vek17",
       "Description": "Tabletop Tweaks is a mod that seeks to adjust the cRPG rules to more closely follow the tabletop ruleset. Additionally it adds content missing from the base game. ",
-      "DownloadLink": "https://github.com/Vek17/TabletopTweaks-Base/releases/download/v2.2.2/TabletopTweaks-Base.zip",
+      "DownloadLink": "https://github.com/Vek17/TabletopTweaks-Base/releases/download/v2.2.3/TabletopTweaks-Base.zip",
       "GithubOwner": "Vek17",
       "GithubRepo": "WrathMods-TabletopTweaks",
       "ModId": {
@@ -1185,7 +1185,7 @@
           "contents": "## Version 2.2.3\n* Fixes\n    * Fixed issue where Bloodline Ascendance was not selectable when it should have been."
         }
       ],
-      "Latest": "2.2.2",
+      "Latest": "2.2.3",
       "Name": "Tabletop Tweaks",
       "NexusModID": 0,
       "Source": "GitHub"
