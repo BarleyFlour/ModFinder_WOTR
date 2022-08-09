@@ -1746,6 +1746,10 @@
         {
           "version": "1.3.22",
           "contents": "[1.3.22]\n- added infusion Kinetic Fist\n- added infusion Energize Weapon\n- fixed Spell Perfection not working with Spell Specialization and some interactions with TableTopTweaks\n- fixed Metamagic Master &co not working with Bladed Dash\n- added Hexcrafter to Cursing Gaze"
+        },
+        {
+          "version": "1.3.23",
+          "contents": "[1.3.23]\n- removed Kinetic Artifact \"Catalyst\", because it causes bugs I can't seem to fix\n- fixed kinetic fist and energize weapon dealing damage even if burn cannot be paid\n- fixed Blood Kineticist cached damage info\n- fixed Kinetic Whip with 3rd party elements\n- fixed Selective Metakinesis with 3rd party elements\n- added fix for Eldritch Archer Spellstrike"
         }
       ],
       "Latest": "1.3.22",
