@@ -1531,7 +1531,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.22/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.24/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1750,9 +1750,13 @@
         {
           "version": "1.3.23",
           "contents": "[1.3.23]\n- removed Kinetic Artifact \"Catalyst\", because it causes bugs I can't seem to fix\n- fixed kinetic fist and energize weapon dealing damage even if burn cannot be paid\n- fixed Blood Kineticist cached damage info\n- fixed Kinetic Whip with 3rd party elements\n- fixed Selective Metakinesis with 3rd party elements\n- added fix for Eldritch Archer Spellstrike"
+        },
+        {
+          "version": "1.3.24",
+          "contents": "[1.3.24]\n- fixed bug from spellstrike patch"
         }
       ],
-      "Latest": "1.3.22",
+      "Latest": "1.3.24",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
