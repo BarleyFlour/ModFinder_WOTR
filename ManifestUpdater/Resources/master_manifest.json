@@ -1535,7 +1535,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.23/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.3.24/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1760,7 +1760,7 @@
           "contents": "[1.3.24]\n- fixed bug from spellstrike patch"
         }
       ],
-      "Latest": "1.3.23",
+      "Latest": "1.3.24",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
