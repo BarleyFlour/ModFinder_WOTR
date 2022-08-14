@@ -3,7 +3,7 @@
     {
       "Author": "Barley",
       "Description": "A respec mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/BarleyFlour/RespecMod/releases/download/v1.10.5/Download_This_RespecWrath.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/RespecMod/releases/download/v1.10.6/Download_This_RespecWrath.zip",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "RespecMod",
       "ModId": {
@@ -162,9 +162,13 @@
         {
           "version": "1.10.5",
           "contents": "Fixed an issue when the game would freeze after a respec.\nAdded an option to remove the Attribute Selection Icons on the class page."
+        },
+        {
+          "version": "1.10.6",
+          "contents": ">Fixed for V1.4.0 beta"
         }
       ],
-      "Latest": "1.10.5",
+      "Latest": "1.10.6",
       "Name": "Respec Mod",
       "NexusModID": 0,
       "Source": "GitHub"
