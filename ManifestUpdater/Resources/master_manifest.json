@@ -1552,10 +1552,6 @@
       },
       "Changelog": [
         {
-          "version": "0.1.0",
-          "contents": "Initial release.\nUse at own risk!"
-        },
-        {
           "version": "0.2.0",
           "contents": "[0.2.0]\n- fixed rare case where a wrong id would be parsed, even tho it doesn't have any id\n- changed so affected list are cleared instead of setting them to null; renamed 'Null' field to 'IsList'\n- added right click event to copy fields into clipboard\n- added 'Generate Peeks' option to reduce RAM usage, also faster when processing lots of guids\n\nnote: still does not work with all kinds of features"
         },
@@ -1650,10 +1646,6 @@
         {
           "version": "1.2.4",
           "contents": "[1.2.4]\n- added dispel effects to Resourceful Caster conditions\n- added thunderstorm chain variant\n- added logic to organize ability groups via drag&drop (needs unlock in mod menu)\n- fixed destrutive dispel not scaling for non-spellcaster classes (like Kineticist)"
-        },
-        {
-          "version": "1.2.5",
-          "contents": "[1.2.5]\n- fixed \"Unlock ability groups\" not showing up in menu\n- fixed oversight in Patch_AOEAttackRolls\n- fixed Dismiss Anything"
         },
         {
           "version": "1.2.6b",
