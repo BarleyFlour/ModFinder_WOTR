@@ -227,15 +227,18 @@
       },
       "Name": "Puzzle Skip",
       "Source": "GitHub"
-    },
+    },   
     {
-            "Name": "Visual Adjustments 2", 
-            "ModType": 1,
-            "Source": 0,
-            "OwnerAndRepo": [
-                "BarleyFlour",
-                "VisualAdjustments2"
-            ]
+      "Author": "BarleyFlour",
+      "GithubOwner": "BarleyFlour",
+      "GithubRepo": "VisualAdjustments2",
+      "ModId": {
+        "Identifier": "VisualAdjustments2",
+        "ModType": "UMM"
+      },
+      "Name": "Visual Adjustments 2",
+      "NexusModID": 0,
+      "Source": "GitHub"
     }
   ]
 }
