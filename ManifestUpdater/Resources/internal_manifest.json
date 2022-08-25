@@ -227,6 +227,15 @@
       },
       "Name": "Puzzle Skip",
       "Source": "GitHub"
+    },
+    {
+            "Name": "Visual Adjustments 2", 
+            "ModType": 1,
+            "Source": 0,
+            "OwnerAndRepo": [
+                "BarleyFlour",
+                "VisualAdjustments2"
+            ]
     }
   ]
 }
