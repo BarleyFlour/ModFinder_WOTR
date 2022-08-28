@@ -1903,6 +1903,51 @@
       "Name": "Puzzle Skip",
       "NexusModID": 0,
       "Source": "GitHub"
+    },
+    {
+      "Author": "BarleyFlour",
+      "Description": null,
+      "DownloadLink": "https://github.com/BarleyFlour/VisualAdjustments2/releases/download/v1.0.6/VisualAdjustments2.zip",
+      "GithubOwner": "BarleyFlour",
+      "GithubRepo": "VisualAdjustments2",
+      "ModId": {
+        "Identifier": "VisualAdjustments2",
+        "ModType": "UMM"
+      },
+      "Changelog": [
+        {
+          "version": "1.0.0",
+          "contents": "Initial Release."
+        },
+        {
+          "version": "1.0.1",
+          "contents": ">Added an option to fix scale to 1x (Under Buff Blocker)\n>Fixed info.json\n"
+        },
+        {
+          "version": "1.0.2",
+          "contents": ">Fixed an issue where part of the doll UI would be superimposed over the rest of the UI under certain circumstances"
+        },
+        {
+          "version": "1.0.3",
+          "contents": ">Fixed an issue where the portrait picker would fail to function in certain circumstances."
+        },
+        {
+          "version": "1.0.4",
+          "contents": ">Fixed an issue where the \"Fix Scale\" button had inverted function (this also caused an issue where Drake companions from Expanded Content would be huge)"
+        },
+        {
+          "version": "1.0.5",
+          "contents": ">Added an option to hide Mythic Visuals\n>Fixed a bug where Per-Character Buff profiles wouldnt save."
+        },
+        {
+          "version": "1.0.6",
+          "contents": "Fixed it not working on the overworld map and when the doll UI would get stuck on the screen sometimes."
+        }
+      ],
+      "Latest": "1.0.6",
+      "Name": "Visual Adjustments 2",
+      "NexusModID": 0,
+      "Source": "GitHub"
     }
   ]
 }
