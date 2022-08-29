@@ -1390,7 +1390,7 @@
     {
       "Author": "Kadyn",
       "Description": "Seeking to expand and add to content in Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.3.65/ExpandedContent.zip",
+      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.3.66/ExpandedContent.zip",
       "GithubOwner": "ka-dyn",
       "GithubRepo": "ExpandedContent",
       "ModId": {
@@ -1537,9 +1537,13 @@
         {
           "version": "0.3.65",
           "contents": "**Expanded Content** V0.3.65\n\nAdded Subdomains\n-Psychopomp\n-Rivers\n-Rage\n\nAdded Spells\n-Hydraulic push\n-Slipstream"
+        },
+        {
+          "version": "0.3.66",
+          "contents": "**Expanded Content** V0.3.66\n\n-Added Draconic Shaman Archetype for Shaman\n-Improved Oathbreakers Direction stability.\n\nThanks to @LilBitRetro for helping me test.\n"
         }
       ],
-      "Latest": "0.3.65",
+      "Latest": "0.3.66",
       "Name": "Expanded Content",
       "NexusModID": 0,
       "Source": "GitHub"
