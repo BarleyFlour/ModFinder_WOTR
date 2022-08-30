@@ -924,7 +924,7 @@
     {
       "Author": "Vek17",
       "Description": "Tabletop Tweaks is a mod that seeks to adjust the cRPG rules to more closely follow the tabletop ruleset. Additionally it adds content missing from the base game. ",
-      "DownloadLink": "https://github.com/Vek17/TabletopTweaks-Base/releases/download/v2.3.0/TabletopTweaks-Base.zip",
+      "DownloadLink": "https://github.com/Vek17/TabletopTweaks-Base/releases/download/v2.3.1/TabletopTweaks-Base.zip",
       "GithubOwner": "Vek17",
       "GithubRepo": "WrathMods-TabletopTweaks",
       "ModId": {
@@ -1191,9 +1191,13 @@
         {
           "version": "2.3.0",
           "contents": "**THIS IS THE FOR 1.4.0 BETA ONLY**\n\n## Version 2.3.0\n* Fixes\n    * Witch\n        * Fixed Cauldren Witch incorrectly scaling with character level instead of witch level.\n* Added Content\n    * Rogue Talents\n        * Bleeding Attack\n            * A rogue with this ability can cause living opponents to bleed by hitting them with a sneak attack. This attack causes the target to take 1 additional point of damage each round for each die of the rogue’s sneak attack.\n        * Emboldening Strike\n            * When a rogue with this talent hits a creature with a melee attack that deals sneak attack damage, she gains a +1 circumstance bonus on saving throws for every 2 sneak attack dice rolled (minimum +1) for 1 round.\n    * Spells\n        * Mage's Disjunction\n            * All magical effects and magic items within the radius of the spell, except for those that you carry or touch, are disjoined. That is, spells and spell-like effects are unraveled and destroyed completely (ending the effect as a dispel magic spell does), and each permanent magic item must make a successful Will save or be turned into a normal item for the duration of this spell.\n"
+        },
+        {
+          "version": "2.3.1",
+          "contents": "## Version 2.3.1\n* Release for 1.4.0"
         }
       ],
-      "Latest": "2.3.0",
+      "Latest": "2.3.1",
       "Name": "Tabletop Tweaks",
       "NexusModID": 0,
       "Source": "GitHub"
