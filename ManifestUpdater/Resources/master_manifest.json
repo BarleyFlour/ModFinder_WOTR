@@ -1394,7 +1394,7 @@
     {
       "Author": "Kadyn",
       "Description": "Seeking to expand and add to content in Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.3.66/ExpandedContent.zip",
+      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.3.70/ExpandedContent.zip",
       "GithubOwner": "ka-dyn",
       "GithubRepo": "ExpandedContent",
       "ModId": {
@@ -1545,9 +1545,13 @@
         {
           "version": "0.3.66",
           "contents": "**Expanded Content** V0.3.66\n\n-Added Draconic Shaman Archetype for Shaman\n-Improved Oathbreakers Direction stability.\n\nThanks to @LilBitRetro for helping me test.\n"
+        },
+        {
+          "version": "0.3.70",
+          "contents": "**Expanded Content** V0.3.70\n\n-Enabled Groetus\n\nAdded Spells\n-Scourge of the Horsemen\n-Rigor Mortis"
         }
       ],
-      "Latest": "0.3.66",
+      "Latest": "0.3.70",
       "Name": "Expanded Content",
       "NexusModID": 0,
       "Source": "GitHub"
