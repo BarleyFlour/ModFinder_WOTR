@@ -1931,7 +1931,7 @@
     {
       "Author": "BarleyFlour",
       "Description": null,
-      "DownloadLink": "https://github.com/BarleyFlour/VisualAdjustments2/releases/download/v1.0.6/VisualAdjustments2.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/VisualAdjustments2/releases/download/v1.0.7/VisualAdjustments2.zip",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "VisualAdjustments2",
       "ModId": {
@@ -1966,9 +1966,13 @@
         {
           "version": "1.0.6",
           "contents": "Fixed it not working on the overworld map and when the doll UI would get stuck on the screen sometimes."
+        },
+        {
+          "version": "1.0.7",
+          "contents": ">Fixed for game version 1.4.0y"
         }
       ],
-      "Latest": "1.0.6",
+      "Latest": "1.0.7",
       "Name": "Visual Adjustments 2",
       "NexusModID": 0,
       "Source": "GitHub"
