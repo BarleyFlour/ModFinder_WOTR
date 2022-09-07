@@ -1410,7 +1410,7 @@
     {
       "Author": "Kadyn",
       "Description": "Seeking to expand and add to content in Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.3.72/ExpandedContent.zip",
+      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.3.73/ExpandedContent.zip",
       "GithubOwner": "ka-dyn",
       "GithubRepo": "ExpandedContent",
       "ModId": {
@@ -1573,9 +1573,13 @@
         {
           "version": "0.3.72",
           "contents": "**Expanded Content** V0.3.72\n\nAdded spells\n-Reviving Finale\n-Deadly Finale\n\nSeveral bug fixes"
+        },
+        {
+          "version": "0.3.73",
+          "contents": "**Expanded Content** V0.3.73\nBugfix for Oceans Echo Archetype"
         }
       ],
-      "Latest": "0.3.72",
+      "Latest": "0.3.73",
       "Name": "Expanded Content",
       "NexusModID": 0,
       "Source": "GitHub"
