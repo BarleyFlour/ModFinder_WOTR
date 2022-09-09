@@ -1955,7 +1955,7 @@
     {
       "Author": "BarleyFlour",
       "Description": null,
-      "DownloadLink": "https://github.com/BarleyFlour/VisualAdjustments2/releases/download/v1.0.7/VisualAdjustments2.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/VisualAdjustments2/releases/download/v1.0.8/VisualAdjustments2.zip",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "VisualAdjustments2",
       "ModId": {
@@ -1994,9 +1994,13 @@
         {
           "version": "1.0.7",
           "contents": ">Fixed for game version 1.4.0y"
+        },
+        {
+          "version": "1.0.8",
+          "contents": "Fixed the \"Fix Scale\" & the \"Global buff profile\" buttons."
         }
       ],
-      "Latest": "1.0.7",
+      "Latest": "1.0.8",
       "Name": "Visual Adjustments 2",
       "NexusModID": 0,
       "Source": "GitHub"
