@@ -1624,6 +1624,10 @@
           "contents": "[0.2.0]\n- fixed rare case where a wrong id would be parsed, even tho it doesn't have any id\n- changed so affected list are cleared instead of setting them to null; renamed 'Null' field to 'IsList'\n- added right click event to copy fields into clipboard\n- added 'Generate Peeks' option to reduce RAM usage, also faster when processing lots of guids\n\nnote: still does not work with all kinds of features"
         },
         {
+          "version": "0.2.0",
+          "contents": "[0.2.0]\n- fixed rare case where a wrong id would be parsed, even tho it doesn't have any id\n- changed so affected list are cleared instead of setting them to null; renamed 'Null' field to 'IsList'\n- added right click event to copy fields into clipboard\n- added 'Generate Peeks' option to reduce RAM usage, also faster when processing lots of guids\n\nnote: still does not work with all kinds of features"
+        },
+        {
           "version": "0.3.0",
           "contents": "NOTE: future updates found here: https://github.com/Truinto/BlueprintPurge/releases\n\n[0.3.0]\n- fixed json syntax error\n- added basic syntax validation\n\nChanged release to 64 bit. Installation requires .NET 5 framework (32-bit?)."
         },
@@ -1774,10 +1778,6 @@
         {
           "version": "1.3.10",
           "contents": "[1.3.10]\n- added PatchArcanistBrownFur: allows Share Transmutation to affect any spell\n- fixed Metamagic Adept still increasing caster time to standard action, if the original casting time was shorter\n- added Mythic Metamagic Adept feat: allow spontaneous spellcasters to apply metamagic without casting time penalty\n- added Sacred Summons, basic feat: requires Channel Energy, summons act immediately"
-        },
-        {
-          "version": "1.3.11",
-          "contents": "[1.3.11]\n- renamed Hexcrafter to Magus category\n- added Sword Saint Any Weapon: allow Sword Saint to pick any weapon focus; default off"
         },
         {
           "version": "1.3.12",
