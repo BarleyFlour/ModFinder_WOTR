@@ -1632,6 +1632,14 @@
           "contents": "[0.2.0]\n- fixed rare case where a wrong id would be parsed, even tho it doesn't have any id\n- changed so affected list are cleared instead of setting them to null; renamed 'Null' field to 'IsList'\n- added right click event to copy fields into clipboard\n- added 'Generate Peeks' option to reduce RAM usage, also faster when processing lots of guids\n\nnote: still does not work with all kinds of features"
         },
         {
+          "version": "0.3.0",
+          "contents": "NOTE: future updates found here: https://github.com/Truinto/BlueprintPurge/releases\n\n[0.3.0]\n- fixed json syntax error\n- added basic syntax validation\n\nChanged release to 64 bit. Installation requires .NET 5 framework (32-bit?)."
+        },
+        {
+          "version": "1.0.2",
+          "contents": "first release; largely untested"
+        },
+        {
           "version": "1.0.3",
           "contents": "fixed and new features"
         },
@@ -1710,6 +1718,10 @@
         {
           "version": "1.2.3",
           "contents": "[1.2.3]\n- fixed Arcane Weapon buff not getting replaced on cast\n- fixed ability group not showing up"
+        },
+        {
+          "version": "1.2.4",
+          "contents": "[1.2.4]\n- added dispel effects to Resourceful Caster conditions\n- added thunderstorm chain variant\n- added logic to organize ability groups via drag&drop (needs unlock in mod menu)\n- fixed destrutive dispel not scaling for non-spellcaster classes (like Kineticist)"
         },
         {
           "version": "1.2.5",
