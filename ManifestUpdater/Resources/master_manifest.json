@@ -1983,7 +1983,7 @@
     {
       "Author": "BarleyFlour",
       "Description": null,
-      "DownloadLink": "https://github.com/BarleyFlour/VisualAdjustments2/releases/download/v1.0.9/VisualAdjustments2.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/VisualAdjustments2/releases/download/v1.0.10/VisualAdjustments2.zip",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "VisualAdjustments2",
       "ModId": {
@@ -2030,9 +2030,13 @@
         {
           "version": "1.0.9",
           "contents": ">Fixed the \"Hide\" option for Enchant Overrides\n>Fixed \"Hide Class Equipment\" option"
+        },
+        {
+          "version": "1.0.10",
+          "contents": ">Fixed the \"Hide Belt Items\" Feature"
         }
       ],
-      "Latest": "1.0.9",
+      "Latest": "1.0.10",
       "Name": "Visual Adjustments 2",
       "NexusModID": 0,
       "Source": "GitHub"
