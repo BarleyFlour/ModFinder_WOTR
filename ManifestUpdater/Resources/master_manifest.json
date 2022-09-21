@@ -1434,7 +1434,7 @@
     {
       "Author": "Kadyn",
       "Description": "Seeking to expand and add to content in Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.3.8/ExpandedContent.zip",
+      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.3.81/ExpandedContent.zip",
       "GithubOwner": "ka-dyn",
       "GithubRepo": "ExpandedContent",
       "ModId": {
@@ -1613,9 +1613,13 @@
         {
           "version": "0.3.75",
           "contents": "**Expanded Content** V0.3.75\n\nAdded Spell\n-Hollow Blades\n\nBunch of little bug fixes"
+        },
+        {
+          "version": "0.3.81",
+          "contents": "**Expanded Content** V0.3.81\n\nAdded deity\n-Naderi\n\nMade Drake power selection order easier to follow\nFixed version number problems, probably. "
         }
       ],
-      "Latest": "0.3.8",
+      "Latest": "0.3.81",
       "Name": "Expanded Content",
       "NexusModID": 0,
       "Source": "GitHub"
