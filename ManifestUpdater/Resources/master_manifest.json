@@ -964,7 +964,7 @@
     {
       "Author": "Vek17",
       "Description": "Tabletop Tweaks is a mod that seeks to adjust the cRPG rules to more closely follow the tabletop ruleset. Additionally it adds content missing from the base game. ",
-      "DownloadLink": "https://github.com/Vek17/TabletopTweaks-Base/releases/download/v2.3.1/TabletopTweaks-Base.zip",
+      "DownloadLink": "https://github.com/Vek17/TabletopTweaks-Base/releases/download/v2.3.2/TabletopTweaks-Base.zip",
       "GithubOwner": "Vek17",
       "GithubRepo": "WrathMods-TabletopTweaks",
       "ModId": {
@@ -1235,9 +1235,13 @@
         {
           "version": "2.3.1",
           "contents": "## Version 2.3.1\n* Release for 1.4.0"
+        },
+        {
+          "version": "2.3.2",
+          "contents": "Fix for 1.4.4g"
         }
       ],
-      "Latest": "2.3.1",
+      "Latest": "2.3.2",
       "Name": "Tabletop Tweaks",
       "NexusModID": 0,
       "Source": "GitHub"
