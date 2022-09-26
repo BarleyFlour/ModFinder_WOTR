@@ -358,10 +358,6 @@
       },
       "Changelog": [
         {
-          "version": "0.1.1",
-          "contents": "Adds fast travel + speed slider for tactical battles (homm-minigame) \nSettings integrated into main game"
-        },
-        {
           "version": "0.2.0a",
           "contents": "\n* Added \"disband army\" button\n* Fixed a bug where the global map speed would not change until the map was loaded/unloaded.\n"
         },
@@ -380,10 +376,6 @@
         {
           "version": "0.5.1",
           "contents": "Stop showing settlement stats in village screen, maybe fixes gray building bug."
-        },
-        {
-          "version": "0.6.0",
-          "contents": "\n* Update to Game Version 1.1 (beta), won't work on old version.\n* Added invading armies and quest locations to the map sidebar."
         },
         {
           "version": "0.6.1",
@@ -448,10 +440,6 @@
         {
           "version": "1.14.2",
           "contents": "fix json error"
-        },
-        {
-          "version": "1.14.3",
-          "contents": "fix army disband (and army info)"
         },
         {
           "version": "1.15.0",
