@@ -358,6 +358,10 @@
       },
       "Changelog": [
         {
+          "version": "0.1.1",
+          "contents": "Adds fast travel + speed slider for tactical battles (homm-minigame) \nSettings integrated into main game"
+        },
+        {
           "version": "0.2.0a",
           "contents": "\n* Added \"disband army\" button\n* Fixed a bug where the global map speed would not change until the map was loaded/unloaded.\n"
         },
@@ -376,6 +380,10 @@
         {
           "version": "0.5.1",
           "contents": "Stop showing settlement stats in village screen, maybe fixes gray building bug."
+        },
+        {
+          "version": "0.6.0",
+          "contents": "\n* Update to Game Version 1.1 (beta), won't work on old version.\n* Added invading armies and quest locations to the map sidebar."
         },
         {
           "version": "0.6.1",
@@ -440,6 +448,10 @@
         {
           "version": "1.14.2",
           "contents": "fix json error"
+        },
+        {
+          "version": "1.14.3",
+          "contents": "fix army disband (and army info)"
         },
         {
           "version": "1.15.0",
@@ -1426,7 +1438,7 @@
     {
       "Author": "Kadyn",
       "Description": "Seeking to expand and add to content in Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.3.81/ExpandedContent.zip",
+      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.3.82/ExpandedContent.zip",
       "GithubOwner": "ka-dyn",
       "GithubRepo": "ExpandedContent",
       "ModId": {
@@ -1609,9 +1621,13 @@
         {
           "version": "0.3.81",
           "contents": "**Expanded Content** V0.3.81\n\nAdded deity\n-Naderi\n\nMade Drake power selection order easier to follow\nFixed version number problems, probably. "
+        },
+        {
+          "version": "0.3.82",
+          "contents": "**Expanded Content** V0.3.82\n\nAdded Subdomain\n-Thievery\n\nAdded Spell\n-Steam Ray Fusillade\n\nAdded Deity\n-Pazuzu"
         }
       ],
-      "Latest": "0.3.81",
+      "Latest": "0.3.82",
       "Name": "Expanded Content",
       "NexusModID": 0,
       "Source": "GitHub"
