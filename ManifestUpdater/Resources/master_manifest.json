@@ -1635,7 +1635,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.4.2/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.4.3/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1870,9 +1870,13 @@
         {
           "version": "1.4.2",
           "contents": "[1.4.2]\n- added 'body forms become immune to horrid wilting' to General: Various Tweaks\n- added Bladed Brush: new combat feat #87\n- extended Mythic.PatchVarious with: allow Elemental Barrage on any damage trigger #136\n- included feats in gold dragon bonus feat\n- added Mythic Animal Companion, mythic feat: unlocks companion equipment slots #134\n- added Not A Chance: mythic ability: immunity to crits #133\n- fixed PatchAlwaysAChance not being called #137\n- added Split Hex"
+        },
+        {
+          "version": "1.4.3",
+          "contents": "[1.4.3]\n- extended Mythic.PatchVarious with: elemental rampage works with limitless rage #138\n- fixed issue with loading CodexLib\n- fixed life bubble is AOE again"
         }
       ],
-      "Latest": "1.4.2",
+      "Latest": "1.4.3",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
