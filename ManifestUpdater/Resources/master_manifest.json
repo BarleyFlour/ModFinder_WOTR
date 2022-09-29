@@ -964,7 +964,7 @@
     {
       "Author": "Vek17",
       "Description": "Tabletop Tweaks is a mod that seeks to adjust the cRPG rules to more closely follow the tabletop ruleset. Additionally it adds content missing from the base game. ",
-      "DownloadLink": "https://github.com/Vek17/TabletopTweaks-Base/releases/download/v2.3.2/TabletopTweaks-Base.zip",
+      "DownloadLink": "https://github.com/Vek17/TabletopTweaks-Base/releases/download/v2.4.0/TabletopTweaks-Base.zip",
       "GithubOwner": "Vek17",
       "GithubRepo": "WrathMods-TabletopTweaks",
       "ModId": {
@@ -1239,9 +1239,13 @@
         {
           "version": "2.3.2",
           "contents": "Fix for 1.4.4g"
+        },
+        {
+          "version": "2.4.0",
+          "contents": "## Version 2.4.0\n* Release for 2.0.0\n* Fixes\n    * Fixed broken charge mechanics\n    * Sohei\n        * Sohei should now work correctly with weapon training changes if enabled\n    * Winter Witch\n        * Unearly Cold's direct damage should now properly respect metamagic and added bonus damage\n* Added Metamagic\n\t* Elemental Spell Metamagic\n\t\t* Choose one energy type: acid, cold, electricity, or fire. You may replace a spell’s normal damage with that energy type \"or split the spell’s damage, so that half is of that energy type and half is of its normal type.\n"
         }
       ],
-      "Latest": "2.3.2",
+      "Latest": "2.4.0",
       "Name": "Tabletop Tweaks",
       "NexusModID": 0,
       "Source": "GitHub"
