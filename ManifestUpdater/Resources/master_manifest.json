@@ -1307,7 +1307,7 @@
     {
       "Author": "vikigenius",
       "Description": "SpellbookMerge is a mod for Pathfinder Wrath of the righteous that allows additional spellbook merging options",
-      "DownloadLink": "https://github.com/vikigenius/SpellbookMerge/releases/download/v1.6.0/SpellbookMerge.zip",
+      "DownloadLink": "https://github.com/vikigenius/SpellbookMerge/releases/download/v1.7.0/SpellbookMerge.zip",
       "GithubOwner": "vikigenius",
       "GithubRepo": "SpellbookMerge",
       "ModId": {
@@ -1370,9 +1370,13 @@
         {
           "version": "1.6.0",
           "contents": "- Fixed for patch 1.3 (use with 1.3.0+ game versions only). \n- Reverted to old merging system."
+        },
+        {
+          "version": "1.7.0",
+          "contents": "## What's Changed\n* EE Release with lots of new spellbooks by @wyakpara in https://github.com/vikigenius/SpellbookMerge/pull/23\n\n## New Contributors\n* @wyakpara made their first contribution in https://github.com/vikigenius/SpellbookMerge/pull/23\n\n**Full Changelog**: https://github.com/vikigenius/SpellbookMerge/compare/v1.6.0...v1.7.0"
         }
       ],
-      "Latest": "1.6.0",
+      "Latest": "1.7.0",
       "Name": "Spellbook Merge",
       "NexusModID": 0,
       "Source": "GitHub"
