@@ -968,7 +968,7 @@
     {
       "Author": "Vek17",
       "Description": "Tabletop Tweaks is a mod that seeks to adjust the cRPG rules to more closely follow the tabletop ruleset. Additionally it adds content missing from the base game. ",
-      "DownloadLink": "https://github.com/Vek17/TabletopTweaks-Base/releases/download/v2.4.0/TabletopTweaks-Base.zip",
+      "DownloadLink": "https://github.com/Vek17/TabletopTweaks-Base/releases/download/v2.4.1/TabletopTweaks-Base.zip",
       "GithubOwner": "Vek17",
       "GithubRepo": "WrathMods-TabletopTweaks",
       "ModId": {
@@ -1247,9 +1247,13 @@
         {
           "version": "2.4.0",
           "contents": "## Version 2.4.0\n* Release for 2.0.0\n* Fixes\n    * Fixed broken charge mechanics\n    * Sohei\n        * Sohei should now work correctly with weapon training changes if enabled\n    * Winter Witch\n        * Unearly Cold's direct damage should now properly respect metamagic and added bonus damage\n* Added Metamagic\n\t* Elemental Spell Metamagic\n\t\t* Choose one energy type: acid, cold, electricity, or fire. You may replace a spell’s normal damage with that energy type \"or split the spell’s damage, so that half is of that energy type and half is of its normal type.\n"
+        },
+        {
+          "version": "2.4.1",
+          "contents": "## Version 2.4.1\n* Scrolls of new spells should now be available at appropriate venders.\n* Dragon Disciple Prerequistes with TTT have been fixed.\n\n* Added Spells\n    * Stunning Barrier Greater\n        * This spell functions as stunning barrier, except it provides a +2 bonus to AC and on saving throws and it is not discharged until it has stunned a number of creatures equal to your caster level.\n    * Cloak of Winds\n        * You shroud a creature in a whirling screen of strong, howling wind. Ranged attack rolls against the subject take a -4 penalty."
         }
       ],
-      "Latest": "2.4.0",
+      "Latest": "2.4.1",
       "Name": "Tabletop Tweaks",
       "NexusModID": 0,
       "Source": "GitHub"
