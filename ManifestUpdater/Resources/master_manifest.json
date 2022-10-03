@@ -1655,7 +1655,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.4.3/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/V1.5.0/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1894,9 +1894,13 @@
         {
           "version": "1.4.3",
           "contents": "[1.4.3]\n- extended Mythic.PatchVarious with: elemental rampage works with limitless rage #138\n- fixed issue with loading CodexLib\n- fixed life bubble is AOE again"
+        },
+        {
+          "version": "1.5.0",
+          "contents": "[1.5.0]\n- fixed Feral Combat with Elemental Fist\n- extended Kineticist.PatchVarious with: fixed Negative Energy Mastery #140\n- fixes for 2.0 release"
         }
       ],
-      "Latest": "1.4.3",
+      "Latest": "1.5.0",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
