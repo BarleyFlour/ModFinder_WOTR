@@ -1454,7 +1454,7 @@
     {
       "Author": "Kadyn",
       "Description": "Seeking to expand and add to content in Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.4.0/ExpandedContent.zip",
+      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.4.1/ExpandedContent.zip",
       "GithubOwner": "ka-dyn",
       "GithubRepo": "ExpandedContent",
       "ModId": {
@@ -1645,9 +1645,13 @@
         {
           "version": "0.4.0",
           "contents": "**Expanded Content** V0.4.0\n\nUpdated for EE update.\n\nFixed localization problems (thanks Wolfie)\n\nAdded Subdomain\n-Revolution\n"
+        },
+        {
+          "version": "0.4.1",
+          "contents": "**Expanded Content** V0.4.1\n\nAdded scrolls for all new spells and added them to venders (thanks Vek)\nAdded Spells - Inflict Pain, Inflict Pain Mass\nAdded Mythic Ability - Impossible Subdomain\nFixed reported bugs"
         }
       ],
-      "Latest": "0.4.0",
+      "Latest": "0.4.1",
       "Name": "Expanded Content",
       "NexusModID": 0,
       "Source": "GitHub"
