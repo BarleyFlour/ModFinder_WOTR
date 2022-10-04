@@ -2035,7 +2035,7 @@
     {
       "Author": "BarleyFlour",
       "Description": null,
-      "DownloadLink": "https://github.com/BarleyFlour/VisualAdjustments2/releases/download/v1.0.11/VisualAdjustments2.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/VisualAdjustments2/releases/download/v1.0.12/VisualAdjustments2.zip",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "VisualAdjustments2",
       "ModId": {
@@ -2090,9 +2090,13 @@
         {
           "version": "1.0.11",
           "contents": ">Fixed hide enchants again"
+        },
+        {
+          "version": "1.0.12",
+          "contents": ">Fixed an issue where \"create doll\" would be non functional on Story Companions. (This may have also fixed the issue with leveling and custom dolls but couldnt repro that)"
         }
       ],
-      "Latest": "1.0.11",
+      "Latest": "1.0.12",
       "Name": "Visual Adjustments 2",
       "NexusModID": 0,
       "Source": "GitHub"
