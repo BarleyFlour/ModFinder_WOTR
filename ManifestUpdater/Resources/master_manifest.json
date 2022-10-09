@@ -968,7 +968,7 @@
     {
       "Author": "Vek17",
       "Description": "Tabletop Tweaks is a mod that seeks to adjust the cRPG rules to more closely follow the tabletop ruleset. Additionally it adds content missing from the base game. ",
-      "DownloadLink": "https://github.com/Vek17/TabletopTweaks-Base/releases/download/v2.4.1/TabletopTweaks-Base.zip",
+      "DownloadLink": "https://github.com/Vek17/TabletopTweaks-Base/releases/download/v2.4.2/TabletopTweaks-Base.zip",
       "GithubOwner": "Vek17",
       "GithubRepo": "WrathMods-TabletopTweaks",
       "ModId": {
@@ -1251,9 +1251,13 @@
         {
           "version": "2.4.1",
           "contents": "## Version 2.4.1\n* Scrolls of new spells should now be available at appropriate venders.\n* Dragon Disciple Prerequistes with TTT have been fixed.\n\n* Added Spells\n    * Stunning Barrier Greater\n        * This spell functions as stunning barrier, except it provides a +2 bonus to AC and on saving throws and it is not discharged until it has stunned a number of creatures equal to your caster level.\n    * Cloak of Winds\n        * You shroud a creature in a whirling screen of strong, howling wind. Ranged attack rolls against the subject take a -4 penalty."
+        },
+        {
+          "version": "2.4.2",
+          "contents": "## Version 2.4.2\n* Fixes\n    * General\n        * Area of Effects should no longer double trigger on cast as if an extra round had elapsed.\n        * Vulnerability now works properly on combined damage types (IE: Slashing/Bludgeoning)\n    * Spells\n        * Shadow Enchantment \n            * Scrolls should now be available and craftable.\n        * Believe In Yourself\n            * Now correctly has CL scale buff duration.\n        * Burst of Sonic Energy\n            * Now applies the correct amount of damage instead of triggering chaotic healing.\n        * Field of Flowers\n            * Now applies the correct debuffs instead of using Repulsive Nature's debuffs.\n        * Repulsive Nature\n            * Now uses the correct spell DC and actually applies its debuffs on fail.\n        * Water Push\n            * Now has working targeting and effects.\n        * Nature's Grasp\n            * Now deals the correct amount of damage.\n        * Sudden Squall\n            * Now has working targeting and debuff.\n        * Friendly Hug\n            * Now has fully working immunities.\n        * Unbreakable Bond\n            * Now has fully working immunities.\n        * Water Torrent\n            * Now has working targeting and debuff.\n        * Ode to Miraculous Magic\n            * Now correctly has CL scale buff duration.\n        * Songs of Steel\n            * No longer procs extra spell effects from the spell damage, deals the bonus damage based on CL, and applies only on first hit.\n        * Protection of Nature\n            * Concealment no longer is bypassed by true seeing.\n        * Joy of Life\n            * Now converts outgoing damage to Holy.\n    * Equipment\n        * Amulet Of Quick Draw\n            * No longer creates excessive damage instance and now functions correctly with critical hits."
         }
       ],
-      "Latest": "2.4.1",
+      "Latest": "2.4.2",
       "Name": "Tabletop Tweaks",
       "NexusModID": 0,
       "Source": "GitHub"
