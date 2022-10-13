@@ -1437,7 +1437,7 @@
     {
       "Author": "Balkoth",
       "Description": "A mod of Owlcat's Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Balkoth-dev/WOTR_PATH_OF_RAGE/releases/download/1.1.0/WOTR_PATH_OF_RAGE.zip",
+      "DownloadLink": "https://github.com/Balkoth-dev/WOTR_PATH_OF_RAGE/releases/download/1.1.1/WOTR_PATH_OF_RAGE.zip",
       "GithubOwner": "Balkoth-dev",
       "GithubRepo": "WOTR_PATH_OF_RAGE",
       "ModId": {
@@ -1446,11 +1446,11 @@
       },
       "Changelog": [
         {
-          "version": "1.1.0",
-          "contents": "How to Install\n\nDownload and install Unity Mod Manager, make sure it is at least version 0.23.0\nRun Unity Mod Manger and set it up to find Wrath of the Righteous\nDownload the WOTR_PATH_OF_RAGE mod\nInstall the mod by dragging the zip file from step 3 into the Unity Mod Manager window under the Mods tab\n\nChanges in this version:\n* Brimorak Aspect Fix now works with the Areelu cloak.\n* Added compatibility with TTT-Base and the Brimorak Aspect Fix. If TTT-Base is installed and has its brimorak aspect setting active, then the setting on Path of Rage will turn off.\n* Made the new demon rage no longer work with Dark Codex's infinite rage resource."
+          "version": "1.1.1",
+          "contents": "How to Install\n\nDownload and install Unity Mod Manager, make sure it is at least version 0.23.0\nRun Unity Mod Manger and set it up to find Wrath of the Righteous\nDownload the WOTR_PATH_OF_RAGE mod\nInstall the mod by dragging the zip file from step 3 into the Unity Mod Manager window under the Mods tab\n\nChanges in this version:\n* Fixed demonologies to use new demonic rage resource.\n* Demon Rage now updated. You will be able to use it now for an unlimited amount of time out of combat. This also means it will not turn off when combat ends, meaning you get to stay angry even between cutscenes!\n* Elemental Rampager is now activated when you start your elemental rage."
         }
       ],
-      "Latest": "1.1.0",
+      "Latest": "1.1.1",
       "Name": "PATH OF RAGE",
       "NexusModID": 0,
       "Source": "GitHub"
