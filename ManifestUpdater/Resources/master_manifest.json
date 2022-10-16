@@ -1458,7 +1458,7 @@
     {
       "Author": "Kadyn",
       "Description": "Seeking to expand and add to content in Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.4.22/ExpandedContent.zip",
+      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.4.23/ExpandedContent.zip",
       "GithubOwner": "ka-dyn",
       "GithubRepo": "ExpandedContent",
       "ModId": {
@@ -1665,9 +1665,13 @@
         {
           "version": "0.4.22",
           "contents": "**Expanded Content** V0.4.22\nBug fixes and making some stuff look a bit nicer."
+        },
+        {
+          "version": "0.4.23",
+          "contents": "**Expanded Content** V0.4.23\nAdded Archetype - Storm Druid\nbug fixes 'n' stuff"
         }
       ],
-      "Latest": "0.4.22",
+      "Latest": "0.4.23",
       "Name": "Expanded Content",
       "NexusModID": 0,
       "Source": "GitHub"
