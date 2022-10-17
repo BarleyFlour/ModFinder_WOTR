@@ -1679,7 +1679,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/V1.5.0/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.1/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1922,9 +1922,13 @@
         {
           "version": "1.5.0",
           "contents": "[1.5.0]\n- fixed Feral Combat with Elemental Fist\n- extended Kineticist.PatchVarious with: fixed Negative Energy Mastery #140\n- fixes for 2.0 release"
+        },
+        {
+          "version": "1.5.1",
+          "contents": "[1.5.1]\n- fixed Bladed Brush for Spell Combat, Duelist Parry, and Duelist's Deflect Arrows #144\n- split boundless healing and boundless injury into separate feats #143\n- added fix for fortune hex\n- added background: Fate’s Favored #146\n- fixed ice tomb DC stacking, added to winter witch selection #149\n- fixed Patch_ChangeSpellElement overwriting channel energy #148"
         }
       ],
-      "Latest": "1.5.0",
+      "Latest": "1.5.1",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
