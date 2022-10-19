@@ -1679,7 +1679,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.1/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.2/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1926,9 +1926,13 @@
         {
           "version": "1.5.1",
           "contents": "[1.5.1]\n- fixed Bladed Brush for Spell Combat, Duelist Parry, and Duelist's Deflect Arrows #144\n- split boundless healing and boundless injury into separate feats #143\n- added fix for fortune hex\n- added background: Fate’s Favored #146\n- fixed ice tomb DC stacking, added to winter witch selection #149\n- fixed Patch_ChangeSpellElement overwriting channel energy #148"
+        },
+        {
+          "version": "1.5.2",
+          "contents": "[1.5.2]\n- added Purifying Channel feat: channel positive energy deals fire damage #150\n- added Patch Parry Always: use parry even if attack would have missed anyway default=off #156\n- changed Patch_BackgroundChecks which should fix #151\n- fixed internal blueprint cache #155"
         }
       ],
-      "Latest": "1.5.1",
+      "Latest": "1.5.2",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
