@@ -968,7 +968,7 @@
     {
       "Author": "Vek17",
       "Description": "Tabletop Tweaks is a mod that seeks to adjust the cRPG rules to more closely follow the tabletop ruleset. Additionally it adds content missing from the base game. ",
-      "DownloadLink": "https://github.com/Vek17/TabletopTweaks-Base/releases/download/v2.4.2/TabletopTweaks-Base.zip",
+      "DownloadLink": "https://github.com/Vek17/TabletopTweaks-Base/releases/download/v2.4.3/TabletopTweaks-Base.zip",
       "GithubOwner": "Vek17",
       "GithubRepo": "WrathMods-TabletopTweaks",
       "ModId": {
@@ -1255,9 +1255,13 @@
         {
           "version": "2.4.2",
           "contents": "## Version 2.4.2\n* Fixes\n    * General\n        * Area of Effects should no longer double trigger on cast as if an extra round had elapsed.\n        * Vulnerability now works properly on combined damage types (IE: Slashing/Bludgeoning)\n    * Spells\n        * Shadow Enchantment \n            * Scrolls should now be available and craftable.\n        * Believe In Yourself\n            * Now correctly has CL scale buff duration.\n        * Burst of Sonic Energy\n            * Now applies the correct amount of damage instead of triggering chaotic healing.\n        * Field of Flowers\n            * Now applies the correct debuffs instead of using Repulsive Nature's debuffs.\n        * Repulsive Nature\n            * Now uses the correct spell DC and actually applies its debuffs on fail.\n        * Water Push\n            * Now has working targeting and effects.\n        * Nature's Grasp\n            * Now deals the correct amount of damage.\n        * Sudden Squall\n            * Now has working targeting and debuff.\n        * Friendly Hug\n            * Now has fully working immunities.\n        * Unbreakable Bond\n            * Now has fully working immunities.\n        * Water Torrent\n            * Now has working targeting and debuff.\n        * Ode to Miraculous Magic\n            * Now correctly has CL scale buff duration.\n        * Songs of Steel\n            * No longer procs extra spell effects from the spell damage, deals the bonus damage based on CL, and applies only on first hit.\n        * Protection of Nature\n            * Concealment no longer is bypassed by true seeing.\n        * Joy of Life\n            * Now converts outgoing damage to Holy.\n    * Equipment\n        * Amulet Of Quick Draw\n            * No longer creates excessive damage instance and now functions correctly with critical hits."
+        },
+        {
+          "version": "2.4.3",
+          "contents": "## Version 2.4.3\n* Fixes\n    * Removed Overtip Fixes as they are now in vanilla.\n    * Spells\n        * Magical Vestment\n            * Now properly handles loading and area changes."
         }
       ],
-      "Latest": "2.4.2",
+      "Latest": "2.4.3",
       "Name": "Tabletop Tweaks",
       "NexusModID": 0,
       "Source": "GitHub"
