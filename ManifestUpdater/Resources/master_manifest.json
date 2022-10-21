@@ -2071,7 +2071,7 @@
     {
       "Author": "BarleyFlour",
       "Description": null,
-      "DownloadLink": "https://github.com/BarleyFlour/VisualAdjustments2/releases/download/v1.0.13/VisualAdjustments2.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/VisualAdjustments2/releases/download/v1.0.14/VisualAdjustments2.zip",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "VisualAdjustments2",
       "ModId": {
@@ -2134,9 +2134,13 @@
         {
           "version": "1.0.13",
           "contents": ">Fixed for version 2.0.2c"
+        },
+        {
+          "version": "1.0.14",
+          "contents": ">Fixed an issue with the EE Color picker where B/G channels would be inverted aswell as oversaturated.\n>Fixed an issue where hiding mythic effects would only hide them in menus."
         }
       ],
-      "Latest": "1.0.13",
+      "Latest": "1.0.14",
       "Name": "Visual Adjustments 2",
       "NexusModID": 0,
       "Source": "GitHub"
