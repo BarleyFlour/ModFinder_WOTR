@@ -1683,7 +1683,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.2/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.3/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1934,9 +1934,13 @@
         {
           "version": "1.5.2",
           "contents": "[1.5.2]\n- added Purifying Channel feat: channel positive energy deals fire damage #150\n- added Patch Parry Always: use parry even if attack would have missed anyway default=off #156\n- changed Patch_BackgroundChecks which should fix #151\n- fixed internal blueprint cache #155"
+        },
+        {
+          "version": "1.5.3",
+          "contents": "[1.5.3]\n- fixed Patch_NotAChance making all attacks miss #159\n- fixed Patch_ChangeSpellElement ambiguous match\n- fixed split hex working on some major/grand hexes"
         }
       ],
-      "Latest": "1.5.2",
+      "Latest": "1.5.3",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
