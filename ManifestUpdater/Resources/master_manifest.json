@@ -1137,14 +1137,6 @@
           "contents": "* Aeon Mythic Rework\n    * Aeon Bane is now a free action to activate instead of a swift\n    * Aeon Bane usages now scale at 2x Mythic level + Character level\n    * Aeon Greater Bane damage is now rolled into the main weapon attack instead of a separate instance\n    * Aeon Greater Bane now allows you to cast swift action spells as a move action\n    * Aeon Gaze selection is no longer limited on the first selection and all selections are available\n    * Aeon Gaze now functions like Inquisitor Judgments where multiple can be activated for the same swift action and resouce usage\n    * Aeon Gaze DC has been adjusted from 15 + 2x Mythic Level to 10 + 1/2 Character Level + 2x Mythic level\n        * This takes the DC range from DC 21-35 to DC 21-40 (+2 vs Chaotic)\n* fixed armor specilization cap being lower than it should have been\n* made nature oracle AC conversion more consistant\n* advanced armor training should now increase heavy armor movement speed again"
         },
         {
-          "version": "1.8.0",
-          "contents": "* Aeon Mythic Rework\n    * Aeon Bane is now a free action to activate instead of a swift\n    * Aeon Bane usages now scale at 2x Mythic level + Character level\n    * Aeon Greater Bane damage is now rolled into the main weapon attack instead of a separate instance\n    * Aeon Greater Bane now allows you to cast swift action spells as a move action\n    * Aeon Gaze selection is no longer limited on the first selection and all selections are available\n    * Aeon Gaze now functions like Inquisitor Judgments where multiple can be activated for the same swift action and resouce usage\n    * Aeon Gaze DC has been adjusted from 15 + 2x Mythic Level to 10 + 1/2 Character Level + 2x Mythic level\n        * This takes the DC range from DC 21-35 to DC 21-40 (+2 vs Chaotic)\n* fixed armor specilization cap being lower than it should have been\n* made nature oracle AC conversion more consistant\n* advanced armor training should now increase heavy armor movement speed again"
-        },
-        {
-          "version": "1.8.1",
-          "contents": "* Aeon Bane no longer grants disadvantage on spell resistance and instead correctly adds mythic rank to spell resistance checks\n* Aeon Improved Bane now uses greater dispel magic rules to remove 1/4 CL buffs where CL is defined as Character Level + Mythic Rank instead of ALL buffs\n* Aeon Greater Bane now has the guaranteed auto dispel on first hit\n* Break Enchantment no longer removes friendly buffs\n* Cleaned up fighter armor training speed increase to work more correctly with archetypes"
-        },
-        {
           "version": "1.8.1",
           "contents": "* Aeon Bane no longer grants disadvantage on spell resistance and instead correctly adds mythic rank to spell resistance checks\n* Aeon Improved Bane now uses greater dispel magic rules to remove 1/4 CL buffs where CL is defined as Character Level + Mythic Rank instead of ALL buffs\n* Aeon Greater Bane now has the guaranteed auto dispel on first hit\n* Break Enchantment no longer removes friendly buffs\n* Cleaned up fighter armor training speed increase to work more correctly with archetypes"
         },
@@ -1167,6 +1159,10 @@
         {
           "version": "1.9.3a",
           "contents": "**For Beta 1.1.0**\n\n## Version 1.9.3\n* Added new modified version of Armor Master as a homebrew option\n* Updated icon for Aeon Bane\n* Minor fixes to nested activatable abilities\n* Aberrant bloodline should now work correctly with Mixed Blood Bloodrager\n* Destined bloodline should now work correctly with Mixed Blood Bloodrager\n\n## Version 1.9.3a\n* Fixed issue with Oracle curse progression moving at the wrong rate\n* Fixed issue with alternate racial features breaking with Destinaty Beyond Birth\n* Fixed CL scaling on Burning Magic Revelation"
+        },
+        {
+          "version": "1.9.4",
+          "contents": "## Version 1.9.4\n* Updated handling of nested activatable abilities\n* Fixed issue where additional spell selections from spell blending/loremaster were not actually applying\n* Fixed unarmed strikes not being valid for weapon training\n* Close to the Abyss now correctly deals 1.5 strength damage instead of 0.5\n* Steel Headbutt should now more correctly use armor enchantment values\n* Aeon Bane is now a swift action instead of a free\n* Aeon Gaze is now a free action instead of a swift\n* Updated Deity favored weapon mechanics to fix proficiency not being granted properly in some cases"
         },
         {
           "version": "1.9.5",
@@ -1215,6 +1211,10 @@
         {
           "version": "2.1.0",
           "contents": "## Version 2.1.0\n* Fixes\n    * Systems\n        * Fixed Concealment checks for invisibility.\n        * Size shifts are now supported from Fine to Colossal.\n        * Charge damage multipliers should now work correctly again.\n        * Prebuffs will be applied at a more correct level instead of nearly always CL 20.\n        * Saves will now properly remember who cast buffs which should fix several bugs including idealize discovery not working on save load.\n    * Feats\n        * Cleave\n            * Cleave now checks for adjacency to the last target (Adjacent = within 5ft) instead of just reach.\n        * Cleaving Finish\n            * Cleaving Finish now checks for adjacency to the last target (Adjacent = within 5ft) instead of just reach.\n        * Toppling Bash\n            * Toppling Bash's action cost has been removed for now due to bugs breaking action econemy when toggled. This is still limited to once per round.\n    * Spells\n        * Animal Growth\n            * Animal Growth should now work correctly with animal companions.\n        * Corrupt Magic\n            * Corrupt Magic now uses a single dispel roll for all buffs like other dispels.\n        * Death Ward\n            * Death Ward now Suppresses existing negative levels.\n        * Mind Blank\n            * Mind blank now makes you immune to detection with divination effects like see invisibility and true seeing.\n        * Zero State\n            * Zero State now uses a single dispel roll for all buffs like other dispels.\n    * Armor\n        * Singing Steel\n            * Singing Steel now works.\n    * Equipment\n        * Flawless Belt Of Physical Perfection 8\n            * Now increases critical hit range by 1 in all cases.\n            * Now appears as a DLC1 reward.\n    * Alchemist\n        * Fixed Incense Fog scaling incorrectly if you took expanded area.\n    * Cavalier\n        * Order of the Star's Calling ability should now properly apply bonuses.\n    * Hunter\n        * Fixed Divine Hunter's animal companion getting unlimited smites.\n    * Rogue\n        * Dispelling Attack now uses the correct CL and no longer removes debuffs.\n* Added Mythic Feats\n\t* Cleave (Mythic)\n\t\t* Whenever you use Cleave or Cleaving Finish, your attacks can be made against a foe that is within your reach."
+        },
+        {
+          "version": "2.1.1",
+          "contents": "## Version 2.1.1\n* Fixes\n    * Hotfix for immortal mythic enemies."
         },
         {
           "version": "2.2.0",
