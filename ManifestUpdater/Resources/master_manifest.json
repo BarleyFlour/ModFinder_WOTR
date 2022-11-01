@@ -2161,7 +2161,7 @@
         },
         {
           "version": "1.1.0",
-          "contents": ">Added a voice selector in the portrait picker. (Bottom right corner)"
+          "contents": ">Added a voice selector in the portrait picker. (Bottom right corner)\nEdit: now with the correct dll."
         }
       ],
       "Latest": "1.1.0",
