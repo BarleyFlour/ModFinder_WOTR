@@ -1691,7 +1691,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.4/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.5/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1950,9 +1950,13 @@
         {
           "version": "1.5.4",
           "contents": "[1.5.4]\n- added Kitsune Foxfire: magical tail also grants Foxfire Bolt #161\n- added Bestow Hope: basic feat channel energy reduces fear #160\n- added Patch: Azata Favorable Magic, include saving throws from auras (does not work with TableTopTweaks Azata.FavorableMagic enabled) #162\n- fixed Purifying Channel hitting all enemies #150"
+        },
+        {
+          "version": "1.5.5",
+          "contents": "[1.5.5]\n- added limitless smite to antipaladin #166\n- fixed Purifying Channel hitting all enemies #150"
         }
       ],
-      "Latest": "1.5.4",
+      "Latest": "1.5.5",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
