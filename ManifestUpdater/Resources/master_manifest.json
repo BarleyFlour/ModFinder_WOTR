@@ -1440,21 +1440,16 @@
     },
     {
       "Author": "Balkoth",
-      "Description": "A mod of Owlcat's Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Balkoth-dev/WOTR_PATH_OF_RAGE/releases/download/1.1.3/WOTR_PATH_OF_RAGE.zip",
+      "Description": null,
+      "DownloadLink": null,
       "GithubOwner": "Balkoth-dev",
       "GithubRepo": "WOTR_PATH_OF_RAGE",
       "ModId": {
         "Identifier": "WOTR_PATH_OF_RAGE",
         "ModType": "UMM"
       },
-      "Changelog": [
-        {
-          "version": "1.1.3",
-          "contents": "How to Install\n\nDownload and install Unity Mod Manager, make sure it is at least version 0.23.0\nRun Unity Mod Manger and set it up to find Wrath of the Righteous\nDownload the WOTR_PATH_OF_RAGE mod\nInstall the mod by dragging the zip file from step 3 into the Unity Mod Manager window under the Mods tab\n\nChanges this version:\n* Balor Aspect should no longer give its intelligence bonus.\n* Unleashed Demon's balor form now has the correct number of times per day\n* Aspect of Quasit will now reroll attack rolls if they fail and reroll on concealment rolls."
-        }
-      ],
-      "Latest": "1.1.3",
+      "Changelog": null,
+      "Latest": "-",
       "Name": "PATH OF RAGE",
       "NexusModID": 0,
       "Source": "GitHub"
