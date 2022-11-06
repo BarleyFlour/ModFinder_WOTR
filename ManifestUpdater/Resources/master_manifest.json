@@ -1686,7 +1686,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.6/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.7/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1953,9 +1953,13 @@
         {
           "version": "1.5.6",
           "contents": "[1.5.6]\n- fixed Bestow Hope only working on cleric channel\n- added Energy Channel: basic feat channel energy through weapon attacks #168\n- added spell Healing Flames #169\n- fixed Patch_ParryAlways #156\n- changed bleeding logic"
+        },
+        {
+          "version": "1.5.7",
+          "contents": "[1.5.7]\n- fixed damage calculation of Energy Channel\n- fixed Healing Flames alignment checks\n- added Limitless Warpriest Blessing: mythic ability use blessing powers at will #170"
         }
       ],
-      "Latest": "1.5.6",
+      "Latest": "1.5.7",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
