@@ -1269,7 +1269,7 @@
     {
       "Author": "Barley",
       "Description": null,
-      "DownloadLink": "https://github.com/BarleyFlour/FinneanTweaks/releases/download/v1.0.1/DownloadThis.-FinneanTweaks.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/FinneanTweaks/releases/download/v1.0.2/FinneanTweaks.zip",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "FinneanTweaks",
       "ModId": {
@@ -1284,9 +1284,13 @@
         {
           "version": "1.0.1",
           "contents": "For Game Version 1.2.0\n\n>Removed Lethal enchant from tier 1.\n>Added Agile, Cruel, Disruption & Keen to tier 1.\n>Added Furyborn and Deteriorative to tier 2.\n>Moved Heartseeker & Improved critical multiplier from tier 2 to tier 1.\n"
+        },
+        {
+          "version": "1.0.2",
+          "contents": "Fixed for game version 2.0.3"
         }
       ],
-      "Latest": "1.0.1",
+      "Latest": "1.0.2",
       "Name": "Finnean Tweaks",
       "NexusModID": 0,
       "Source": "GitHub"
