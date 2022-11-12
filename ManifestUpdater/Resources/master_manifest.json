@@ -1466,7 +1466,7 @@
     {
       "Author": "Kadyn",
       "Description": "Seeking to expand and add to content in Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.4.40/ExpandedContent.zip",
+      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.4.41/ExpandedContent.zip",
       "GithubOwner": "ka-dyn",
       "GithubRepo": "ExpandedContent",
       "ModId": {
@@ -1685,9 +1685,13 @@
         {
           "version": "0.4.40",
           "contents": "**Expanded Content** V0.4.40 Happy Spookmas\n\nAdded drake type - Umbral (It has Negative Energy Affinity)\n\nReduced the volume of drake footsteps (requires respec)\nAdded Icons to the dragon mystery and vampire curse, courtesy of xTekek"
+        },
+        {
+          "version": "0.4.41",
+          "contents": "**Expanded Content** V0.4.41\n\nEye Icons for added pets\nSeveral new Demon Lord Deities (Icons by xTekek)\nHopefully the last of the Dreadknight bugfixes or I will cry."
         }
       ],
-      "Latest": "0.4.40",
+      "Latest": "0.4.41",
       "Name": "Expanded Content",
       "NexusModID": 0,
       "Source": "GitHub"
