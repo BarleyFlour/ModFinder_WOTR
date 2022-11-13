@@ -1699,7 +1699,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.7/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.8/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1970,9 +1970,13 @@
         {
           "version": "1.5.7",
           "contents": "[1.5.7]\n- fixed damage calculation of Energy Channel\n- fixed Healing Flames alignment checks\n- added Limitless Warpriest Blessing: mythic ability use blessing powers at will #170"
+        },
+        {
+          "version": "1.5.8",
+          "contents": "[1.5.8]\n- added Flame Blade, spell: Flame Blade, feat: Flame Blade Dervish Combat"
         }
       ],
-      "Latest": "1.5.7",
+      "Latest": "1.5.8",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
