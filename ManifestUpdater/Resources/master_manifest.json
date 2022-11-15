@@ -3,7 +3,7 @@
     {
       "Author": "Barley",
       "Description": "A respec mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/BarleyFlour/RespecMod/releases/download/v1.10.8/Download_This_RespecWrath.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/RespecMod/releases/download/v1.10.9/Download_This_RespecWrath.zip",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "RespecMod",
       "ModId": {
@@ -174,9 +174,13 @@
         {
           "version": "1.10.8",
           "contents": ">Fixed for v1.4.3k"
+        },
+        {
+          "version": "1.10.9",
+          "contents": "Fixed for game version 2.0.4."
         }
       ],
-      "Latest": "1.10.8",
+      "Latest": "1.10.9",
       "Name": "Respec Mod",
       "NexusModID": 0,
       "Source": "GitHub"
