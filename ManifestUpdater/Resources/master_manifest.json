@@ -1703,7 +1703,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.8/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.9/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -1978,9 +1978,13 @@
         {
           "version": "1.5.8",
           "contents": "[1.5.8]\n- added Flame Blade, spell: Flame Blade, feat: Flame Blade Dervish Combat"
+        },
+        {
+          "version": "1.5.9",
+          "contents": "[1.5.9]\n- added metamagic to Flame Blade\n- changed Flame Blade to move action (like unsheating a weapon), that way you get the free touch attack from casting a spell, but cannot do a full attack\n- added Gozreh's Trident (Divine Trident); allowing Flame Blade Dervish Combat with it (since the spell is virtually identical)\n- fixed for 2.0.4j"
         }
       ],
-      "Latest": "1.5.8",
+      "Latest": "1.5.9",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
