@@ -2127,7 +2127,7 @@
     {
       "Author": "BarleyFlour",
       "Description": null,
-      "DownloadLink": "https://github.com/BarleyFlour/VisualAdjustments2/releases/download/v1.1.0/VisualAdjustments2.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/VisualAdjustments2/releases/download/v1.1.1/VisualAdjustments2.zip",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "VisualAdjustments2",
       "ModId": {
@@ -2202,9 +2202,13 @@
         {
           "version": "1.1.0",
           "contents": ">Added a voice selector in the portrait picker. (Bottom right corner)\nEdit: now with the correct dll."
+        },
+        {
+          "version": "1.1.1",
+          "contents": "Fixed for game version 2.0.4k"
         }
       ],
-      "Latest": "1.1.0",
+      "Latest": "1.1.1",
       "Name": "Visual Adjustments 2",
       "NexusModID": 0,
       "Source": "GitHub"
