@@ -2147,7 +2147,7 @@
     {
       "Author": "BarleyFlour",
       "Description": null,
-      "DownloadLink": "https://github.com/BarleyFlour/VisualAdjustments2/releases/download/v1.1.1/VisualAdjustments2.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/VisualAdjustments2/releases/download/v1.1.2/VisualAdjustments2.zip",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "VisualAdjustments2",
       "ModId": {
@@ -2226,9 +2226,13 @@
         {
           "version": "1.1.1",
           "contents": "Fixed for game version 2.0.4k"
+        },
+        {
+          "version": "1.1.2",
+          "contents": "Fixed an issue where class clothing could reappear if removed with the EE picker."
         }
       ],
-      "Latest": "1.1.1",
+      "Latest": "1.1.2",
       "Name": "Visual Adjustments 2",
       "NexusModID": 0,
       "Source": "GitHub"
