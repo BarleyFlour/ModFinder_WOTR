@@ -60,6 +60,10 @@
           "contents": "Reworked how story companions first class is handled (no more bugs regarding recruitment and phantom levels, in theory atleast)"
         },
         {
+          "version": "1.5.0",
+          "contents": "Reworked how story companions first class is handled (no more bugs regarding recruitment and phantom levels, in theory atleast)"
+        },
+        {
           "version": "1.5.1",
           "contents": "Fixed Level 0 companions again (hopefully properly this time)"
         },
@@ -138,10 +142,6 @@
         {
           "version": "1.9.3",
           "contents": ">Fixed for game version 1.1.6"
-        },
-        {
-          "version": "1.10.0",
-          "contents": ">Reworked logic touching AddClassLevels.LevelUp, this means increased compatibility with other mods.\n>Said rework should also help with any issues regarding deity selection/background not sticking.\n"
         },
         {
           "version": "1.10.1",
