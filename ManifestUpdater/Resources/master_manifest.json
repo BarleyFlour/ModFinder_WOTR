@@ -1486,7 +1486,7 @@
     {
       "Author": "Kadyn",
       "Description": "Seeking to expand and add to content in Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.4.60/ExpandedContent.zip",
+      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.4.70/ExpandedContent.zip",
       "GithubOwner": "ka-dyn",
       "GithubRepo": "ExpandedContent",
       "ModId": {
@@ -1717,9 +1717,13 @@
         {
           "version": "0.4.60",
           "contents": "**Expanded Content** V0.4.60\n\nAdded spell - Zephyr's Fleetness\nReduced the sounds of drakes, Good drakes now use the Aivu sounds for walking, Evil drakes use the Umbral dragon sounds.\n"
+        },
+        {
+          "version": "0.4.70",
+          "contents": "**Expanded Content** V0.4.70\n\nAdded Oracle Mystery - Heavens\nAdded Spell - Hypnotic Pattern\n\nNew mystery has support for Mystical Mayhem, when both mods are installed Heavens lvl9 spell is replaced with Meteor Swarm.\nAlso bug fixes 'n' stuff"
         }
       ],
-      "Latest": "0.4.60",
+      "Latest": "0.4.70",
       "Name": "Expanded Content",
       "NexusModID": 0,
       "Source": "GitHub"
