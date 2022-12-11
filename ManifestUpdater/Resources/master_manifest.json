@@ -48,22 +48,6 @@
           "contents": "Fixed an issue where certain class features of story companions wouldnt be cleared properly (e.x Ember's Blackened)\nFixed an issue where Full Story Companion Respec wouldnt allow you to choose Deity/Background\nAdded persistent settings( i.e you dont have to set your setting every time you start the game)"
         },
         {
-          "version": "1.2.4",
-          "contents": "Fixed an issue where animal companions wouldn't be removed properly.\nFixed an issue where Nenio's Kitsune heritage wouldn't be cleared out properly.\nPotentially fixed an issue with phantom levels."
-        },
-        {
-          "version": "1.4.0",
-          "contents": "Added a feature to respec only your mythic levels."
-        },
-        {
-          "version": "1.5.0",
-          "contents": "Reworked how story companions first class is handled (no more bugs regarding recruitment and phantom levels, in theory atleast)"
-        },
-        {
-          "version": "1.5.1",
-          "contents": "Fixed Level 0 companions again (hopefully properly this time)"
-        },
-        {
           "version": "1.5.2",
           "contents": "Fixed an issue where atheist companions couldnt be respeced\nFixed an issue where you could not pick deity for atheist companions with Choose Background/Deity"
         },
@@ -1784,7 +1768,19 @@
           "contents": ""
         },
         {
+          "version": "1.0.6",
+          "contents": ""
+        },
+        {
           "version": "1.0.7",
+          "contents": ""
+        },
+        {
+          "version": "1.0.7",
+          "contents": ""
+        },
+        {
+          "version": "1.0.8",
           "contents": ""
         },
         {
@@ -1794,6 +1790,14 @@
         {
           "version": "1.0.9",
           "contents": ""
+        },
+        {
+          "version": "1.0.9",
+          "contents": ""
+        },
+        {
+          "version": "1.1.0",
+          "contents": "NOTE: If your save does not load, open the settings and try with Debug2 flag enabled. This will delete traps when you load your save. Make a new save afterwards and disable the flag again!\n\n## [1.1.0]\n- fix for missing area effects\n- added Kineticist.createHurricaneQueen\n- added Mythic.patchBoundlessHealing: Boundless Healing also grants healing spells to spellbooks\n- added Mythic.patchVarious: allow quicken metamagic on demon teleport spell\n- added Patch_AlwaysAChance: feat 'Always A Chance' will critical succeed on a natural 1 and apply to more checks (saving throws, skill checks)\n- added Mythic.patchRangingShots: doesn't get weaker when hitting\n- added Mythic.patchWanderingHex: can swap hex at will, instead of once per day (which wasn't in the description anyway)\n- updated for game version 1.1.0i\n- added debugflag 2 that removes trap data from save games (without this my save wouldn't load)"
         },
         {
           "version": "1.1.0",
@@ -1824,10 +1828,6 @@
           "contents": "- fixed improved hunter's bond not showing up in feat selection"
         },
         {
-          "version": "1.1.7",
-          "contents": "## [1.1.7]\n- added Patch_FixAreaEffectDamage which prevents area effects from running simultaneously OnEnter and OnRound e.g. dealing double damage\n- extended Control_AreaEffects functionality to cutscenes (needs testing)\n- added events to advanced patch manager\n- disabled patches show warnings, if a requirement isn't met"
-        },
-        {
           "version": "1.1.8",
           "contents": "## [1.1.8]\n- removed Patch_FixAreaEffectDamage\n- added Patch_FixAreaDoubleDamage, which doesn't have overlapping issues\n- added Patch_FixAreaEndOfTurn to deal damage at the end of each unit's turn, instead all at once during the caster's turn\n- added option to disable new features by default"
         },
@@ -1842,10 +1842,6 @@
         {
           "version": "1.2.2",
           "contents": "[1.2.2]\n- added logic to organize ability groups via drag&drop\n- added Dark Elementalist soul power to burn boni\n- added option to dismiss any spell regardless of who casted it (default off)\n- fixed Limitless Arcane Pool not applying to Eldritch Scion\n- fixed Enduring Spells not able to apply to enchantment spells (like Magic Weapon)\n- rewrote blueprint loading, which should fix previous issues with it and still be quite fast"
-        },
-        {
-          "version": "1.2.3",
-          "contents": "[1.2.3]\n- fixed Arcane Weapon buff not getting replaced on cast\n- fixed ability group not showing up"
         },
         {
           "version": "1.2.4",
@@ -1894,18 +1890,6 @@
         {
           "version": "1.3.6",
           "contents": "[1.3.6]\n- added Butchering Axe weapon proficiency, which is now required to use it\n- fixed Elemental Focus not applying to spell-like abilities\n- added Additional Traits, metamagic traits\n- added fix for Master Shapeshifter: ensures polymorph buffs grant boni\n- added freebooter to swift hunter's bond\n- fixed AC malus of Flensing Strike not updating\n- changed installation path, so files should extract correctly for everybody"
-        },
-        {
-          "version": "1.3.7",
-          "contents": "[1.3.7]\n- added Orc-Atavism; Kindred-Raised Half-Elf regain Elven Immunity\n- fixed bug that made metamagic traits unselectable"
-        },
-        {
-          "version": "1.3.8",
-          "contents": "[1.3.8]\n- added fix for Arcane bloodline; Metamagic Adept and Arcane Apotheosis\n- fixed crash during save, if a character has Arcane Apotheosis"
-        },
-        {
-          "version": "1.3.9",
-          "contents": "[1.3.9]\n- fixed Metamagic Adept to retaining through saves\n- fixed fix of Master Shapeshifter ;)"
         },
         {
           "version": "1.3.10",
