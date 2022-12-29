@@ -1755,7 +1755,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.11/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.12/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -2042,9 +2042,13 @@
         {
           "version": "1.5.11",
           "contents": "[1.5.11]\n- fixed Kinetic Knight maneuver bonus while whip is active #185\n- added Unlock Spells: unlocks some spells: Transformation\n- fixed parametrized selection not showing spells from base game #188"
+        },
+        {
+          "version": "1.5.12",
+          "contents": "[1.5.12]\n- fixed limitless features ignoring activatables"
         }
       ],
-      "Latest": "1.5.11",
+      "Latest": "1.5.12",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
