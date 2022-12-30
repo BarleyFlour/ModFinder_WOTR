@@ -1506,7 +1506,7 @@
     {
       "Author": "Kadyn",
       "Description": "Seeking to expand and add to content in Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.4.80/ExpandedContent.zip",
+      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.4.90/ExpandedContent.zip",
       "GithubOwner": "ka-dyn",
       "GithubRepo": "ExpandedContent",
       "ModId": {
@@ -1745,9 +1745,13 @@
         {
           "version": "0.4.80",
           "contents": "**Expanded Content** V0.4.80\n\nAdded Oracle Mystery - Succor\nAdded Spells - Clay Skin, Entropic Shield, Shield of Fortification (normal and greater)\nAdded Feature - Aid Another\nAdded Feat - Swift Aid\nNew mystery has support for TTT-Base, when both mods are installed Succor lvl9 spell is replaced with Mage's Disjunction\nBugs and spelling fixes"
+        },
+        {
+          "version": "0.4.90",
+          "contents": "**Expanded Content** V0.4.90\n\nAdded Subdomain - Stars\nAdded Spells - Dance of a Hundred Cuts, Dance of a Thousand Cuts"
         }
       ],
-      "Latest": "0.4.80",
+      "Latest": "0.4.90",
       "Name": "Expanded Content",
       "NexusModID": 0,
       "Source": "GitHub"
