@@ -1495,7 +1495,7 @@
       "Changelog": [
         {
           "version": "1.1.6",
-          "contents": "How to Install\n\nDownload and install Unity Mod Manager, make sure it is at least version 0.23.0\nRun Unity Mod Manger and set it up to find Wrath of the Righteous\nDownload the WOTR_PATH_OF_RAGE mod\nInstall the mod by dragging the zip file from step 3 into the Unity Mod Manager window under the Mods tab\n\nChanges this version:\n* Refixed bug with demon rage that causes it to persist when given as part of a cutscene.\n* Renamed Aspect of Quasit to Aspect of Oolioddroo"
+          "contents": "How to Install\n\nDownload and install Unity Mod Manager, make sure it is at least version 0.23.0\nRun Unity Mod Manger and set it up to find Wrath of the Righteous\nDownload the WOTR_PATH_OF_RAGE mod\nInstall the mod by dragging the zip file from step 3 into the Unity Mod Manager window under the Mods tab\n\n## [![Download zip](https://github.com/Balkoth-dev/WOTR_PATH_OF_RAGE/blob/master/downloadButton.png?raw=true \"Download zip\")](https://github.com/Balkoth-dev/WOTR_PATH_OF_RAGE/releases/latest/download/WOTR_PATH_OF_RAGE.zip)\n\nChanges this version:\n* Refixed bug with demon rage that causes it to persist when given as part of a cutscene.\n* Renamed Aspect of Quasit to Aspect of Oolioddroo"
         }
       ],
       "Latest": "1.1.6",
