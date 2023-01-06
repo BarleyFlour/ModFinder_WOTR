@@ -1759,7 +1759,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.13/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.14/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -2054,9 +2054,13 @@
         {
           "version": "1.5.13",
           "contents": "[1.5.13]\n- added Martyr (Paladin) to Limitless Bardic Performance #196\n- added Patch: Fix limitless activatables; makes it so activatables with infinite resources start out of combat and stay on after combat #195"
+        },
+        {
+          "version": "1.5.14",
+          "contents": "[1.5.14]\n- fixed spell resistance with Bladed Dash #198\n- fix for selection #189"
         }
       ],
-      "Latest": "1.5.13",
+      "Latest": "1.5.14",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
