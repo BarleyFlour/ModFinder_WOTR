@@ -1506,7 +1506,7 @@
     {
       "Author": "Kadyn",
       "Description": "Seeking to expand and add to content in Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.4.90/ExpandedContent.zip",
+      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.4.95/ExpandedContent.zip",
       "GithubOwner": "ka-dyn",
       "GithubRepo": "ExpandedContent",
       "ModId": {
@@ -1749,9 +1749,13 @@
         {
           "version": "0.4.90",
           "contents": "**Expanded Content** V0.4.90\n\nAdded Subdomain - Stars\nAdded Spells - Dance of a Hundred Cuts, Dance of a Thousand Cuts"
+        },
+        {
+          "version": "0.4.95",
+          "contents": "**Expanded Content** V0.4.95\n\nAdded Druid Archetype - Bear Shaman (renamed to Bear Totem Druid)\nGrammar and bug fixes\n\nThanks to xTekek for the icons"
         }
       ],
-      "Latest": "0.4.90",
+      "Latest": "0.4.95",
       "Name": "Expanded Content",
       "NexusModID": 0,
       "Source": "GitHub"
