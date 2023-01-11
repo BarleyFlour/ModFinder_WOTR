@@ -1763,7 +1763,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.14/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.15/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -2062,9 +2062,13 @@
         {
           "version": "1.5.14",
           "contents": "[1.5.14]\n- fixed spell resistance with Bladed Dash #198\n- fix for selection #189"
+        },
+        {
+          "version": "1.5.15",
+          "contents": "[1.5.15]\n- fixed conflicting prerequisites #204\n- fixed spell resistance with chain infusion #205\n- added patch info to Patch_UnlockClassLevels"
         }
       ],
-      "Latest": "1.5.14",
+      "Latest": "1.5.15",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
