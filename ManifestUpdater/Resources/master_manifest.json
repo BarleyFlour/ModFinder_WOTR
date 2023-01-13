@@ -1763,7 +1763,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.15.17/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v.15.17/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -2070,9 +2070,13 @@
         {
           "version": "1.15.17",
           "contents": "[1.5.16]\n- Feral Combat Training unlocks iterative natural attacks #206"
+        },
+        {
+          "version": "15.17.0",
+          "contents": "[1.5.17]\n- fixed Ki Strikes and Shattering Punch with Feral Combat Training"
         }
       ],
-      "Latest": "1.15.17",
+      "Latest": "15.17.0",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
