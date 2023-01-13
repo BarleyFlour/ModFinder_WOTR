@@ -1309,7 +1309,7 @@
     {
       "Author": "Barley",
       "Description": null,
-      "DownloadLink": "https://github.com/BarleyFlour/FinneanTweaks/releases/download/v1.0.2/FinneanTweaks.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/FinneanTweaks/releases/download/v1.0.1/DownloadThis.-FinneanTweaks.zip",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "FinneanTweaks",
       "ModId": {
@@ -1330,7 +1330,7 @@
           "contents": "Fixed for game version 2.0.3"
         }
       ],
-      "Latest": "1.0.2",
+      "Latest": "1.0.1",
       "Name": "Finnean Tweaks",
       "NexusModID": 0,
       "Source": "GitHub"
