@@ -1763,7 +1763,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v.15.17/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.15.17/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -2068,15 +2068,15 @@
           "contents": "[1.5.15]\n- fixed conflicting prerequisites #204\n- fixed spell resistance with chain infusion #205\n- added patch info to Patch_UnlockClassLevels"
         },
         {
-          "version": "1.15.17",
+          "version": "1.15.16",
           "contents": "[1.5.16]\n- Feral Combat Training unlocks iterative natural attacks #206"
         },
         {
-          "version": "15.17.0",
+          "version": "1.15.17",
           "contents": "[1.5.17]\n- fixed Ki Strikes and Shattering Punch with Feral Combat Training"
         }
       ],
-      "Latest": "15.17.0",
+      "Latest": "1.15.17",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
