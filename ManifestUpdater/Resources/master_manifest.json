@@ -378,6 +378,10 @@
           "contents": "\n* Added \"disband army\" button\n* Fixed a bug where the global map speed would not change until the map was loaded/unloaded.\n"
         },
         {
+          "version": "0.3.0a",
+          "contents": " * Added a \"jump to siege\" button"
+        },
+        {
           "version": "0.4.0",
           "contents": "Adds loot-colouring:\n  Corpse-loot: red\n  Not-coprse-loot: green"
         },
@@ -394,8 +398,16 @@
           "contents": "\n* Update to Game Version 1.1 (beta), won't work on old version.\n* Added invading armies and quest locations to the map sidebar."
         },
         {
+          "version": "0.6.1",
+          "contents": " * Minor fix to disable speed tweaks during TBM combat"
+        },
+        {
           "version": "0.7.0",
           "contents": "\n* Customisable cursor scale for combat/non-combat cursors\n* Customisable(ish) color for attack count text (white is sometimes real hard to see)\n"
+        },
+        {
+          "version": "0.8.0",
+          "contents": "\n\tCharacter Statistics (beta)\n\t\tEach character will have a new tab 'statistics' in their character sheet\n\t\tIt can only track stats while it's installed so sadly it won't retroactively find them"
         },
         {
           "version": "0.8.1",
@@ -1631,10 +1643,6 @@
           "contents": "**Expanded Content** V0.3.61\n\nFixed all reported bugs with Oathbreaker and Dreadknight!!\n\nAdded Gold Drake type\n\nNew Archetypes\n- Clutch Thief, Homebrew rogue archetype with a young drake companion\n- Claw of the False Wyrm, Evil Silver Champion variant using Dreadknight instead of Paladin and worshiping Dahak\n\n  "
         },
         {
-          "version": "0.3.61",
-          "contents": "**Expanded Content** V0.3.61\n\nFixed all reported bugs with Oathbreaker and Dreadknight!!\n\nAdded Gold Drake type\n\nNew Archetypes\n- Clutch Thief, Homebrew rogue archetype with a young drake companion\n- Claw of the False Wyrm, Evil Silver Champion variant using Dreadknight instead of Paladin and worshiping Dahak\n\n  "
-        },
-        {
           "version": "0.3.62",
           "contents": "**Expanded Content** V0.3.62\n\n-Added Dragon Mystery and Vampirism Curse to the Oracle class\n-Made most features togglable in the UMM menu\n-Bunch of tiny fixes"
         },
@@ -1705,6 +1713,10 @@
         {
           "version": "0.4.22",
           "contents": "**Expanded Content** V0.4.22\nBug fixes and making some stuff look a bit nicer."
+        },
+        {
+          "version": "0.4.23",
+          "contents": "**Expanded Content** V0.4.23\nAdded Archetype - Storm Druid\nbug fixes 'n' stuff"
         },
         {
           "version": "0.4.30",
@@ -1936,24 +1948,12 @@
           "contents": "[1.3.13]\n- fixed sticky spells not working with Boundless Injury\n- allowed arcanist to use temporary known spells without preparing them\n- added Venom Infusion; infusion: applies sickened or poisons the target\n- fixed Orc Atavism Ferocity not in UI"
         },
         {
-          "version": "1.3.13",
-          "contents": "[1.3.13]\n- fixed sticky spells not working with Boundless Injury\n- allowed arcanist to use temporary known spells without preparing them\n- added Venom Infusion; infusion: applies sickened or poisons the target\n- fixed Orc Atavism Ferocity not in UI"
-        },
-        {
-          "version": "1.3.14",
-          "contents": "[1.3.14]\n- fixed Orc Atavism Ferocity not in UI\n- fixed Venom Infusion applying to all attacks, not just blasts\n- added Dirty Fighting combat feat\n- added Spell Perfection\n"
-        },
-        {
           "version": "1.3.14",
           "contents": "[1.3.14]\n- fixed Orc Atavism Ferocity not in UI\n- fixed Venom Infusion applying to all attacks, not just blasts\n- added Dirty Fighting combat feat\n- added Spell Perfection\n"
         },
         {
           "version": "1.3.15",
           "contents": "[1.3.15]\n- added references to KineticistExpandedElements; will fix interactions with substance infusions\n- fixed Venom Infusion's poison from \"2 saves\" to \"2 consecutive saves\"; simplified damage calculation which might fix bugs;\n\tit deals dex damage, if target is immune to con damage; target is sickended while poisoned; reduced burn by 1;\n\tfixed DC being dex based, instead of main stat\n- added more checks to Spell Perfection\n- fixed Dirty Fighting granting all maneuver feats instead of just the action; this might need a respec, if you already took that feat\n- added Razortusk to Orc Atavism\n- fixed kinetic weapons not registering as melee weapon for some abilities\n- fixed Blood Kineticist Bleed Infusion and some strings\n- reversed some butchering axe changes until bugs are fixed"
-        },
-        {
-          "version": "1.3.16",
-          "contents": "[1.3.16]\n- added icon to Venom Infusion Poison\n- added Opportune Parry, combat feat: duelist parry by expending Attack of Opportunities\n- added patch to allow Zippy to work with spell-like abilities"
         },
         {
           "version": "1.3.16",
@@ -2004,6 +2004,10 @@
           "contents": "[1.4.2]\n- added 'body forms become immune to horrid wilting' to General: Various Tweaks\n- added Bladed Brush: new combat feat #87\n- extended Mythic.PatchVarious with: allow Elemental Barrage on any damage trigger #136\n- included feats in gold dragon bonus feat\n- added Mythic Animal Companion, mythic feat: unlocks companion equipment slots #134\n- added Not A Chance: mythic ability: immunity to crits #133\n- fixed PatchAlwaysAChance not being called #137\n- added Split Hex"
         },
         {
+          "version": "1.4.3",
+          "contents": "[1.4.3]\n- extended Mythic.PatchVarious with: elemental rampage works with limitless rage #138\n- fixed issue with loading CodexLib\n- fixed life bubble is AOE again"
+        },
+        {
           "version": "1.5.0",
           "contents": "[1.5.0]\n- fixed Feral Combat with Elemental Fist\n- extended Kineticist.PatchVarious with: fixed Negative Energy Mastery #140\n- fixes for 2.0 release"
         },
@@ -2044,6 +2048,10 @@
           "contents": "[1.5.9]\n- added metamagic to Flame Blade\n- changed Flame Blade to move action (like unsheating a weapon), that way you get the free touch attack from casting a spell, but cannot do a full attack\n- added Gozreh's Trident (Divine Trident); allowing Flame Blade Dervish Combat with it (since the spell is virtually identical)\n- fixed for 2.0.4j"
         },
         {
+          "version": "1.5.10",
+          "contents": "[1.5.10]\n- added Limitless Bloodline Claws, mythic ability: use claws from bloodlines at will, use breath weapon more often, use dragon disciple form II at will\n- fixed spell resistance check on Flame Blade\n- change Flame Blade to standard action, but you can target enemies for the first attack\n- added Evangelist (Homebrew Archetypes) to Limitless Bardic Performance\n- fixed metamagic reduction with convertable spells\n- fixed spell selection for metamagic traits, spell perfection, preferred spell"
+        },
+        {
           "version": "1.5.11",
           "contents": "[1.5.11]\n- fixed Kinetic Knight maneuver bonus while whip is active #185\n- added Unlock Spells: unlocks some spells: Transformation\n- fixed parametrized selection not showing spells from base game #188"
         },
@@ -2062,6 +2070,10 @@
         {
           "version": "1.5.15",
           "contents": "[1.5.15]\n- fixed conflicting prerequisites #204\n- fixed spell resistance with chain infusion #205\n- added patch info to Patch_UnlockClassLevels"
+        },
+        {
+          "version": "1.15.16",
+          "contents": "[1.5.16]\n- Feral Combat Training unlocks iterative natural attacks #206"
         },
         {
           "version": "1.15.17",
