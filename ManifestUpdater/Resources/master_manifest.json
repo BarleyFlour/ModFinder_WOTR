@@ -2118,6 +2118,10 @@
       },
       "Changelog": [
         {
+          "version": "0.0.1",
+          "contents": "Initial alpha version"
+        },
+        {
           "version": "0.0.2",
           "contents": "Minor Update"
         },
@@ -2156,6 +2160,10 @@
         {
           "version": "0.1.3",
           "contents": "* Fixed bug where wrong spell casting from additional menu"
+        },
+        {
+          "version": "0.1.4",
+          "contents": "Fixed issue with pick up an item type for the first time displaying as if you do not have any of those items."
         },
         {
           "version": "0.1.5",
