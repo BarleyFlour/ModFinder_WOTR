@@ -1767,7 +1767,7 @@
     {
       "Author": "Fumihiko",
       "Description": "Mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.15.17/DarkCodex.zip",
+      "DownloadLink": "https://github.com/Truinto/DarkCodex/releases/download/v1.5.18/DarkCodex.zip",
       "GithubOwner": "Truinto",
       "GithubRepo": "DarkCodex",
       "ModId": {
@@ -2072,6 +2072,10 @@
           "contents": "[1.5.15]\n- fixed conflicting prerequisites #204\n- fixed spell resistance with chain infusion #205\n- added patch info to Patch_UnlockClassLevels"
         },
         {
+          "version": "1.5.18",
+          "contents": "[1.5.18]\n- removed broken logic from KineticArtifact #210\n- removed recommendation from Piranha Strike #208\n- changed weapon type 'Flame Blade' to scimitar, 'Divine Trident' to trident #197\n- added Limitless Animal Focus, mythic ability: gain the Hunter capstone 'Master Hunter' #209\n- added Limitless Inquisitor Bane, mythic ability: infinite inquisitor bane #203"
+        },
+        {
           "version": "1.15.16",
           "contents": "[1.5.16]\n- Feral Combat Training unlocks iterative natural attacks #206"
         },
@@ -2080,7 +2084,7 @@
           "contents": "[1.5.17]\n- fixed Ki Strikes and Shattering Punch with Feral Combat Training"
         }
       ],
-      "Latest": "1.15.17",
+      "Latest": "1.5.18",
       "Name": "DarkCodex",
       "NexusModID": 0,
       "Source": "GitHub"
