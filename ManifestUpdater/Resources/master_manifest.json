@@ -1506,7 +1506,7 @@
     {
       "Author": "Kadyn",
       "Description": "Seeking to expand and add to content in Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.4.99/ExpandedContent.zip",
+      "DownloadLink": "https://github.com/ka-dyn/ExpandedContent/releases/download/v0.4.99a/ExpandedContent.zip",
       "GithubOwner": "ka-dyn",
       "GithubRepo": "ExpandedContent",
       "ModId": {
@@ -1757,9 +1757,13 @@
         {
           "version": "0.4.99",
           "contents": "**Expanded Content** V0.4.99\n\nAdded Subdomains\n- Agathion\n- Lust\n- Resolve\n"
+        },
+        {
+          "version": "0.4.99a",
+          "contents": "**Expanded Content** V0.4.99a\n\nTiny bug fix"
         }
       ],
-      "Latest": "0.4.99",
+      "Latest": "0.4.99a",
       "Name": "Expanded Content",
       "NexusModID": 0,
       "Source": "GitHub"
