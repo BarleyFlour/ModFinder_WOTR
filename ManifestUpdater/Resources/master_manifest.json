@@ -2223,7 +2223,7 @@
     {
       "Author": "BarleyFlour",
       "Description": null,
-      "DownloadLink": "https://github.com/BarleyFlour/VisualAdjustments2/releases/download/v1.1.4/VisualAdjustments2.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/VisualAdjustments2/releases/download/v1.2.0/Eye.png",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "VisualAdjustments2",
       "ModId": {
@@ -2314,9 +2314,13 @@
         {
           "version": "1.1.4",
           "contents": "Fixed an issue where the cache would fail to update aswell as displaying an error in UMM"
+        },
+        {
+          "version": "1.2.0",
+          "contents": "Added the ability to add your own pet eye images for custom portraits, just place a .png in the custom portrait folder named \"Eye.png\" and it will appear as the eye image (though you may have to reload a save/transition into a new area for it to update if you just switched portrait). The appropriate aspect ratio is 22:3 (i.e. 22 units of width for each 3 units of height)\n(Included in this release is a sample eye.png)"
         }
       ],
-      "Latest": "1.1.4",
+      "Latest": "1.2.0",
       "Name": "Visual Adjustments 2",
       "NexusModID": 0,
       "Source": "GitHub"
