@@ -2248,10 +2248,6 @@
           "contents": ">Fixed an issue where the portrait picker would fail to function in certain circumstances."
         },
         {
-          "version": "1.0.4",
-          "contents": ">Fixed an issue where the \"Fix Scale\" button had inverted function (this also caused an issue where Drake companions from Expanded Content would be huge)"
-        },
-        {
           "version": "1.0.5",
           "contents": ">Added an option to hide Mythic Visuals\n>Fixed a bug where Per-Character Buff profiles wouldnt save."
         },
@@ -2296,16 +2292,8 @@
           "contents": ">Fixed \"Hide Equipment\" being non-functional."
         },
         {
-          "version": "1.1.0",
-          "contents": ">Added a voice selector in the portrait picker. (Bottom right corner)\nEdit: now with the correct dll."
-        },
-        {
           "version": "1.1.1",
           "contents": "Fixed for game version 2.0.4k"
-        },
-        {
-          "version": "1.1.2",
-          "contents": "Fixed an issue where class clothing could reappear if removed with the EE picker."
         },
         {
           "version": "1.1.3",
