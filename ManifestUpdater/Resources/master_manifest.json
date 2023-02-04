@@ -3,7 +3,7 @@
     {
       "Author": "Barley",
       "Description": "A respec mod for Pathfinder: Wrath of the Righteous",
-      "DownloadLink": "https://github.com/BarleyFlour/RespecMod/releases/download/v1.10.11/Download_This_RespecWrath.zip",
+      "DownloadLink": "https://github.com/BarleyFlour/RespecMod/releases/download/v1.10.12/Download_This_RespecWrath.zip",
       "GithubOwner": "BarleyFlour",
       "GithubRepo": "RespecMod",
       "ModId": {
@@ -186,9 +186,13 @@
         {
           "version": "1.10.11",
           "contents": "Fixed for game version 2.0.6"
+        },
+        {
+          "version": "1.10.12",
+          "contents": ">Fixed an issue where leaving \"respec from recruit level\" on would cause default classes of companions to be added back."
         }
       ],
-      "Latest": "1.10.11",
+      "Latest": "1.10.12",
       "Name": "Respec Mod",
       "NexusModID": 0,
       "Source": "GitHub"
